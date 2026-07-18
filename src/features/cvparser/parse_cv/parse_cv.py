@@ -36,6 +36,11 @@ class ParseCVResult(BaseModel):
 
 @parse_cv_router.post("/parse", response_model=HTTPDataResponse[ParseCVResult])
 async def parse_cv(request: ParseCVRequest) -> HTTPDataResponse[ParseCVResult]:
+    logger.info(
+        "[CVParser API] Plain-text CV received: text_length=%d file_name=%s",
+        len(request.text),
+        request.file_name,
+    )
     try:
         parsed = await cv_parser.parse_cv(request.text)
     except ValueError as exc:

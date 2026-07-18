@@ -14,9 +14,16 @@ load_dotenv()
 class Settings:
     app_env: str = os.getenv("APP_ENV", "development")
     port: int = int(os.getenv("PORT", "8001"))
-    llm_api_url: str = os.getenv("LLM_API_URL", "https://openrouter.ai/api/v1")
-    llm_api_key: str | None = os.getenv("LLM_API_KEY")
-    llm_model: str = os.getenv("LLM_MODEL", "minimax/minimax-m2.5:free")
+    deepseek_base_url: str = os.getenv(
+        "DEEPSEEK_BASE_URL",
+        "https://api.deepseek.com",
+    )
+    deepseek_api_key: str | None = os.getenv("DEEPSEEK_API_KEY")
+    deepseek_model: str = os.getenv("DEEPSEEK_MODEL", "deepseek-chat")
+    deepseek_max_tokens: int = int(os.getenv("DEEPSEEK_MAX_TOKENS", "8000"))
+    deepseek_timeout_seconds: float = float(
+        os.getenv("DEEPSEEK_TIMEOUT_SECONDS", "120")
+    )
 
 
 settings = Settings()

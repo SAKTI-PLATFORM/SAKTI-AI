@@ -12,9 +12,9 @@ import logging
 from dataclasses import dataclass
 from typing import Any
 
-from src.infrastructure.llm.openrouter import (
-    extract_cv_with_openrouter,
-    is_openrouter_configured,
+from src.infrastructure.llm.deepseek import (
+    extract_cv_with_deepseek,
+    is_deepseek_configured,
 )
 
 
@@ -81,7 +81,7 @@ KNOWN_SKILLS = {
     "power bi",
 }
 
-logger = logging.getLogger(__name__)
+logger = logging.getLogger("uvicorn.error")
 
 
 @dataclass(frozen=True)
@@ -95,15 +95,44 @@ class CVParser:
         return await self.parse_cv(text)
 
     async def parse_cv(self, text: str) -> dict[str, Any]:
-        if is_openrouter_configured():
+        deepseek_configured = is_deepseek_configured()
+        logger.info(
+            "[CVParser] Starting parse: text_length=%d deepseek_configured=%s",
+            len(text),
+            deepseek_configured,
+        )
+
+        if deepseek_configured:
             try:
-                parsed = await extract_cv_with_openrouter(text)
+                parsed = await extract_cv_with_deepseek(text)
+                logger.info("[CVParser] Parse completed using DeepSeek")
                 return parsed.to_response_dict()
             except Exception as exc:
                 # Keep onboarding usable during local demos or provider outages.
-                logger.warning("OpenRouter CV parsing failed; using fallback parser: %s", exc)
+                logger.warning(
+                    "[CVParser] DeepSeek parsing failed; using fallback parser: %s",
+                    exc,
+                    exc_info=True,
+                )
+        else:
+            logger.info(
+                "[CVParser] DEEPSEEK_API_KEY is not configured; using fallback parser"
+            )
 
-        return self.parse_cv_with_rules(text)
+        result = self.parse_cv_with_rules(text)
+        logger.info(
+            (
+                "[CVParser] Fallback parse completed: confidence=%.2f "
+                "educations=%d experiences=%d projects=%d certifications=%d skills=%d"
+            ),
+            result["confidence_score"],
+            len(result["educations"]),
+            len(result["experiences"]),
+            len(result["projects"]),
+            len(result["certifications"]),
+            len(result["skills"]),
+        )
+        return result
 
     def parse_cv_with_rules(self, text: str) -> dict[str, Any]:
         normalized_text = self._normalize_text(text)
