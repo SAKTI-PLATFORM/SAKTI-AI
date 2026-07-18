@@ -1,14 +1,14 @@
 [project]
-name = "sakti-platform"
+name = "sakti-ai"
 version = "0.1.0"
-description = "SAKTI - Skill-Adaptive Knowledge and Talent Intelligence Platform"
+description = "SAKTI AI service for CV parsing and extraction"
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "MIT" }
 authors = [
     { name = "Gipi Argy", email = "gipi@example.com" }
 ]
-keywords = ["job-matching", "ai", "nlp", "skill-extraction", "fastapi"]
+keywords = ["cv-parser", "ai", "nlp", "onboarding", "fastapi"]
 
 dependencies = [
     # API & Web Framework
