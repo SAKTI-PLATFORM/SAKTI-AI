@@ -19,6 +19,17 @@ from src.infrastructure.llm.openrouter import (
 
 
 SECTION_HEADINGS: dict[str, tuple[str, ...]] = {
+    "summary": (
+        "summary",
+        "profile",
+        "professional summary",
+        "profile summary",
+        "about",
+        "about me",
+        "ringkasan",
+        "profil",
+        "tentang saya",
+    ),
     "education": (
         "education",
         "educations",
@@ -98,6 +109,7 @@ class CVParser:
         normalized_text = self._normalize_text(text)
         lines = self._to_lines(normalized_text)
 
+        personal_info = self.extract_personal_info(lines)
         educations = self.extract_educations(lines)
         experiences = self.extract_experience(lines)
         projects = self.extract_projects(lines)
@@ -113,11 +125,54 @@ class CVParser:
 
         return {
             "confidence_score": min(confidence_score, 0.95),
+            "personal_info": personal_info,
             "educations": educations,
             "experiences": experiences,
             "projects": projects,
             "certifications": certifications,
             "skills": skills,
+        }
+
+    def extract_personal_info(self, lines: list[str]) -> dict[str, str | None]:
+        raw = "\n".join(lines)
+        email_match = re.search(
+            r"\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b",
+            raw,
+            re.I,
+        )
+        phone_match = re.search(r"(?<!\d)(?:\+?62|0)[\d\s().-]{8,}\d", raw)
+        linkedin_match = re.search(
+            r"(?:https?://)?(?:www\.)?linkedin\.com/in/[^\s|,;]+",
+            raw,
+            re.I,
+        )
+
+        full_name = self._labeled_value(lines, ("name", "nama", "nama lengkap"))
+        if not full_name:
+            full_name = self._header_name(lines)
+
+        professional_headline = self._labeled_value(
+            lines,
+            ("headline", "professional headline", "title", "jabatan"),
+        )
+        if not professional_headline and full_name:
+            professional_headline = self._line_after(lines, full_name)
+
+        domicile = self._labeled_value(
+            lines,
+            ("domicile", "domisili", "location", "lokasi", "address", "alamat"),
+        )
+        summary_lines = self._section_lines(lines, "summary")
+        profile_summary = " ".join(summary_lines).strip()[:1000] or None
+
+        return {
+            "full_name": full_name,
+            "professional_headline": professional_headline,
+            "email": email_match.group(0) if email_match else None,
+            "phone_number": phone_match.group(0).strip() if phone_match else None,
+            "domicile": domicile,
+            "linkedin_url": linkedin_match.group(0) if linkedin_match else None,
+            "profile_summary": profile_summary,
         }
 
     def extract_educations(self, lines: list[str]) -> list[dict[str, Any]]:
@@ -261,6 +316,52 @@ class CVParser:
 
     def _to_lines(self, text: str) -> list[str]:
         return [line.strip() for line in text.split("\n") if line.strip()]
+
+    def _labeled_value(
+        self,
+        lines: list[str],
+        labels: tuple[str, ...],
+    ) -> str | None:
+        pattern = "|".join(re.escape(label) for label in labels)
+        for line in lines:
+            match = re.match(rf"^(?:{pattern})\s*[:|-]\s*(.+)$", line, re.I)
+            if match:
+                return match.group(1).strip() or None
+        return None
+
+    def _header_name(self, lines: list[str]) -> str | None:
+        headings = {
+            heading.lower()
+            for section_headings in SECTION_HEADINGS.values()
+            for heading in section_headings
+        }
+        for line in lines[:8]:
+            cleaned = line.strip()
+            lowered = re.sub(r"[^a-zA-Z ]", "", cleaned).strip().lower()
+            if lowered in headings or re.search(r"@|https?://|linkedin|\d", cleaned, re.I):
+                continue
+            words = cleaned.split()
+            if 2 <= len(words) <= 6 and 3 <= len(cleaned) <= 80:
+                return cleaned
+        return None
+
+    def _line_after(self, lines: list[str], value: str) -> str | None:
+        try:
+            start_index = lines.index(value)
+        except ValueError:
+            return None
+        headings = {
+            heading.lower()
+            for section_headings in SECTION_HEADINGS.values()
+            for heading in section_headings
+        }
+        for line in lines[start_index + 1 : start_index + 4]:
+            lowered = re.sub(r"[^a-zA-Z ]", "", line).strip().lower()
+            if lowered in headings or re.search(r"@|https?://|linkedin|(?:\+?62|0)\d", line, re.I):
+                continue
+            if len(line) <= 120:
+                return line
+        return None
 
     def _section_lines(self, lines: list[str], section: str) -> list[str]:
         current_section: str | None = None

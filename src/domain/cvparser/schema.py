@@ -9,6 +9,16 @@ from pydantic import BaseModel, Field
 EducationLevel = Literal["SMA", "D3", "S1", "S2", "S3"]
 
 
+class ParsedPersonalInfo(BaseModel):
+    full_name: str | None = None
+    professional_headline: str | None = None
+    email: str | None = None
+    phone_number: str | None = None
+    domicile: str | None = None
+    linkedin_url: str | None = None
+    profile_summary: str | None = None
+
+
 class ParsedEducation(BaseModel):
     education_level: EducationLevel | None = None
     institution: str | None = None
@@ -56,6 +66,7 @@ class ParsedSkill(BaseModel):
 
 class ParsedCVResult(BaseModel):
     confidence_score: float = Field(ge=0, le=1)
+    personal_info: ParsedPersonalInfo = Field(default_factory=ParsedPersonalInfo)
     educations: list[ParsedEducation] = Field(default_factory=list)
     experiences: list[ParsedExperience] = Field(default_factory=list)
     projects: list[ParsedProject] = Field(default_factory=list)

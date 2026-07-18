@@ -22,6 +22,7 @@ class ParseCVRequest(BaseModel):
 
 class ParseCVResult(BaseModel):
     confidence_score: float
+    personal_info: dict[str, Any]
     educations: list[dict[str, Any]]
     experiences: list[dict[str, Any]]
     projects: list[dict[str, Any]]
