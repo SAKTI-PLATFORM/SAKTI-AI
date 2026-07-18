@@ -4,19 +4,24 @@ FastAPI service for first-stage BI Hackathon job seeker onboarding.
 
 Current focus:
 
-- `POST /ml/cv/parse`
-- `POST /ml/cv/extract`
+- `POST /ml/cv/parse-file` accepts a `multipart/form-data` PDF upload, extracts
+  its text on the server, and returns structured CV data.
+- `POST /ml/cv/parse` remains available for internal plain-text parsing.
 
-Both endpoints receive CV plain text and return structured education,
-experience, project, certification, and preliminary skill extraction.
+The PDF upload is limited to 10 MB. Education, experience, project,
+certification, and preliminary skill extraction are returned as arrays, so a
+CV can contain multiple records of each type.
 
-LLM configuration uses the OpenAI-compatible OpenRouter API:
+LLM configuration uses the OpenAI-compatible DeepSeek API:
 
 ```env
-LLM_API_URL=https://openrouter.ai/api/v1
-LLM_API_KEY=<your-openrouter-key>
-LLM_MODEL=minimax/minimax-m2.5:free
+DEEPSEEK_BASE_URL=https://api.deepseek.com
+DEEPSEEK_API_KEY=<your-deepseek-api-key>
+DEEPSEEK_MODEL=deepseek-chat
+DEEPSEEK_MAX_TOKENS=8000
+DEEPSEEK_TIMEOUT_SECONDS=120
 ```
 
-If `LLM_API_KEY` is empty, the service falls back to deterministic local
+Use `deepseek-reasoner` as `DEEPSEEK_MODEL` when reasoning mode is needed. If
+`DEEPSEEK_API_KEY` is empty, the service falls back to deterministic local
 heuristics so local development can still run.
