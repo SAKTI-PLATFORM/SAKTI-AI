@@ -1,20 +1,14 @@
-"""SAKTI-AI — FastAPI ML inference service (OCR, embed, psychometric, RAG, match)."""
+"""SAKTI-AI - FastAPI service for CV parsing and extraction."""
 
 from fastapi import FastAPI
 
 from src.core.error_handler import add_global_exception_handlers
-from src.features.insight.generate_insight.generate_insight import (
-    generate_insight_router,
-)
-from src.features.psychometric.score_psychometric.score_psychometric import (
-    score_psychometric_router,
-)
+from src.features.cvparser.parse_cv.parse_cv import parse_cv_router
 
-app = FastAPI(title="SAKTI-AI", description="SAKTI ML inference service")
+app = FastAPI(title="SAKTI-AI", description="SAKTI CV parsing service")
 add_global_exception_handlers(app)
 
-app.include_router(score_psychometric_router)
-app.include_router(generate_insight_router)
+app.include_router(parse_cv_router)
 
 
 @app.get("/health", tags=["health"])
