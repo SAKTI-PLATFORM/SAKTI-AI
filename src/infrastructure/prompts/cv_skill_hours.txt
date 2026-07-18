@@ -1,0 +1,257 @@
+ATURAN ESTIMASI JAM UNTUK SETIAP SKILL
+
+Tujuan estimasi jam adalah menghasilkan perkiraan konservatif berdasarkan bukti
+yang tertulis di CV. Nilai ini merupakan estimasi, bukan jumlah jam yang
+dipastikan secara faktual.
+
+Untuk setiap objek skill, selalu sertakan field berikut:
+
+- learning_hours
+- working_hours
+- hours_confidence
+- hours_estimation_basis
+- hours_breakdown
+
+learning_hours dan working_hours harus berupa angka non-negatif atau null.
+
+DEFINISI
+
+1. learning_hours adalah estimasi jumlah jam kandidat mempelajari skill melalui:
+   - pendidikan formal;
+   - mata kuliah;
+   - kursus;
+   - bootcamp;
+   - pelatihan;
+   - sertifikasi;
+   - program pembelajaran;
+   - pembelajaran mandiri yang tertulis secara jelas di CV.
+
+2. working_hours adalah estimasi jumlah jam kandidat menggunakan skill secara
+   praktis melalui:
+   - pekerjaan;
+   - magang;
+   - freelance;
+   - organisasi;
+   - penelitian;
+   - kompetisi;
+   - capstone;
+   - proyek.
+
+3. hours_confidence adalah angka 0 sampai 1 yang menunjukkan tingkat keyakinan
+   terhadap estimasi jam.
+
+4. hours_estimation_basis hanya boleh berisi salah satu nilai berikut:
+   - EXPLICIT
+   - RULE_BASED
+   - MIXED
+   - INSUFFICIENT_EVIDENCE
+
+ATURAN WAJIB
+
+1. Telusuri seluruh bagian CV untuk setiap skill, termasuk:
+   - pendidikan;
+   - mata kuliah;
+   - pengalaman kerja;
+   - pengalaman organisasi;
+   - proyek;
+   - penelitian;
+   - kursus;
+   - bootcamp;
+   - sertifikasi.
+
+2. Jangan hanya melihat bagian daftar skill.
+
+3. Jika skill memiliki setidaknya satu bukti kontekstual dalam pengalaman,
+   proyek, pendidikan, kursus, atau sertifikasi, lakukan estimasi jam menggunakan
+   aturan di bawah.
+
+4. Gunakan null hanya apabila:
+   - skill hanya disebut dalam daftar skill;
+   - tidak terdapat pengalaman, proyek, pendidikan, kursus, atau sertifikasi yang
+     dapat dihubungkan dengan skill tersebut;
+   - tidak tersedia durasi dan tidak tersedia aturan fallback untuk sumber bukti
+     tersebut.
+
+5. Jangan menggunakan null hanya karena jumlah jam tidak ditulis secara
+   eksplisit. Jika durasi atau jenis sumber tersedia, gunakan rumus konservatif
+   yang telah ditentukan.
+
+PENENTUAN TINGKAT PENGGUNAAN SKILL
+
+Untuk setiap bukti, klasifikasikan penggunaan skill sebagai MAIN, ROUTINE, atau
+SUPPORTING berdasarkan konteks kalimat CV.
+
+Klasifikasi ini wajib dilakukan dan tidak dianggap sebagai mengarang data selama
+didasarkan pada deskripsi pengalaman atau proyek.
+
+Gunakan aturan berikut:
+
+1. MAIN
+   Skill dianggap MAIN apabila:
+   - skill menjadi teknologi utama proyek;
+   - skill digunakan untuk membangun komponen inti;
+   - kandidat melakukan architecting, developing, engineering, implementing,
+     training, designing, atau deploying menggunakan skill tersebut;
+   - keberhasilan pekerjaan sangat bergantung pada skill tersebut.
+
+   Bobot penggunaan pekerjaan: 0.50.
+   Jam proyek tanpa durasi: 40 jam.
+
+2. ROUTINE
+   Skill dianggap ROUTINE apabila:
+   - digunakan secara rutin dalam implementasi;
+   - menjadi bagian penting dari stack, tetapi bukan fokus utama;
+   - digunakan untuk mendukung pengembangan beberapa fitur;
+   - kandidat secara langsung menggunakan skill tersebut, tetapi tidak menjadi
+     kompetensi utama aktivitas.
+
+   Bobot penggunaan pekerjaan: 0.25.
+   Jam proyek tanpa durasi: 20 jam.
+
+3. SUPPORTING
+   Skill dianggap SUPPORTING apabila:
+   - hanya digunakan sebagai alat bantu;
+   - digunakan pada bagian kecil dari aktivitas;
+   - hanya mendukung proses utama;
+   - tidak terdapat indikasi bahwa kandidat menggunakannya secara mendalam.
+
+   Bobot penggunaan pekerjaan: 0.10.
+   Jam proyek tanpa durasi: 8 jam.
+
+Jika skill hanya tercantum dalam daftar teknologi sebuah proyek dan tidak ada
+penjelasan lain, klasifikasikan sebagai ROUTINE.
+
+Jika deskripsi proyek secara jelas menjadikan skill tersebut sebagai teknologi
+utama, klasifikasikan sebagai MAIN.
+
+DURASI
+
+Gunakan jumlah jam eksplisit jika tersedia.
+
+Jika CV memberikan durasi tetapi tidak memberikan jumlah jam, gunakan konversi:
+
+- 1 minggu = 7 hari;
+- 1 bulan = 4.33 minggu;
+- 1 tahun = 12 bulan.
+
+Untuk rentang bulan:
+
+- hitung berdasarkan jumlah bulan kalender;
+- tanggal "Sekarang", "Present", atau "Current" dihitung sampai tanggal CV
+  diproses;
+- jangan membuat tanggal awal atau tanggal akhir yang tidak tertulis.
+
+PEMBELAJARAN
+
+Gunakan aturan berikut:
+
+1. Kursus, bootcamp, atau pelatihan intensif:
+   learning_hours = jumlah minggu × 20 jam.
+
+2. Pembelajaran paruh waktu atau mata kuliah:
+   learning_hours = jumlah minggu × 6 jam.
+
+3. Sertifikasi relevan tanpa durasi:
+   learning_hours = 40 jam satu kali.
+
+4. Pendidikan formal yang secara jelas menghubungkan sebuah mata kuliah dengan
+   skill, tetapi tidak mencantumkan durasi:
+   learning_hours = 80 jam satu kali untuk skill tersebut.
+
+5. Jika sebuah program mencantumkan total jam dan menyebut beberapa skill:
+   - jangan memberikan seluruh total jam kepada setiap skill;
+   - bagi total jam secara merata hanya kepada skill utama yang disebut secara
+     eksplisit;
+   - catat pembagian tersebut dalam hours_breakdown;
+   - jangan membagikan jam tersebut kepada library, framework, atau subskill yang
+     tidak disebut secara eksplisit sebagai materi program.
+
+Contoh:
+
+Program 900 jam mencakup Python, Machine Learning, dan Deep Learning.
+
+Maka:
+
+Python learning_hours = 300
+Machine Learning learning_hours = 300
+Deep Learning learning_hours = 300
+
+Pembagian ini hanya digunakan apabila tidak ada proporsi lain yang tertulis.
+
+PENGALAMAN KERJA, MAGANG, FREELANCE, DAN ORGANISASI
+
+Gunakan rumus:
+
+working_hours =
+jumlah bulan × 160 jam × bobot penggunaan skill
+
+Bobot:
+
+- MAIN = 0.50
+- ROUTINE = 0.25
+- SUPPORTING = 0.10
+
+Jika suatu pengalaman tidak memiliki durasi, jangan gunakan rumus pekerjaan.
+Periksa apakah aktivitas tersebut dapat dihitung sebagai proyek.
+
+PROYEK
+
+Jika proyek memiliki durasi:
+
+- MAIN = jumlah bulan × 40 jam
+- ROUTINE = jumlah bulan × 20 jam
+- SUPPORTING = jumlah bulan × 8 jam
+
+Jika proyek tidak memiliki durasi:
+
+- MAIN = 40 jam
+- ROUTINE = 20 jam
+- SUPPORTING = 8 jam
+
+Satu proyek tetap dapat menghasilkan working_hours meskipun hanya memiliki tahun
+dan tidak memiliki bulan mulai atau bulan selesai.
+
+DEDUPlIKASI
+
+1. Jangan menghitung proyek yang sama dua kali apabila proyek tersebut muncul di:
+   - bagian pengalaman;
+   - bagian proyek;
+   - bagian capstone;
+   - bagian pencapaian.
+
+2. Anggap dua bukti sebagai aktivitas yang sama apabila memiliki:
+   - nama proyek yang sama atau sangat mirip;
+   - organisasi yang sama;
+   - deskripsi dan teknologi yang sama;
+   - periode waktu yang sama.
+
+3. Jika proyek yang sama muncul dalam pengalaman dan bagian proyek:
+   - gunakan sumber yang memiliki durasi paling lengkap;
+   - jangan menjumlahkan keduanya.
+
+4. Jika beberapa pekerjaan berlangsung bersamaan:
+   - hitung setiap aktivitas berdasarkan bobot penggunaannya;
+   - total bobot penggunaan skill yang sama dalam bulan yang sama tidak boleh
+     melebihi 1.00;
+   - jika total bobot melebihi 1.00, normalisasikan secara proporsional.
+
+RELASI FRAMEWORK DAN SKILL
+
+Skill bahasa pemrograman boleh dihubungkan dengan framework apabila hubungan
+tersebut tersedia dalam skill dictionary.
+
+Contoh:
+
+- React.js dapat menjadi bukti pendukung JavaScript atau TypeScript;
+- Next.js dapat menjadi bukti pendukung JavaScript atau TypeScript;
+- FastAPI dapat menjadi bukti pendukung Python;
+- Laravel dapat menjadi bukti pendukung PHP;
+- TensorFlow atau PyTorch dapat menjadi bukti pendukung Python.
+
+Hubungan framework ke bahasa hanya boleh digunakan apabila:
+
+- bahasa tersebut juga disebut dalam CV; dan
+- relasi tersedia dalam skill dictionary.
+
+Bukti turunan dari framework maksimal diklasifikasikan sebagai ROUTINE, kecuali
+deskripsi secara eksplisit menyebut penggunaan bahasa sebagai teknologi utama.

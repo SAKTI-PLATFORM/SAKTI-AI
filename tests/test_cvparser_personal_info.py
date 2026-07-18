@@ -36,4 +36,14 @@ Python, TypeScript, Power BI
                 ),
             },
         )
-        self.assertIn("personal_info", ParseCVResult(**result).model_dump())
+        self.assertTrue(result["skills"])
+        for skill in result["skills"]:
+            self.assertIn("learning_hours", skill)
+            self.assertIn("working_hours", skill)
+            self.assertIsNone(skill["learning_hours"])
+            self.assertIsNone(skill["working_hours"])
+
+        response = ParseCVResult(**result).model_dump()
+        self.assertIn("personal_info", response)
+        self.assertIn("learning_hours", response["skills"][0])
+        self.assertIn("working_hours", response["skills"][0])
