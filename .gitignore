@@ -24,6 +24,7 @@ build/
 .idea/
 .vscode/
 *.iml
+pyrightconfig.json
 
 # Testing
 .pytest_cache/
@@ -33,3 +34,4 @@ htmlcov/
 # Misc
 *.log
 .DS_Store
+.agents/

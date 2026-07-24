@@ -1,0 +1,2572 @@
+{
+    "success": true,
+    "statusCode": 200,
+    "message": "Data onboarding lengkap berhasil diambil",
+    "data": {
+        "exported_at": "2026-07-22T15:40:49.182Z",
+        "session": {
+            "onboarding_session_id": "019f8a72-8af2-7a76-869d-3fca5c9769ae",
+            "cv_id": "019f8a72-8afc-7132-9334-40a0aea24eef",
+            "current_step": "COMPLETE",
+            "profile_step": 7,
+            "status": "COMPLETED",
+            "onboarding_version": "V2k",
+            "started_at": "2026-07-22T15:29:50.000Z",
+            "last_saved_at": "2026-07-22T15:34:47.000Z",
+            "completed_at": "2026-07-22T15:34:47.000Z"
+        },
+        "cv": {
+            "cv_id": "019f8a72-8afc-7132-9334-40a0aea24eef",
+            "version_number": 1,
+            "file_name": "Anargya Isadhi Maheswara-resume.pdf",
+            "file_type": "application/pdf",
+            "upload_status": "UPLOADED",
+            "parse_status": "PARSED",
+            "uploaded_at": "2026-07-22T15:29:50.000Z",
+            "parsed_id": "019f8a72-f353-7939-928b-2341a40364e0",
+            "parse_confidence_score": 0.92,
+            "parsed_at": "2026-07-22T15:30:17.000Z",
+            "parsed_result": {
+                "confidenceScore": 0.92,
+                "personalInfo": {
+                    "fullName": "Anargya Isadhi Maheswara",
+                    "email": "anargya115@gmail.com",
+                    "phoneNumber": "+6285849373612",
+                    "domicile": "Bogor, West Java",
+                    "professionalHeadline": "Software Engineer with a full-stack foundation and growing depth in applied ML",
+                    "linkedinUrl": "https://www.linkedin.com/in/anargya-isadhi-maheswara",
+                    "profileSummary": "Software Engineer with a full-stack foundation and growing depth in applied ML. Built and scaled platforms serving 4,000+ real users combined, including a co-founded laundry platform processing 1,600+ real orders and a national competition platform handling 1,000+ registrations. Lead engineer at a software agency across 5+ client projects, and national LIDM finalist for an AI-powered learning product. Comfortable shipping end to end, from model to deployment."
+                },
+                "educations": [
+                    {
+                        "education_level": "S1",
+                        "institution": "Institut Pertanian Bogor",
+                        "major": "Computer Science",
+                        "degree": "Undergraduate Computer Science",
+                        "start_year": 2023,
+                        "end_year": 2027,
+                        "gpa": 3.86,
+                        "is_current": true
+                    }
+                ],
+                "experiences": [
+                    {
+                        "title": "Software Engineer, ERP & Automation",
+                        "organization": "PT Bumi Rekayasa Mandiri",
+                        "experience_type": "WORK",
+                        "start_date": "2025-09-01",
+                        "end_date": "2026-05-01",
+                        "is_current": false,
+                        "duration_months": 8,
+                        "description": "Engineered a custom procurement and finance ERP, consolidating fragmented operational workflows into one centralized platform. Built automation pipelines with n8n and OCR that auto-extract data from invoices, cutting manual data-entry workload by an estimated 40%. Designed multi-level approval workflows and real-time financial tracking, improving data integrity and cross-department transparency."
+                    },
+                    {
+                        "title": "Lead Engineer",
+                        "organization": "KodeKita",
+                        "experience_type": "WORK",
+                        "start_date": "2025-01-01",
+                        "end_date": null,
+                        "is_current": true,
+                        "duration_months": null,
+                        "description": "Full-service software agency building scalable and secure digital solutions for startups and enterprises. Led end-to-end delivery of 5+ client projects across multiple industries, from architecture to deployment. Translated business requirements into technical architecture, owning DevOps, database design, frontend, and backend. Managed a small dev team, enforcing code quality through reviews and CI/CD practices."
+                    },
+                    {
+                        "title": "Co-founder & Lead Engineer",
+                        "organization": "Aku Cuciin",
+                        "experience_type": "WORK",
+                        "start_date": "2024-01-01",
+                        "end_date": null,
+                        "is_current": true,
+                        "duration_months": null,
+                        "description": "Tech platform offering on-demand laundry services, optimized for convenience and scalability. Architected and shipped a full laundry management ecosystem spanning a customer app, admin dashboard, laundry app using React Native, Express.js, and Next.js. Scaled the platform to 948 registered users and 1,699 processed orders at 99.9% uptime. Integrated payment gateways and real-time order tracking, cutting manual operational overhead by 30%."
+                    },
+                    {
+                        "title": "AI Engineer Cohort",
+                        "organization": "Coding Camp powered by DBS Foundation",
+                        "experience_type": "INTERNSHIP",
+                        "start_date": "2026-02-01",
+                        "end_date": null,
+                        "is_current": true,
+                        "duration_months": null,
+                        "description": "Selected for the AI Engineer learning path, a 900+ hour curriculum covering Python, machine learning, and deep learning. Led a 6-person cross-functional team to build FinSight as the capstone, an AI-powered spending intelligence platform. Architected the ML pipeline combining NLP transaction classification, autoencoder anomaly detection, and behavioral persona clustering with K-Means, plus a RAG-based LLM generating Indonesian financial coaching reports, deployed on a dual-server NestJS and FastAPI architecture."
+                    },
+                    {
+                        "title": "Staff",
+                        "organization": "Bureau Research and Development",
+                        "experience_type": "ORGANIZATION",
+                        "start_date": "2023-12-01",
+                        "end_date": "2024-11-01",
+                        "is_current": false,
+                        "duration_months": 11,
+                        "description": "Student organization providing welfare support and solutions for PKU IPB students' needs. Led the development of the \"Ormawa Eksekutif PKU\" website, serving as the central information hub for total 5,000+ student visits."
+                    },
+                    {
+                        "title": "Staff",
+                        "organization": "Himpunan Mahasiswa Ilmu Komputer",
+                        "experience_type": "ORGANIZATION",
+                        "start_date": "2025-01-01",
+                        "end_date": "2025-12-01",
+                        "is_current": false,
+                        "duration_months": 11,
+                        "description": "Computer Science Student Association at IPB University, supporting students' academic, professional, and personal development. Developed internal management features (Work Programs & Comments) using Laravel and MySQL, optimizing organizational workflow efficiency."
+                    }
+                ],
+                "projects": [
+                    {
+                        "project_name": "Bacarita, AI-Powered Dyslexia Learning Platform",
+                        "description": "Adaptive learning platform integrating real-time AI eye-tracking and speech recognition to assist students with dyslexia.",
+                        "tools_used": "Next.js, Nest.js, TensorFlow, MediaPipe, Google Speech API",
+                        "start_date": "2025-01-01",
+                        "end_date": "2025-12-31"
+                    },
+                    {
+                        "project_name": "FinSight, AI-Powered Spending Intelligence",
+                        "description": "Spending intelligence platform for digital banking, built as DBS Coding Camp capstone. Designed an ML pipeline combining NLP transaction classification, autoencoder anomaly detection, and behavioral persona clustering via UMAP and K-Means, with a RAG-based LLM generating Indonesian financial coaching reports, deployed on a dual-server architecture.",
+                        "tools_used": "NestJS, FastAPI, PostgreSQL, TensorFlow, scikit-learn, RAG Pipeline",
+                        "start_date": "2026-01-01",
+                        "end_date": "2026-12-31"
+                    },
+                    {
+                        "project_name": "AkuCuciin Ecosystem",
+                        "description": "Co-founded end-to-end on-demand laundry platform; 948 registered users, 1,699 orders processed, 99.9% uptime.",
+                        "tools_used": "React Native, Next.js, Express.js",
+                        "start_date": "2024-01-01",
+                        "end_date": "2025-12-31"
+                    },
+                    {
+                        "project_name": "Pesta Sains Nasional",
+                        "description": "High-performance competition platform managing 1,000+ applications and serving 3,000+ active users.",
+                        "tools_used": "Laravel, React.js, MySQL",
+                        "start_date": "2025-01-01",
+                        "end_date": "2025-12-31"
+                    },
+                    {
+                        "project_name": "DLH Kalsel Government Platforms",
+                        "description": "Delivered two systems for the South Kalimantan environmental agency. Built a secure Computer-Based Test platform for government recruitment with automated scoring, plus a responsive Onelandscape showcase for environmental and conservation data, deployed live on the official kalselprov.go.id domain.",
+                        "tools_used": "React.js, Node.js",
+                        "start_date": "2025-01-01",
+                        "end_date": "2025-12-31"
+                    },
+                    {
+                        "project_name": "Garbage Image Classification",
+                        "description": "12-class waste classifier on ~15,500 images using MobileNetV2 transfer learning with two-phase fine-tuning. Designed a per-class image-enhancement pipeline of CLAHE, non-local means denoising, adaptive gamma, white balance, and saturation, each selected via objective quality metrics. A controlled A/B study lifted test accuracy to 97.05% from a 96.24% baseline, reaching macro F1 0.96 and weighted F1 0.97.",
+                        "tools_used": "MobileNetV2, TensorFlow/Keras, OpenCV, Python",
+                        "start_date": "2026-01-01",
+                        "end_date": "2026-12-31"
+                    },
+                    {
+                        "project_name": "Crop Recommendation System",
+                        "description": "22-class crop classifier on a 2,200-sample agronomic dataset of soil N-P-K and climate variables, engineering nutrient-ratio and climate-index features validated via Kruskal-Wallis and Chi-Square tests. Tuned RF and XGBoost with RandomizedSearchCV and 5-fold stratified CV to 99.3-99.6% accuracy, then ran a feature-reduction experiment cutting 26 features to 10, a 61.5% reduction, with under 0.5% accuracy drop.",
+                        "tools_used": "Random Forest, XGBoost, scikit-learn, Python",
+                        "start_date": "2026-01-01",
+                        "end_date": "2026-12-31"
+                    }
+                ],
+                "certifications": [],
+                "skills": [
+                    {
+                        "detected_text": "JavaScript",
+                        "confidence_score": 0.9,
+                        "learning_hours": 80,
+                        "working_hours": 2880,
+                        "evidence_source": "cv_text",
+                        "evidence_strength": "high"
+                    },
+                    {
+                        "detected_text": "TypeScript",
+                        "confidence_score": 0.9,
+                        "learning_hours": 80,
+                        "working_hours": 2880,
+                        "evidence_source": "cv_text",
+                        "evidence_strength": "high"
+                    },
+                    {
+                        "detected_text": "PHP",
+                        "confidence_score": 0.8,
+                        "learning_hours": 80,
+                        "working_hours": 440,
+                        "evidence_source": "cv_text",
+                        "evidence_strength": "medium"
+                    },
+                    {
+                        "detected_text": "Python",
+                        "confidence_score": 0.9,
+                        "learning_hours": 380,
+                        "working_hours": 640,
+                        "evidence_source": "cv_text",
+                        "evidence_strength": "high"
+                    },
+                    {
+                        "detected_text": "Java",
+                        "confidence_score": 0.5,
+                        "learning_hours": 80,
+                        "working_hours": null,
+                        "evidence_source": "cv_text",
+                        "evidence_strength": "low"
+                    },
+                    {
+                        "detected_text": "SQL",
+                        "confidence_score": 0.8,
+                        "learning_hours": 80,
+                        "working_hours": 2880,
+                        "evidence_source": "cv_text",
+                        "evidence_strength": "high"
+                    },
+                    {
+                        "detected_text": "C",
+                        "confidence_score": 0.3,
+                        "learning_hours": 80,
+                        "working_hours": null,
+                        "evidence_source": "cv_text",
+                        "evidence_strength": "low"
+                    },
+                    {
+                        "detected_text": "C++",
+                        "confidence_score": 0.3,
+                        "learning_hours": 80,
+                        "working_hours": null,
+                        "evidence_source": "cv_text",
+                        "evidence_strength": "low"
+                    },
+                    {
+                        "detected_text": "React.js",
+                        "confidence_score": 0.9,
+                        "learning_hours": 80,
+                        "working_hours": 2880,
+                        "evidence_source": "cv_text",
+                        "evidence_strength": "high"
+                    },
+                    {
+                        "detected_text": "Next.js",
+                        "confidence_score": 0.9,
+                        "learning_hours": 80,
+                        "working_hours": 2880,
+                        "evidence_source": "cv_text",
+                        "evidence_strength": "high"
+                    },
+                    {
+                        "detected_text": "React Native",
+                        "confidence_score": 0.8,
+                        "learning_hours": 80,
+                        "working_hours": 1440,
+                        "evidence_source": "cv_text",
+                        "evidence_strength": "high"
+                    },
+                    {
+                        "detected_text": "Tailwind CSS",
+                        "confidence_score": 0.7,
+                        "learning_hours": 80,
+                        "working_hours": 1440,
+                        "evidence_source": "cv_text",
+                        "evidence_strength": "medium"
+                    },
+                    {
+                        "detected_text": "Shadcn UI",
+                        "confidence_score": 0.5,
+                        "learning_hours": 80,
+                        "working_hours": 1440,
+                        "evidence_source": "cv_text",
+                        "evidence_strength": "medium"
+                    },
+                    {
+                        "detected_text": "Material UI",
+                        "confidence_score": 0.5,
+                        "learning_hours": 80,
+                        "working_hours": 1440,
+                        "evidence_source": "cv_text",
+                        "evidence_strength": "medium"
+                    },
+                    {
+                        "detected_text": "Vite",
+                        "confidence_score": 0.5,
+                        "learning_hours": 80,
+                        "working_hours": 1440,
+                        "evidence_source": "cv_text",
+                        "evidence_strength": "medium"
+                    },
+                    {
+                        "detected_text": "Redux",
+                        "confidence_score": 0.5,
+                        "learning_hours": 80,
+                        "working_hours": 1440,
+                        "evidence_source": "cv_text",
+                        "evidence_strength": "medium"
+                    },
+                    {
+                        "detected_text": "Node.js",
+                        "confidence_score": 0.9,
+                        "learning_hours": 80,
+                        "working_hours": 2880,
+                        "evidence_source": "cv_text",
+                        "evidence_strength": "high"
+                    },
+                    {
+                        "detected_text": "Express.js",
+                        "confidence_score": 0.9,
+                        "learning_hours": 80,
+                        "working_hours": 2880,
+                        "evidence_source": "cv_text",
+                        "evidence_strength": "high"
+                    },
+                    {
+                        "detected_text": "Nest.js",
+                        "confidence_score": 0.8,
+                        "learning_hours": 80,
+                        "working_hours": 1440,
+                        "evidence_source": "cv_text",
+                        "evidence_strength": "high"
+                    },
+                    {
+                        "detected_text": "FastAPI",
+                        "confidence_score": 0.8,
+                        "learning_hours": 80,
+                        "working_hours": 640,
+                        "evidence_source": "cv_text",
+                        "evidence_strength": "high"
+                    },
+                    {
+                        "detected_text": "CodeIgniter",
+                        "confidence_score": 0.5,
+                        "learning_hours": 80,
+                        "working_hours": null,
+                        "evidence_source": "cv_text",
+                        "evidence_strength": "low"
+                    },
+                    {
+                        "detected_text": "Laravel",
+                        "confidence_score": 0.8,
+                        "learning_hours": 80,
+                        "working_hours": 440,
+                        "evidence_source": "cv_text",
+                        "evidence_strength": "high"
+                    },
+                    {
+                        "detected_text": "TensorFlow",
+                        "confidence_score": 0.9,
+                        "learning_hours": 300,
+                        "working_hours": 640,
+                        "evidence_source": "cv_text",
+                        "evidence_strength": "high"
+                    },
+                    {
+                        "detected_text": "Keras",
+                        "confidence_score": 0.8,
+                        "learning_hours": 300,
+                        "working_hours": 640,
+                        "evidence_source": "cv_text",
+                        "evidence_strength": "high"
+                    },
+                    {
+                        "detected_text": "PyTorch",
+                        "confidence_score": 0.5,
+                        "learning_hours": 300,
+                        "working_hours": null,
+                        "evidence_source": "cv_text",
+                        "evidence_strength": "medium"
+                    },
+                    {
+                        "detected_text": "scikit-learn",
+                        "confidence_score": 0.9,
+                        "learning_hours": 300,
+                        "working_hours": 640,
+                        "evidence_source": "cv_text",
+                        "evidence_strength": "high"
+                    },
+                    {
+                        "detected_text": "XGBoost",
+                        "confidence_score": 0.7,
+                        "learning_hours": 300,
+                        "working_hours": 40,
+                        "evidence_source": "cv_text",
+                        "evidence_strength": "medium"
+                    },
+                    {
+                        "detected_text": "OpenCV",
+                        "confidence_score": 0.8,
+                        "learning_hours": 80,
+                        "working_hours": 40,
+                        "evidence_source": "cv_text",
+                        "evidence_strength": "high"
+                    },
+                    {
+                        "detected_text": "Pandas",
+                        "confidence_score": 0.8,
+                        "learning_hours": 300,
+                        "working_hours": 640,
+                        "evidence_source": "cv_text",
+                        "evidence_strength": "high"
+                    },
+                    {
+                        "detected_text": "NumPy",
+                        "confidence_score": 0.8,
+                        "learning_hours": 300,
+                        "working_hours": 640,
+                        "evidence_source": "cv_text",
+                        "evidence_strength": "high"
+                    },
+                    {
+                        "detected_text": "YOLO",
+                        "confidence_score": 0.5,
+                        "learning_hours": 80,
+                        "working_hours": null,
+                        "evidence_source": "cv_text",
+                        "evidence_strength": "low"
+                    },
+                    {
+                        "detected_text": "MediaPipe",
+                        "confidence_score": 0.7,
+                        "learning_hours": 80,
+                        "working_hours": 40,
+                        "evidence_source": "cv_text",
+                        "evidence_strength": "medium"
+                    },
+                    {
+                        "detected_text": "MySQL",
+                        "confidence_score": 0.9,
+                        "learning_hours": 80,
+                        "working_hours": 2880,
+                        "evidence_source": "cv_text",
+                        "evidence_strength": "high"
+                    },
+                    {
+                        "detected_text": "MongoDB",
+                        "confidence_score": 0.5,
+                        "learning_hours": 80,
+                        "working_hours": null,
+                        "evidence_source": "cv_text",
+                        "evidence_strength": "low"
+                    },
+                    {
+                        "detected_text": "SQLite",
+                        "confidence_score": 0.5,
+                        "learning_hours": 80,
+                        "working_hours": null,
+                        "evidence_source": "cv_text",
+                        "evidence_strength": "low"
+                    },
+                    {
+                        "detected_text": "PostgreSQL",
+                        "confidence_score": 0.8,
+                        "learning_hours": 80,
+                        "working_hours": 640,
+                        "evidence_source": "cv_text",
+                        "evidence_strength": "high"
+                    },
+                    {
+                        "detected_text": "TypeORM",
+                        "confidence_score": 0.5,
+                        "learning_hours": 80,
+                        "working_hours": 1440,
+                        "evidence_source": "cv_text",
+                        "evidence_strength": "medium"
+                    },
+                    {
+                        "detected_text": "Prisma ORM",
+                        "confidence_score": 0.5,
+                        "learning_hours": 80,
+                        "working_hours": 1440,
+                        "evidence_source": "cv_text",
+                        "evidence_strength": "medium"
+                    },
+                    {
+                        "detected_text": "Mongoose",
+                        "confidence_score": 0.5,
+                        "learning_hours": 80,
+                        "working_hours": null,
+                        "evidence_source": "cv_text",
+                        "evidence_strength": "low"
+                    },
+                    {
+                        "detected_text": "Git",
+                        "confidence_score": 0.7,
+                        "learning_hours": 80,
+                        "working_hours": 2880,
+                        "evidence_source": "cv_text",
+                        "evidence_strength": "medium"
+                    },
+                    {
+                        "detected_text": "Postman",
+                        "confidence_score": 0.5,
+                        "learning_hours": 80,
+                        "working_hours": 2880,
+                        "evidence_source": "cv_text",
+                        "evidence_strength": "medium"
+                    },
+                    {
+                        "detected_text": "Docker",
+                        "confidence_score": 0.7,
+                        "learning_hours": 80,
+                        "working_hours": 1440,
+                        "evidence_source": "cv_text",
+                        "evidence_strength": "medium"
+                    }
+                ]
+            }
+        },
+        "profile": {
+            "identity": {
+                "user_id": "019f8a61-632f-7acf-85ae-b639375970f5",
+                "full_name": "Anargya Isadhi Maheswara",
+                "email": "anargya1152@gmail.com",
+                "phone_number": "+6285849373612",
+                "photo_url": null,
+                "domicile": "Bogor, West Java",
+                "professional_headline": "Software Engineer with a full-stack foundation and growing depth in applied ML",
+                "linkedin_url": "https://www.linkedin.com/in/anargya-isadhi-maheswara",
+                "profile_summary": "Software Engineer with a full-stack foundation and growing depth in applied ML. Built and scaled platforms serving 4,000+ real users combined, including a co-founded laundry platform processing 1,600+ real orders and a national competition platform handling 1,000+ registrations. Lead engineer at a software agency across 5+ client projects, and national LIDM finalist for an AI-powered learning product. Comfortable shipping end to end, from model to deployment."
+            },
+            "educations": [
+                {
+                    "education_id": "019f8a73-1f33-73de-9658-421d404160a9",
+                    "education_level": "S1",
+                    "institution": "Institut Pertanian Bogor",
+                    "major": "Computer Science",
+                    "degree": "Undergraduate Computer Science",
+                    "start_year": 2023,
+                    "end_year": 2027,
+                    "gpa": 3.86,
+                    "is_current": true,
+                    "source": "HYBRID"
+                }
+            ],
+            "experiences": [
+                {
+                    "experience_id": "019f8a73-1f34-748b-8272-3ff1f76d4acf",
+                    "title": "Software Engineer, ERP & Automation",
+                    "organization": "PT Bumi Rekayasa Mandiri",
+                    "experience_type": "WORK",
+                    "start_date": "2025-09-01",
+                    "end_date": "2026-05-01",
+                    "is_current": false,
+                    "duration_months": 8,
+                    "description": "Engineered a custom procurement and finance ERP, consolidating fragmented operational workflows into one centralized platform. Built automation pipelines with n8n and OCR that auto-extract data from invoices, cutting manual data-entry workload by an estimated 40%. Designed multi-level approval workflows and real-time financial tracking, improving data integrity and cross-department transparency.",
+                    "source": "HYBRID"
+                },
+                {
+                    "experience_id": "019f8a73-1f39-776f-aaa9-cfe8406c44a3",
+                    "title": "Lead Engineer",
+                    "organization": "KodeKita",
+                    "experience_type": "WORK",
+                    "start_date": "2025-01-01",
+                    "end_date": null,
+                    "is_current": true,
+                    "duration_months": null,
+                    "description": "Full-service software agency building scalable and secure digital solutions for startups and enterprises. Led end-to-end delivery of 5+ client projects across multiple industries, from architecture to deployment. Translated business requirements into technical architecture, owning DevOps, database design, frontend, and backend. Managed a small dev team, enforcing code quality through reviews and CI/CD practices.",
+                    "source": "HYBRID"
+                },
+                {
+                    "experience_id": "019f8a73-1f39-776f-aaa9-cfe9c0646853",
+                    "title": "Co-founder & Lead Engineer",
+                    "organization": "Aku Cuciin",
+                    "experience_type": "WORK",
+                    "start_date": "2024-01-01",
+                    "end_date": null,
+                    "is_current": true,
+                    "duration_months": null,
+                    "description": "Tech platform offering on-demand laundry services, optimized for convenience and scalability. Architected and shipped a full laundry management ecosystem spanning a customer app, admin dashboard, laundry app using React Native, Express.js, and Next.js. Scaled the platform to 948 registered users and 1,699 processed orders at 99.9% uptime. Integrated payment gateways and real-time order tracking, cutting manual operational overhead by 30%.",
+                    "source": "HYBRID"
+                },
+                {
+                    "experience_id": "019f8a73-1f3c-7405-8832-41f0c3c5e9a2",
+                    "title": "AI Engineer Cohort",
+                    "organization": "Coding Camp powered by DBS Foundation",
+                    "experience_type": "INTERNSHIP",
+                    "start_date": "2026-02-01",
+                    "end_date": null,
+                    "is_current": true,
+                    "duration_months": null,
+                    "description": "Selected for the AI Engineer learning path, a 900+ hour curriculum covering Python, machine learning, and deep learning. Led a 6-person cross-functional team to build FinSight as the capstone, an AI-powered spending intelligence platform. Architected the ML pipeline combining NLP transaction classification, autoencoder anomaly detection, and behavioral persona clustering with K-Means, plus a RAG-based LLM generating Indonesian financial coaching reports, deployed on a dual-server NestJS and FastAPI architecture.",
+                    "source": "HYBRID"
+                },
+                {
+                    "experience_id": "019f8a73-1f4a-7d85-9ca2-25e1e9e7b773",
+                    "title": "Staff",
+                    "organization": "Himpunan Mahasiswa Ilmu Komputer",
+                    "experience_type": "ORGANIZATION",
+                    "start_date": "2025-01-01",
+                    "end_date": "2025-12-01",
+                    "is_current": false,
+                    "duration_months": 11,
+                    "description": "Computer Science Student Association at IPB University, supporting students' academic, professional, and personal development. Developed internal management features (Work Programs & Comments) using Laravel and MySQL, optimizing organizational workflow efficiency.",
+                    "source": "HYBRID"
+                },
+                {
+                    "experience_id": "019f8a73-1f59-7adb-a5f7-bf170e6ce383",
+                    "title": "Staff",
+                    "organization": "Bureau Research and Development",
+                    "experience_type": "ORGANIZATION",
+                    "start_date": "2023-12-01",
+                    "end_date": "2024-11-01",
+                    "is_current": false,
+                    "duration_months": 11,
+                    "description": "Student organization providing welfare support and solutions for PKU IPB students' needs. Led the development of the \"Ormawa Eksekutif PKU\" website, serving as the central information hub for total 5,000+ student visits.",
+                    "source": "HYBRID"
+                }
+            ],
+            "projects": [
+                {
+                    "project_id": "019f8a73-1f4a-7d85-9ca2-25e2c84f548f",
+                    "project_name": "Bacarita, AI-Powered Dyslexia Learning Platform",
+                    "description": "Adaptive learning platform integrating real-time AI eye-tracking and speech recognition to assist students with dyslexia.",
+                    "tools_used": "Next.js, Nest.js, TensorFlow, MediaPipe, Google Speech API",
+                    "start_date": "2025-01-01",
+                    "end_date": "2025-12-31",
+                    "source": "HYBRID"
+                },
+                {
+                    "project_id": "019f8a73-1f4b-788b-a761-e10d41b00aa7",
+                    "project_name": "DLH Kalsel Government Platforms",
+                    "description": "Delivered two systems for the South Kalimantan environmental agency. Built a secure Computer-Based Test platform for government recruitment with automated scoring, plus a responsive Onelandscape showcase for environmental and conservation data, deployed live on the official kalselprov.go.id domain.",
+                    "tools_used": "React.js, Node.js",
+                    "start_date": "2025-01-01",
+                    "end_date": "2025-12-31",
+                    "source": "HYBRID"
+                },
+                {
+                    "project_id": "019f8a73-1f4b-788b-a761-e10e828c3862",
+                    "project_name": "FinSight, AI-Powered Spending Intelligence",
+                    "description": "Spending intelligence platform for digital banking, built as DBS Coding Camp capstone. Designed an ML pipeline combining NLP transaction classification, autoencoder anomaly detection, and behavioral persona clustering via UMAP and K-Means, with a RAG-based LLM generating Indonesian financial coaching reports, deployed on a dual-server architecture.",
+                    "tools_used": "NestJS, FastAPI, PostgreSQL, TensorFlow, scikit-learn, RAG Pipeline",
+                    "start_date": "2026-01-01",
+                    "end_date": "2026-12-31",
+                    "source": "HYBRID"
+                },
+                {
+                    "project_id": "019f8a73-1f4c-74d6-bc14-c045450e52c8",
+                    "project_name": "Garbage Image Classification",
+                    "description": "12-class waste classifier on ~15,500 images using MobileNetV2 transfer learning with two-phase fine-tuning. Designed a per-class image-enhancement pipeline of CLAHE, non-local means denoising, adaptive gamma, white balance, and saturation, each selected via objective quality metrics. A controlled A/B study lifted test accuracy to 97.05% from a 96.24% baseline, reaching macro F1 0.96 and weighted F1 0.97.",
+                    "tools_used": "MobileNetV2, TensorFlow/Keras, OpenCV, Python",
+                    "start_date": "2026-01-01",
+                    "end_date": "2026-12-31",
+                    "source": "HYBRID"
+                },
+                {
+                    "project_id": "019f8a73-1f58-77f2-8c41-bde1ecdcdd63",
+                    "project_name": "AkuCuciin Ecosystem",
+                    "description": "Co-founded end-to-end on-demand laundry platform; 948 registered users, 1,699 orders processed, 99.9% uptime.",
+                    "tools_used": "React Native, Next.js, Express.js",
+                    "start_date": "2024-01-01",
+                    "end_date": "2025-12-31",
+                    "source": "HYBRID"
+                },
+                {
+                    "project_id": "019f8a73-1f59-7adb-a5f7-bf16001cfaaf",
+                    "project_name": "Pesta Sains Nasional",
+                    "description": "High-performance competition platform managing 1,000+ applications and serving 3,000+ active users.",
+                    "tools_used": "Laravel, React.js, MySQL",
+                    "start_date": "2025-01-01",
+                    "end_date": "2025-12-31",
+                    "source": "HYBRID"
+                },
+                {
+                    "project_id": "019f8a73-1f5c-7f29-94f5-538a8e7682b7",
+                    "project_name": "Crop Recommendation System",
+                    "description": "22-class crop classifier on a 2,200-sample agronomic dataset of soil N-P-K and climate variables, engineering nutrient-ratio and climate-index features validated via Kruskal-Wallis and Chi-Square tests. Tuned RF and XGBoost with RandomizedSearchCV and 5-fold stratified CV to 99.3-99.6% accuracy, then ran a feature-reduction experiment cutting 26 features to 10, a 61.5% reduction, with under 0.5% accuracy drop.",
+                    "tools_used": "Random Forest, XGBoost, scikit-learn, Python",
+                    "start_date": "2026-01-01",
+                    "end_date": "2026-12-31",
+                    "source": "HYBRID"
+                }
+            ],
+            "certifications": [],
+            "skills": [
+                {
+                    "user_skill_id": "019f8a73-1f5a-7480-a6a8-9824b26fa3bf",
+                    "skill_id": "019f8a73-1f59-7adb-a5f7-bf189a151024",
+                    "detected_text": "TypeScript",
+                    "confidence_score": 0.9,
+                    "learning_hours": 80,
+                    "working_hours": 2880,
+                    "evidence_source": "cv_text",
+                    "evidence_strength": "high"
+                },
+                {
+                    "user_skill_id": "019f8a73-1f5b-7220-867c-3e001f85005d",
+                    "skill_id": "019f8a73-1f5a-7480-a6a8-982316d8ff64",
+                    "detected_text": "JavaScript",
+                    "confidence_score": 0.9,
+                    "learning_hours": 80,
+                    "working_hours": 2880,
+                    "evidence_source": "cv_text",
+                    "evidence_strength": "high"
+                },
+                {
+                    "user_skill_id": "019f8a73-1f65-7da4-9b55-4c6e8768f7e9",
+                    "skill_id": "019f8a73-1f63-7172-bdc0-ca89dcc796ef",
+                    "detected_text": "PHP",
+                    "confidence_score": 0.8,
+                    "learning_hours": 80,
+                    "working_hours": 440,
+                    "evidence_source": "cv_text",
+                    "evidence_strength": "medium"
+                },
+                {
+                    "user_skill_id": "019f8a73-1f66-7716-a238-c65e78275c07",
+                    "skill_id": "019f8a73-1f65-7da4-9b55-4c6da4a4760f",
+                    "detected_text": "Python",
+                    "confidence_score": 0.9,
+                    "learning_hours": 380,
+                    "working_hours": 640,
+                    "evidence_source": "cv_text",
+                    "evidence_strength": "high"
+                },
+                {
+                    "user_skill_id": "019f8a73-1f67-7717-88b7-c456d433e2cf",
+                    "skill_id": "019f8a73-1f66-7716-a238-c65fe8ae43e7",
+                    "detected_text": "React.js",
+                    "confidence_score": 0.9,
+                    "learning_hours": 80,
+                    "working_hours": 2880,
+                    "evidence_source": "cv_text",
+                    "evidence_strength": "high"
+                },
+                {
+                    "user_skill_id": "019f8a73-1f67-7717-88b7-c45782f75ab7",
+                    "skill_id": "019f8a73-1f66-7716-a238-c6606df2b174",
+                    "detected_text": "Java",
+                    "confidence_score": 0.5,
+                    "learning_hours": 80,
+                    "working_hours": null,
+                    "evidence_source": "cv_text",
+                    "evidence_strength": "low"
+                },
+                {
+                    "user_skill_id": "019f8a73-1f6a-7898-bdd2-c89c782a865e",
+                    "skill_id": "019f8a73-1f68-73fc-bb02-9754dc972390",
+                    "detected_text": "C",
+                    "confidence_score": 0.3,
+                    "learning_hours": 80,
+                    "working_hours": null,
+                    "evidence_source": "cv_text",
+                    "evidence_strength": "low"
+                },
+                {
+                    "user_skill_id": "019f8a73-1f6a-7898-bdd2-c89d25a4deca",
+                    "skill_id": "019f8a73-1f67-7717-88b7-c4582f82fde1",
+                    "detected_text": "SQL",
+                    "confidence_score": 0.8,
+                    "learning_hours": 80,
+                    "working_hours": 2880,
+                    "evidence_source": "cv_text",
+                    "evidence_strength": "high"
+                },
+                {
+                    "user_skill_id": "019f8a73-1f70-724e-bb7c-d3639af0bcd8",
+                    "skill_id": "019f8a73-1f6d-72c2-879a-e1abfe853f36",
+                    "detected_text": "C++",
+                    "confidence_score": 0.3,
+                    "learning_hours": 80,
+                    "working_hours": null,
+                    "evidence_source": "cv_text",
+                    "evidence_strength": "low"
+                },
+                {
+                    "user_skill_id": "019f8a73-1f75-7acf-8b09-fb93677908d3",
+                    "skill_id": "019f8a73-1f73-75e8-921a-64c0e9feb6c6",
+                    "detected_text": "React Native",
+                    "confidence_score": 0.8,
+                    "learning_hours": 80,
+                    "working_hours": 1440,
+                    "evidence_source": "cv_text",
+                    "evidence_strength": "high"
+                },
+                {
+                    "user_skill_id": "019f8a73-1f78-71d6-971c-aeb0dad7d4a9",
+                    "skill_id": "019f8a73-1f75-7acf-8b09-fb94298507a9",
+                    "detected_text": "Tailwind CSS",
+                    "confidence_score": 0.7,
+                    "learning_hours": 80,
+                    "working_hours": 1440,
+                    "evidence_source": "cv_text",
+                    "evidence_strength": "medium"
+                },
+                {
+                    "user_skill_id": "019f8a73-1f7e-7910-b22f-3cb615a86fd2",
+                    "skill_id": "019f8a73-1f79-7989-9586-b447330e42c4",
+                    "detected_text": "Shadcn UI",
+                    "confidence_score": 0.5,
+                    "learning_hours": 80,
+                    "working_hours": 1440,
+                    "evidence_source": "cv_text",
+                    "evidence_strength": "medium"
+                },
+                {
+                    "user_skill_id": "019f8a73-1f80-7803-9231-b10a65fb29c5",
+                    "skill_id": "019f8a73-1f7f-7e19-a4d8-8cd0877d24a9",
+                    "detected_text": "Next.js",
+                    "confidence_score": 0.9,
+                    "learning_hours": 80,
+                    "working_hours": 2880,
+                    "evidence_source": "cv_text",
+                    "evidence_strength": "high"
+                },
+                {
+                    "user_skill_id": "019f8a73-1f83-74a7-8f91-00624ac63a6f",
+                    "skill_id": "019f8a73-1f82-7776-bd0b-4cdc11ff9b0a",
+                    "detected_text": "Node.js",
+                    "confidence_score": 0.9,
+                    "learning_hours": 80,
+                    "working_hours": 2880,
+                    "evidence_source": "cv_text",
+                    "evidence_strength": "high"
+                },
+                {
+                    "user_skill_id": "019f8a73-1f83-74a7-8f91-00639b5e4062",
+                    "skill_id": "019f8a73-1f82-7776-bd0b-4cdd9a8f1b85",
+                    "detected_text": "Redux",
+                    "confidence_score": 0.5,
+                    "learning_hours": 80,
+                    "working_hours": 1440,
+                    "evidence_source": "cv_text",
+                    "evidence_strength": "medium"
+                },
+                {
+                    "user_skill_id": "019f8a73-1f85-7553-b372-fa17b9f1089e",
+                    "skill_id": "019f8a73-1f85-7553-b372-fa1614cd602b",
+                    "detected_text": "Express.js",
+                    "confidence_score": 0.9,
+                    "learning_hours": 80,
+                    "working_hours": 2880,
+                    "evidence_source": "cv_text",
+                    "evidence_strength": "high"
+                },
+                {
+                    "user_skill_id": "019f8a73-1f88-7a40-8019-ecf52bb29e35",
+                    "skill_id": "019f8a73-1f87-787e-83d5-1ec1d78014aa",
+                    "detected_text": "Material UI",
+                    "confidence_score": 0.5,
+                    "learning_hours": 80,
+                    "working_hours": 1440,
+                    "evidence_source": "cv_text",
+                    "evidence_strength": "medium"
+                },
+                {
+                    "user_skill_id": "019f8a73-1f8a-7a08-b176-963499b6bf4c",
+                    "skill_id": "019f8a73-1f89-735c-96bb-b3fd2f4ce6cc",
+                    "detected_text": "FastAPI",
+                    "confidence_score": 0.8,
+                    "learning_hours": 80,
+                    "working_hours": 640,
+                    "evidence_source": "cv_text",
+                    "evidence_strength": "high"
+                },
+                {
+                    "user_skill_id": "019f8a73-1f8a-7a08-b176-9635ed01ceb1",
+                    "skill_id": "019f8a73-1f89-735c-96bb-b3fe110dab4c",
+                    "detected_text": "Vite",
+                    "confidence_score": 0.5,
+                    "learning_hours": 80,
+                    "working_hours": 1440,
+                    "evidence_source": "cv_text",
+                    "evidence_strength": "medium"
+                },
+                {
+                    "user_skill_id": "019f8a73-1f8c-7d7d-8c09-c60155089251",
+                    "skill_id": "019f8a73-1f8b-79a9-9abe-5588db6131d2",
+                    "detected_text": "Laravel",
+                    "confidence_score": 0.8,
+                    "learning_hours": 80,
+                    "working_hours": 440,
+                    "evidence_source": "cv_text",
+                    "evidence_strength": "high"
+                },
+                {
+                    "user_skill_id": "019f8a73-1f8c-7d7d-8c09-c602837d76a3",
+                    "skill_id": "019f8a73-1f8b-79a9-9abe-5589bc8077f7",
+                    "detected_text": "CodeIgniter",
+                    "confidence_score": 0.5,
+                    "learning_hours": 80,
+                    "working_hours": null,
+                    "evidence_source": "cv_text",
+                    "evidence_strength": "low"
+                },
+                {
+                    "user_skill_id": "019f8a73-1f8e-7666-a9ad-2f7b51a99706",
+                    "skill_id": "019f8a73-1f8e-7666-a9ad-2f7a0097d21b",
+                    "detected_text": "TensorFlow",
+                    "confidence_score": 0.9,
+                    "learning_hours": 300,
+                    "working_hours": 640,
+                    "evidence_source": "cv_text",
+                    "evidence_strength": "high"
+                },
+                {
+                    "user_skill_id": "019f8a73-1f8f-7a9f-9aea-73508381a4ed",
+                    "skill_id": "019f8a73-1f8f-7a9f-9aea-734f3e1b85e1",
+                    "detected_text": "Nest.js",
+                    "confidence_score": 0.8,
+                    "learning_hours": 80,
+                    "working_hours": 1440,
+                    "evidence_source": "cv_text",
+                    "evidence_strength": "high"
+                },
+                {
+                    "user_skill_id": "019f8a73-1f91-7be1-8b7c-a8bf39cc978d",
+                    "skill_id": "019f8a73-1f90-7d5d-8337-9c98dbf26565",
+                    "detected_text": "PyTorch",
+                    "confidence_score": 0.5,
+                    "learning_hours": 300,
+                    "working_hours": null,
+                    "evidence_source": "cv_text",
+                    "evidence_strength": "medium"
+                },
+                {
+                    "user_skill_id": "019f8a73-1f94-727e-89d6-49e29191b03b",
+                    "skill_id": "019f8a73-1f91-7be1-8b7c-a8c09565c6d2",
+                    "detected_text": "scikit-learn",
+                    "confidence_score": 0.9,
+                    "learning_hours": 300,
+                    "working_hours": 640,
+                    "evidence_source": "cv_text",
+                    "evidence_strength": "high"
+                },
+                {
+                    "user_skill_id": "019f8a73-1f96-79ba-b075-c4c0d85e6be4",
+                    "skill_id": "019f8a73-1f94-727e-89d6-49e394fe578a",
+                    "detected_text": "XGBoost",
+                    "confidence_score": 0.7,
+                    "learning_hours": 300,
+                    "working_hours": 40,
+                    "evidence_source": "cv_text",
+                    "evidence_strength": "medium"
+                },
+                {
+                    "user_skill_id": "019f8a73-1f97-7f91-a3fa-706cb0ae89ba",
+                    "skill_id": "019f8a73-1f96-79ba-b075-c4c17dce0762",
+                    "detected_text": "Keras",
+                    "confidence_score": 0.8,
+                    "learning_hours": 300,
+                    "working_hours": 640,
+                    "evidence_source": "cv_text",
+                    "evidence_strength": "high"
+                },
+                {
+                    "user_skill_id": "019f8a73-1f98-76b5-a06a-dee46cda45b5",
+                    "skill_id": "019f8a73-1f97-7f91-a3fa-706b76b45b82",
+                    "detected_text": "NumPy",
+                    "confidence_score": 0.8,
+                    "learning_hours": 300,
+                    "working_hours": 640,
+                    "evidence_source": "cv_text",
+                    "evidence_strength": "high"
+                },
+                {
+                    "user_skill_id": "019f8a73-1f99-78be-925b-9ef03605656f",
+                    "skill_id": "019f8a73-1f99-78be-925b-9eee048746f6",
+                    "detected_text": "OpenCV",
+                    "confidence_score": 0.8,
+                    "learning_hours": 80,
+                    "working_hours": 40,
+                    "evidence_source": "cv_text",
+                    "evidence_strength": "high"
+                },
+                {
+                    "user_skill_id": "019f8a73-1f99-78be-925b-9ef1f65a3516",
+                    "skill_id": "019f8a73-1f99-78be-925b-9eefb953ad7d",
+                    "detected_text": "YOLO",
+                    "confidence_score": 0.5,
+                    "learning_hours": 80,
+                    "working_hours": null,
+                    "evidence_source": "cv_text",
+                    "evidence_strength": "low"
+                },
+                {
+                    "user_skill_id": "019f8a73-1f9e-7833-b6bc-a3e55cca102c",
+                    "skill_id": "019f8a73-1f9d-7f53-9f38-933631594f8e",
+                    "detected_text": "Pandas",
+                    "confidence_score": 0.8,
+                    "learning_hours": 300,
+                    "working_hours": 640,
+                    "evidence_source": "cv_text",
+                    "evidence_strength": "high"
+                },
+                {
+                    "user_skill_id": "019f8a73-1fa0-7993-b5df-1186dc60cbd4",
+                    "skill_id": "019f8a73-1f9e-7833-b6bc-a3e66f714128",
+                    "detected_text": "SQLite",
+                    "confidence_score": 0.5,
+                    "learning_hours": 80,
+                    "working_hours": null,
+                    "evidence_source": "cv_text",
+                    "evidence_strength": "low"
+                },
+                {
+                    "user_skill_id": "019f8a73-1fa0-7993-b5df-1187da16cb2e",
+                    "skill_id": "019f8a73-1f9e-7833-b6bc-a3e7a5149bb3",
+                    "detected_text": "MongoDB",
+                    "confidence_score": 0.5,
+                    "learning_hours": 80,
+                    "working_hours": null,
+                    "evidence_source": "cv_text",
+                    "evidence_strength": "low"
+                },
+                {
+                    "user_skill_id": "019f8a73-1fa1-7f8d-878e-5a1f2d3beef8",
+                    "skill_id": "019f8a73-1fa0-7993-b5df-118854235282",
+                    "detected_text": "PostgreSQL",
+                    "confidence_score": 0.8,
+                    "learning_hours": 80,
+                    "working_hours": 640,
+                    "evidence_source": "cv_text",
+                    "evidence_strength": "high"
+                },
+                {
+                    "user_skill_id": "019f8a73-1fa3-7ba0-a588-38d5f45e9177",
+                    "skill_id": "019f8a73-1fa2-7e2e-820a-bb25b0693750",
+                    "detected_text": "TypeORM",
+                    "confidence_score": 0.5,
+                    "learning_hours": 80,
+                    "working_hours": 1440,
+                    "evidence_source": "cv_text",
+                    "evidence_strength": "medium"
+                },
+                {
+                    "user_skill_id": "019f8a73-1fa4-7c77-aefe-8afdbb5f2846",
+                    "skill_id": "019f8a73-1fa3-7ba0-a588-38d4744bdc3c",
+                    "detected_text": "MediaPipe",
+                    "confidence_score": 0.7,
+                    "learning_hours": 80,
+                    "working_hours": 40,
+                    "evidence_source": "cv_text",
+                    "evidence_strength": "medium"
+                },
+                {
+                    "user_skill_id": "019f8a73-1fa7-7ab4-8823-fe1832577f62",
+                    "skill_id": "019f8a73-1fa6-756f-b70e-d9e0f4dff15d",
+                    "detected_text": "MySQL",
+                    "confidence_score": 0.9,
+                    "learning_hours": 80,
+                    "working_hours": 2880,
+                    "evidence_source": "cv_text",
+                    "evidence_strength": "high"
+                },
+                {
+                    "user_skill_id": "019f8a73-1fa9-7004-ba8e-11040073c8ed",
+                    "skill_id": "019f8a73-1fa8-7dae-bf94-224f420cea8d",
+                    "detected_text": "Prisma ORM",
+                    "confidence_score": 0.5,
+                    "learning_hours": 80,
+                    "working_hours": 1440,
+                    "evidence_source": "cv_text",
+                    "evidence_strength": "medium"
+                },
+                {
+                    "user_skill_id": "019f8a73-1faa-7538-87e8-5d9a02b3aaef",
+                    "skill_id": "019f8a73-1fa9-7004-ba8e-11057d278f3d",
+                    "detected_text": "Mongoose",
+                    "confidence_score": 0.5,
+                    "learning_hours": 80,
+                    "working_hours": null,
+                    "evidence_source": "cv_text",
+                    "evidence_strength": "low"
+                },
+                {
+                    "user_skill_id": "019f8a73-1fab-73fd-a90e-b066bd56b463",
+                    "skill_id": "019f8a73-1faa-7538-87e8-5d9b1844db73",
+                    "detected_text": "Git",
+                    "confidence_score": 0.7,
+                    "learning_hours": 80,
+                    "working_hours": 2880,
+                    "evidence_source": "cv_text",
+                    "evidence_strength": "medium"
+                },
+                {
+                    "user_skill_id": "019f8a73-1fac-7c65-b18c-7d364693a31a",
+                    "skill_id": "019f8a73-1fab-73fd-a90e-b0673721792e",
+                    "detected_text": "Postman",
+                    "confidence_score": 0.5,
+                    "learning_hours": 80,
+                    "working_hours": 2880,
+                    "evidence_source": "cv_text",
+                    "evidence_strength": "medium"
+                },
+                {
+                    "user_skill_id": "019f8a73-1fac-7c65-b18c-7d377b5c26d0",
+                    "skill_id": "019f8a73-1fab-73fd-a90e-b0686a3a7c41",
+                    "detected_text": "Docker",
+                    "confidence_score": 0.7,
+                    "learning_hours": 80,
+                    "working_hours": 1440,
+                    "evidence_source": "cv_text",
+                    "evidence_strength": "medium"
+                }
+            ]
+        },
+        "assessment": {
+            "result": {
+                "assessment_result_id": "019f8a74-b88a-7765-acc5-40ccd769f199",
+                "career_profile_summary": "Profil kecenderungan menunjukkan kekuatan relatif pada keterbukaan terhadap pengalaman, dengan tema minat karier RIASEC RIA. Hasil ini digunakan sebagai bahan eksplorasi, bukan diagnosis psikologis.",
+                "scoring_method_version": "ASSESSMENT-SCORE-V1.0",
+                "reliability_note": "Profil kecenderungan untuk eksplorasi karier; bukan diagnosis psikologis.",
+                "generated_at": "2026-07-22T15:32:13.000Z",
+                "ocean": {
+                    "openness": 66.67,
+                    "conscientiousness": 66.67,
+                    "extraversion": 50,
+                    "agreeableness": 66.67,
+                    "neuroticism": 50
+                },
+                "riasec": {
+                    "realistic": 100,
+                    "investigative": 100,
+                    "artistic": 100,
+                    "social": 100,
+                    "enterprising": 100,
+                    "conventional": 100,
+                    "dominant_code": "RIA"
+                }
+            },
+            "responses": [
+                {
+                    "assessment_response_id": "019f8a73-2b85-7106-86cd-06968f4b60c5",
+                    "question_id": "c24ec15d-aa70-51ca-8a2b-fd2858a69c95",
+                    "question_code": "OCEAN-O-01",
+                    "assessment_type": "OCEAN",
+                    "dimension": "O",
+                    "question_text": "Saya senang menjelajahi ide-ide baru yang belum pernah saya coba sebelumnya.",
+                    "reverse_scored": false,
+                    "answer_value": 5,
+                    "scored_value": 5,
+                    "answered_at": "2026-07-22T15:30:55.000Z",
+                    "updated_at": "2026-07-22T15:30:55.000Z"
+                },
+                {
+                    "assessment_response_id": "019f8a73-3141-7192-96f3-a2510e6e813f",
+                    "question_id": "5e8fdf38-279a-537f-8656-0743b7434cae",
+                    "question_code": "OCEAN-O-02",
+                    "assessment_type": "OCEAN",
+                    "dimension": "O",
+                    "question_text": "Saya lebih nyaman dengan hal-hal yang sudah terbukti daripada mencoba pendekatan baru.",
+                    "reverse_scored": true,
+                    "answer_value": 5,
+                    "scored_value": 1,
+                    "answered_at": "2026-07-22T15:30:55.000Z",
+                    "updated_at": "2026-07-22T15:30:55.000Z"
+                },
+                {
+                    "assessment_response_id": "019f8a73-3141-7192-96f3-a2528998aa5a",
+                    "question_id": "0bdc524c-d156-549e-ab50-c2b54cff2f27",
+                    "question_code": "OCEAN-O-03",
+                    "assessment_type": "OCEAN",
+                    "dimension": "O",
+                    "question_text": "Saya tertarik mempelajari bidang-bidang yang jauh dari keahlian utama saya.",
+                    "reverse_scored": false,
+                    "answer_value": 5,
+                    "scored_value": 5,
+                    "answered_at": "2026-07-22T15:30:55.000Z",
+                    "updated_at": "2026-07-22T15:30:55.000Z"
+                },
+                {
+                    "assessment_response_id": "019f8a73-3973-75cb-8add-4c8e898a4f8a",
+                    "question_id": "87d5ed34-54df-59bc-b85b-17620fabca19",
+                    "question_code": "OCEAN-O-04",
+                    "assessment_type": "OCEAN",
+                    "dimension": "O",
+                    "question_text": "Saya cenderung mempertanyakan cara-cara lama dalam mengerjakan sesuatu.",
+                    "reverse_scored": false,
+                    "answer_value": 5,
+                    "scored_value": 5,
+                    "answered_at": "2026-07-22T15:30:55.000Z",
+                    "updated_at": "2026-07-22T15:30:55.000Z"
+                },
+                {
+                    "assessment_response_id": "019f8a73-3973-75cb-8add-4c8f7b86c0ba",
+                    "question_id": "8ff55599-bc9a-527e-8159-eea1221fce5c",
+                    "question_code": "OCEAN-O-05",
+                    "assessment_type": "OCEAN",
+                    "dimension": "O",
+                    "question_text": "Saya menikmati pekerjaan yang membutuhkan kreativitas dan imajinasi.",
+                    "reverse_scored": false,
+                    "answer_value": 5,
+                    "scored_value": 5,
+                    "answered_at": "2026-07-22T15:30:55.000Z",
+                    "updated_at": "2026-07-22T15:30:55.000Z"
+                },
+                {
+                    "assessment_response_id": "019f8a73-3973-75cb-8add-4c904ebfd7fd",
+                    "question_id": "fab78b73-c391-5b23-abbc-47fc774e1041",
+                    "question_code": "OCEAN-O-06",
+                    "assessment_type": "OCEAN",
+                    "dimension": "O",
+                    "question_text": "Saya lebih suka petunjuk yang jelas dan terstruktur daripada kebebasan tanpa batas.",
+                    "reverse_scored": true,
+                    "answer_value": 5,
+                    "scored_value": 1,
+                    "answered_at": "2026-07-22T15:30:55.000Z",
+                    "updated_at": "2026-07-22T15:30:55.000Z"
+                },
+                {
+                    "assessment_response_id": "019f8a73-40bc-7b6d-92e4-ce04b449b9b4",
+                    "question_id": "8da1774e-e816-55af-90dd-87fc8e75a250",
+                    "question_code": "OCEAN-C-01",
+                    "assessment_type": "OCEAN",
+                    "dimension": "C",
+                    "question_text": "Saya biasanya menyelesaikan pekerjaan jauh sebelum tenggat waktu.",
+                    "reverse_scored": false,
+                    "answer_value": 5,
+                    "scored_value": 5,
+                    "answered_at": "2026-07-22T15:30:55.000Z",
+                    "updated_at": "2026-07-22T15:30:55.000Z"
+                },
+                {
+                    "assessment_response_id": "019f8a73-40bd-7b3d-975a-e5a7bac19d92",
+                    "question_id": "e191a861-2bca-5bc3-851f-1e7b73eebdb3",
+                    "question_code": "OCEAN-C-02",
+                    "assessment_type": "OCEAN",
+                    "dimension": "C",
+                    "question_text": "Saya mudah teralihkan saat mengerjakan sesuatu yang panjang.",
+                    "reverse_scored": true,
+                    "answer_value": 5,
+                    "scored_value": 1,
+                    "answered_at": "2026-07-22T15:30:55.000Z",
+                    "updated_at": "2026-07-22T15:30:55.000Z"
+                },
+                {
+                    "assessment_response_id": "019f8a73-40bd-7b3d-975a-e5a8c4dfb9bf",
+                    "question_id": "20a621bf-7085-5035-b036-b83baf09f42a",
+                    "question_code": "OCEAN-C-03",
+                    "assessment_type": "OCEAN",
+                    "dimension": "C",
+                    "question_text": "Saya membuat rencana yang detail sebelum memulai suatu proyek.",
+                    "reverse_scored": false,
+                    "answer_value": 5,
+                    "scored_value": 5,
+                    "answered_at": "2026-07-22T15:30:55.000Z",
+                    "updated_at": "2026-07-22T15:30:55.000Z"
+                },
+                {
+                    "assessment_response_id": "019f8a73-4949-7d9f-a8ca-83104069bc43",
+                    "question_id": "8643215b-02f5-5f6b-8373-455c70f8563e",
+                    "question_code": "OCEAN-C-04",
+                    "assessment_type": "OCEAN",
+                    "dimension": "C",
+                    "question_text": "Saya sering melupakan janji atau detail kecil yang penting.",
+                    "reverse_scored": true,
+                    "answer_value": 5,
+                    "scored_value": 1,
+                    "answered_at": "2026-07-22T15:30:55.000Z",
+                    "updated_at": "2026-07-22T15:30:55.000Z"
+                },
+                {
+                    "assessment_response_id": "019f8a73-4949-7d9f-a8ca-8311d655581d",
+                    "question_id": "781e4ce0-2e37-5c05-8aca-e05b93687021",
+                    "question_code": "OCEAN-C-05",
+                    "assessment_type": "OCEAN",
+                    "dimension": "C",
+                    "question_text": "Saya memiliki standar kualitas yang tinggi untuk pekerjaan saya.",
+                    "reverse_scored": false,
+                    "answer_value": 5,
+                    "scored_value": 5,
+                    "answered_at": "2026-07-22T15:30:55.000Z",
+                    "updated_at": "2026-07-22T15:30:55.000Z"
+                },
+                {
+                    "assessment_response_id": "019f8a73-4949-7d9f-a8ca-8312621468bd",
+                    "question_id": "17d89325-b42c-5d21-95a0-78b51f6db5c6",
+                    "question_code": "OCEAN-C-06",
+                    "assessment_type": "OCEAN",
+                    "dimension": "C",
+                    "question_text": "Saya bisa bekerja secara konsisten meski tidak ada yang mengawasi.",
+                    "reverse_scored": false,
+                    "answer_value": 5,
+                    "scored_value": 5,
+                    "answered_at": "2026-07-22T15:30:55.000Z",
+                    "updated_at": "2026-07-22T15:30:55.000Z"
+                },
+                {
+                    "assessment_response_id": "019f8a73-4cd1-709a-8ecd-bb9a3819dd3c",
+                    "question_id": "993ea920-c1d7-5521-9aae-1ec728721e3e",
+                    "question_code": "OCEAN-E-01",
+                    "assessment_type": "OCEAN",
+                    "dimension": "E",
+                    "question_text": "Saya merasa berenergi setelah berinteraksi dengan banyak orang.",
+                    "reverse_scored": false,
+                    "answer_value": 5,
+                    "scored_value": 5,
+                    "answered_at": "2026-07-22T15:30:55.000Z",
+                    "updated_at": "2026-07-22T15:30:55.000Z"
+                },
+                {
+                    "assessment_response_id": "019f8a73-52db-77e3-8100-f483364093a4",
+                    "question_id": "34ed61d1-7f24-539b-9c54-fb886b200c6b",
+                    "question_code": "OCEAN-E-02",
+                    "assessment_type": "OCEAN",
+                    "dimension": "E",
+                    "question_text": "Saya lebih suka bekerja sendiri daripada dalam kelompok besar.",
+                    "reverse_scored": true,
+                    "answer_value": 5,
+                    "scored_value": 1,
+                    "answered_at": "2026-07-22T15:30:55.000Z",
+                    "updated_at": "2026-07-22T15:30:55.000Z"
+                },
+                {
+                    "assessment_response_id": "019f8a73-52db-77e3-8100-f48418470946",
+                    "question_id": "20ea3504-54d9-5a21-a6d5-3b0795cd0347",
+                    "question_code": "OCEAN-E-03",
+                    "assessment_type": "OCEAN",
+                    "dimension": "E",
+                    "question_text": "Saya tidak segan memimpin diskusi atau presentasi di depan orang banyak.",
+                    "reverse_scored": false,
+                    "answer_value": 5,
+                    "scored_value": 5,
+                    "answered_at": "2026-07-22T15:30:55.000Z",
+                    "updated_at": "2026-07-22T15:30:55.000Z"
+                },
+                {
+                    "assessment_response_id": "019f8a73-5a1e-735a-b77b-4ad81693e1e8",
+                    "question_id": "13da4b48-4617-5362-9558-b3ea57d9e36c",
+                    "question_code": "OCEAN-E-04",
+                    "assessment_type": "OCEAN",
+                    "dimension": "E",
+                    "question_text": "Saya merasa lelah setelah terlalu banyak bersosialisasi.",
+                    "reverse_scored": true,
+                    "answer_value": 5,
+                    "scored_value": 1,
+                    "answered_at": "2026-07-22T15:30:55.000Z",
+                    "updated_at": "2026-07-22T15:30:55.000Z"
+                },
+                {
+                    "assessment_response_id": "019f8a73-5a1f-795f-8030-6d7789d2690b",
+                    "question_id": "d0a49529-851a-5d94-a351-ad9090b788f4",
+                    "question_code": "OCEAN-E-05",
+                    "assessment_type": "OCEAN",
+                    "dimension": "E",
+                    "question_text": "Saya mudah memulai percakapan dengan orang yang baru saya kenal.",
+                    "reverse_scored": false,
+                    "answer_value": 5,
+                    "scored_value": 5,
+                    "answered_at": "2026-07-22T15:30:55.000Z",
+                    "updated_at": "2026-07-22T15:30:55.000Z"
+                },
+                {
+                    "assessment_response_id": "019f8a73-614b-7ef5-9067-070b7fbac0ed",
+                    "question_id": "4b1606d5-e1a6-5762-af50-7927cf429398",
+                    "question_code": "OCEAN-E-06",
+                    "assessment_type": "OCEAN",
+                    "dimension": "E",
+                    "question_text": "Saya lebih nyaman bekerja di balik layar daripada tampil di depan.",
+                    "reverse_scored": true,
+                    "answer_value": 5,
+                    "scored_value": 1,
+                    "answered_at": "2026-07-22T15:30:55.000Z",
+                    "updated_at": "2026-07-22T15:30:55.000Z"
+                },
+                {
+                    "assessment_response_id": "019f8a73-614b-7ef5-9067-070c558bcce5",
+                    "question_id": "4fd62325-222e-5282-ab8e-181a557dc3d4",
+                    "question_code": "OCEAN-A-01",
+                    "assessment_type": "OCEAN",
+                    "dimension": "A",
+                    "question_text": "Saya mudah berempati dengan kesulitan yang dialami rekan kerja.",
+                    "reverse_scored": false,
+                    "answer_value": 5,
+                    "scored_value": 5,
+                    "answered_at": "2026-07-22T15:30:55.000Z",
+                    "updated_at": "2026-07-22T15:30:55.000Z"
+                },
+                {
+                    "assessment_response_id": "019f8a73-6edd-794a-b40b-eec1e5204c75",
+                    "question_id": "875a2bbf-a99a-5fce-a39f-3fcdc26d51ba",
+                    "question_code": "OCEAN-A-02",
+                    "assessment_type": "OCEAN",
+                    "dimension": "A",
+                    "question_text": "Saya lebih mementingkan harmoni kelompok daripada pendapat saya sendiri.",
+                    "reverse_scored": false,
+                    "answer_value": 5,
+                    "scored_value": 5,
+                    "answered_at": "2026-07-22T15:30:55.000Z",
+                    "updated_at": "2026-07-22T15:30:55.000Z"
+                },
+                {
+                    "assessment_response_id": "019f8a73-6a6c-715c-b991-686c3de8999b",
+                    "question_id": "e85d20d5-265c-5bc5-853d-79ccdf9021a5",
+                    "question_code": "OCEAN-A-03",
+                    "assessment_type": "OCEAN",
+                    "dimension": "A",
+                    "question_text": "Saya tidak ragu mengkritik pekerjaan orang lain jika memang perlu.",
+                    "reverse_scored": true,
+                    "answer_value": 5,
+                    "scored_value": 1,
+                    "answered_at": "2026-07-22T15:30:55.000Z",
+                    "updated_at": "2026-07-22T15:30:55.000Z"
+                },
+                {
+                    "assessment_response_id": "019f8a73-785b-73de-b6f8-04087a85f932",
+                    "question_id": "23af8836-e301-5c2c-a828-7a0879f49036",
+                    "question_code": "OCEAN-A-04",
+                    "assessment_type": "OCEAN",
+                    "dimension": "A",
+                    "question_text": "Saya percaya bahwa kerja sama selalu menghasilkan hasil yang lebih baik.",
+                    "reverse_scored": false,
+                    "answer_value": 5,
+                    "scored_value": 5,
+                    "answered_at": "2026-07-22T15:30:55.000Z",
+                    "updated_at": "2026-07-22T15:30:55.000Z"
+                },
+                {
+                    "assessment_response_id": "019f8a73-785b-73de-b6f8-04097a877e69",
+                    "question_id": "f34b7c11-b5bd-5668-9baf-56140483be99",
+                    "question_code": "OCEAN-A-05",
+                    "assessment_type": "OCEAN",
+                    "dimension": "A",
+                    "question_text": "Saya mudah percaya pada niat baik orang lain.",
+                    "reverse_scored": false,
+                    "answer_value": 5,
+                    "scored_value": 5,
+                    "answered_at": "2026-07-22T15:30:55.000Z",
+                    "updated_at": "2026-07-22T15:30:55.000Z"
+                },
+                {
+                    "assessment_response_id": "019f8a73-785b-73de-b6f8-040a5a404976",
+                    "question_id": "49a10bc0-d812-5e6f-aa57-67ca5856eb26",
+                    "question_code": "OCEAN-A-06",
+                    "assessment_type": "OCEAN",
+                    "dimension": "A",
+                    "question_text": "Saya cenderung mempertahankan posisi saya meski orang lain tidak setuju.",
+                    "reverse_scored": true,
+                    "answer_value": 5,
+                    "scored_value": 1,
+                    "answered_at": "2026-07-22T15:30:55.000Z",
+                    "updated_at": "2026-07-22T15:30:55.000Z"
+                },
+                {
+                    "assessment_response_id": "019f8a73-80c3-7f8b-99d5-6c72e3ecf676",
+                    "question_id": "ec5b1b2a-e199-5b26-874e-978e955e5107",
+                    "question_code": "OCEAN-N-01",
+                    "assessment_type": "OCEAN",
+                    "dimension": "N",
+                    "question_text": "Saya sering merasa cemas saat menghadapi tantangan baru di tempat kerja.",
+                    "reverse_scored": false,
+                    "answer_value": 5,
+                    "scored_value": 5,
+                    "answered_at": "2026-07-22T15:30:55.000Z",
+                    "updated_at": "2026-07-22T15:30:55.000Z"
+                },
+                {
+                    "assessment_response_id": "019f8a73-80c3-7f8b-99d5-6c737b1cee86",
+                    "question_id": "3beff442-90f0-5f7c-99b9-5a036714ec86",
+                    "question_code": "OCEAN-N-02",
+                    "assessment_type": "OCEAN",
+                    "dimension": "N",
+                    "question_text": "Saya bisa tetap tenang bahkan di situasi kerja yang sangat menekan.",
+                    "reverse_scored": true,
+                    "answer_value": 5,
+                    "scored_value": 1,
+                    "answered_at": "2026-07-22T15:30:55.000Z",
+                    "updated_at": "2026-07-22T15:30:55.000Z"
+                },
+                {
+                    "assessment_response_id": "019f8a73-80c3-7f8b-99d5-6c74b4b2b415",
+                    "question_id": "6c1fa564-d3ab-5eaa-81e5-dce05394a22a",
+                    "question_code": "OCEAN-N-03",
+                    "assessment_type": "OCEAN",
+                    "dimension": "N",
+                    "question_text": "Saya mudah terbawa suasana negatif jika lingkungan kerja tidak kondusif.",
+                    "reverse_scored": false,
+                    "answer_value": 5,
+                    "scored_value": 5,
+                    "answered_at": "2026-07-22T15:30:55.000Z",
+                    "updated_at": "2026-07-22T15:30:55.000Z"
+                },
+                {
+                    "assessment_response_id": "019f8a73-845b-786b-a950-8bca88475264",
+                    "question_id": "2519a041-9d71-5ef3-8ae5-bcb385dbbdff",
+                    "question_code": "OCEAN-N-04",
+                    "assessment_type": "OCEAN",
+                    "dimension": "N",
+                    "question_text": "Saya jarang merasa khawatir berlebihan tentang hasil kerja saya.",
+                    "reverse_scored": true,
+                    "answer_value": 5,
+                    "scored_value": 1,
+                    "answered_at": "2026-07-22T15:30:55.000Z",
+                    "updated_at": "2026-07-22T15:30:55.000Z"
+                },
+                {
+                    "assessment_response_id": "019f8a73-8943-7a6a-a0dc-64119755839e",
+                    "question_id": "897c98a6-6ddc-5903-b3af-d2fbcf57fccd",
+                    "question_code": "OCEAN-N-05",
+                    "assessment_type": "OCEAN",
+                    "dimension": "N",
+                    "question_text": "Saya sering meragukan keputusan yang sudah saya buat.",
+                    "reverse_scored": false,
+                    "answer_value": 5,
+                    "scored_value": 5,
+                    "answered_at": "2026-07-22T15:30:55.000Z",
+                    "updated_at": "2026-07-22T15:30:55.000Z"
+                },
+                {
+                    "assessment_response_id": "019f8a73-8944-7f46-bcc3-266f999180c2",
+                    "question_id": "712c806c-9039-55e1-8ac2-58336d70c73d",
+                    "question_code": "OCEAN-N-06",
+                    "assessment_type": "OCEAN",
+                    "dimension": "N",
+                    "question_text": "Saya memiliki cara yang cukup baik untuk mengelola stres pekerjaan.",
+                    "reverse_scored": true,
+                    "answer_value": 5,
+                    "scored_value": 1,
+                    "answered_at": "2026-07-22T15:30:55.000Z",
+                    "updated_at": "2026-07-22T15:30:55.000Z"
+                },
+                {
+                    "assessment_response_id": "019f8a73-95cd-76ff-95fb-4a2b447a3f11",
+                    "question_id": "eea68821-17a2-5d5b-8fe8-c28bbb8c222a",
+                    "question_code": "RIASEC-R-01",
+                    "assessment_type": "RIASEC",
+                    "dimension": "R",
+                    "question_text": "Saya lebih suka bekerja dengan alat, mesin, atau teknologi daripada dengan orang.",
+                    "reverse_scored": false,
+                    "answer_value": 5,
+                    "scored_value": 5,
+                    "answered_at": "2026-07-22T15:32:13.000Z",
+                    "updated_at": "2026-07-22T15:32:13.000Z"
+                },
+                {
+                    "assessment_response_id": "019f8a73-95cd-76ff-95fb-4a2cf4969934",
+                    "question_id": "912b30c5-79df-5fbb-9074-3bf09e9006f7",
+                    "question_code": "RIASEC-R-02",
+                    "assessment_type": "RIASEC",
+                    "dimension": "R",
+                    "question_text": "Saya menikmati pekerjaan yang menghasilkan sesuatu yang nyata dan terukur.",
+                    "reverse_scored": false,
+                    "answer_value": 5,
+                    "scored_value": 5,
+                    "answered_at": "2026-07-22T15:32:13.000Z",
+                    "updated_at": "2026-07-22T15:32:13.000Z"
+                },
+                {
+                    "assessment_response_id": "019f8a74-7bc4-79d4-88f7-6da43a979e4d",
+                    "question_id": "832c2974-34c4-55bd-817c-ae604f64f94d",
+                    "question_code": "RIASEC-R-03",
+                    "assessment_type": "RIASEC",
+                    "dimension": "R",
+                    "question_text": "Saya lebih suka menyelesaikan masalah teknis daripada masalah interpersonal.",
+                    "reverse_scored": false,
+                    "answer_value": 5,
+                    "scored_value": 5,
+                    "answered_at": "2026-07-22T15:32:13.000Z",
+                    "updated_at": "2026-07-22T15:32:13.000Z"
+                },
+                {
+                    "assessment_response_id": "019f8a74-82a2-7d89-b426-f560b3b6386c",
+                    "question_id": "12c514ce-821b-541a-bfbb-4be2770c1e95",
+                    "question_code": "RIASEC-R-04",
+                    "assessment_type": "RIASEC",
+                    "dimension": "R",
+                    "question_text": "Saya merasa paling produktif saat mengerjakan sesuatu secara langsung (hands-on).",
+                    "reverse_scored": false,
+                    "answer_value": 5,
+                    "scored_value": 5,
+                    "answered_at": "2026-07-22T15:32:13.000Z",
+                    "updated_at": "2026-07-22T15:32:13.000Z"
+                },
+                {
+                    "assessment_response_id": "019f8a74-82a2-7d89-b426-f561d30805b3",
+                    "question_id": "27a57c87-79b0-5341-87ab-0542516e9c1f",
+                    "question_code": "RIASEC-I-01",
+                    "assessment_type": "RIASEC",
+                    "dimension": "I",
+                    "question_text": "Saya menikmati menganalisis data dan mencari pola di balik sebuah fenomena.",
+                    "reverse_scored": false,
+                    "answer_value": 5,
+                    "scored_value": 5,
+                    "answered_at": "2026-07-22T15:32:13.000Z",
+                    "updated_at": "2026-07-22T15:32:13.000Z"
+                },
+                {
+                    "assessment_response_id": "019f8a74-8604-73a2-aa98-34a9cd37931d",
+                    "question_id": "661a869e-fdb6-5efc-8551-4ec6b60c88cc",
+                    "question_code": "RIASEC-I-02",
+                    "assessment_type": "RIASEC",
+                    "dimension": "I",
+                    "question_text": "Saya sering bertanya \"mengapa\" dan ingin memahami sesuatu secara mendalam.",
+                    "reverse_scored": false,
+                    "answer_value": 5,
+                    "scored_value": 5,
+                    "answered_at": "2026-07-22T15:32:13.000Z",
+                    "updated_at": "2026-07-22T15:32:13.000Z"
+                },
+                {
+                    "assessment_response_id": "019f8a74-8980-7d1e-98f4-29980034ef79",
+                    "question_id": "8f5d025c-1372-51f2-8345-18f08cc41e95",
+                    "question_code": "RIASEC-I-03",
+                    "assessment_type": "RIASEC",
+                    "dimension": "I",
+                    "question_text": "Saya tertarik dengan penelitian, eksperimen, atau pengujian hipotesis.",
+                    "reverse_scored": false,
+                    "answer_value": 5,
+                    "scored_value": 5,
+                    "answered_at": "2026-07-22T15:32:13.000Z",
+                    "updated_at": "2026-07-22T15:32:13.000Z"
+                },
+                {
+                    "assessment_response_id": "019f8a74-90e0-7f18-bd4d-94ece4a4029a",
+                    "question_id": "dc7ec43b-bfca-575e-ae6a-a104e459e054",
+                    "question_code": "RIASEC-I-04",
+                    "assessment_type": "RIASEC",
+                    "dimension": "I",
+                    "question_text": "Saya lebih suka memecahkan masalah yang kompleks daripada tugas yang repetitif.",
+                    "reverse_scored": false,
+                    "answer_value": 5,
+                    "scored_value": 5,
+                    "answered_at": "2026-07-22T15:32:13.000Z",
+                    "updated_at": "2026-07-22T15:32:13.000Z"
+                },
+                {
+                    "assessment_response_id": "019f8a74-90e0-7f18-bd4d-94ed51bc0b67",
+                    "question_id": "63da0224-a99f-5294-87e8-ff11afb9e123",
+                    "question_code": "RIASEC-A-01",
+                    "assessment_type": "RIASEC",
+                    "dimension": "A",
+                    "question_text": "Saya menikmati pekerjaan yang memberi saya kebebasan untuk bereksperimen secara kreatif.",
+                    "reverse_scored": false,
+                    "answer_value": 5,
+                    "scored_value": 5,
+                    "answered_at": "2026-07-22T15:32:13.000Z",
+                    "updated_at": "2026-07-22T15:32:13.000Z"
+                },
+                {
+                    "assessment_response_id": "019f8a74-90e0-7f18-bd4d-94ee26bf7307",
+                    "question_id": "37f70765-a0d2-5ba0-b65c-9ad6bae357fe",
+                    "question_code": "RIASEC-A-02",
+                    "assessment_type": "RIASEC",
+                    "dimension": "A",
+                    "question_text": "Saya lebih suka situasi kerja yang tidak terlalu terstruktur dan kaku.",
+                    "reverse_scored": false,
+                    "answer_value": 5,
+                    "scored_value": 5,
+                    "answered_at": "2026-07-22T15:32:13.000Z",
+                    "updated_at": "2026-07-22T15:32:13.000Z"
+                },
+                {
+                    "assessment_response_id": "019f8a74-9720-7a99-bfb7-71585ce12021",
+                    "question_id": "0d22636d-82fe-5008-a300-58e8893b88cd",
+                    "question_code": "RIASEC-A-03",
+                    "assessment_type": "RIASEC",
+                    "dimension": "A",
+                    "question_text": "Saya sering menggunakan estetika atau rasa visual dalam pekerjaan saya.",
+                    "reverse_scored": false,
+                    "answer_value": 5,
+                    "scored_value": 5,
+                    "answered_at": "2026-07-22T15:32:13.000Z",
+                    "updated_at": "2026-07-22T15:32:13.000Z"
+                },
+                {
+                    "assessment_response_id": "019f8a74-9720-7a99-bfb7-71595295f1a1",
+                    "question_id": "feeae1c0-7bb6-5980-ad08-07a553071591",
+                    "question_code": "RIASEC-A-04",
+                    "assessment_type": "RIASEC",
+                    "dimension": "A",
+                    "question_text": "Saya menemukan kepuasan dalam menciptakan sesuatu yang orisinal.",
+                    "reverse_scored": false,
+                    "answer_value": 5,
+                    "scored_value": 5,
+                    "answered_at": "2026-07-22T15:32:13.000Z",
+                    "updated_at": "2026-07-22T15:32:13.000Z"
+                },
+                {
+                    "assessment_response_id": "019f8a74-9720-7a99-bfb7-715afedecced",
+                    "question_id": "f1c9d03b-68e0-51a8-a76e-9325afe3a63a",
+                    "question_code": "RIASEC-S-01",
+                    "assessment_type": "RIASEC",
+                    "dimension": "S",
+                    "question_text": "Saya mendapatkan kepuasan dari membantu orang lain berkembang atau belajar.",
+                    "reverse_scored": false,
+                    "answer_value": 5,
+                    "scored_value": 5,
+                    "answered_at": "2026-07-22T15:32:13.000Z",
+                    "updated_at": "2026-07-22T15:32:13.000Z"
+                },
+                {
+                    "assessment_response_id": "019f8a74-9c65-7039-8d4a-8fbedf5c2809",
+                    "question_id": "86b32555-f21f-530f-add8-6249b99ecb78",
+                    "question_code": "RIASEC-S-02",
+                    "assessment_type": "RIASEC",
+                    "dimension": "S",
+                    "question_text": "Saya menikmati pekerjaan yang melibatkan interaksi dan komunikasi langsung.",
+                    "reverse_scored": false,
+                    "answer_value": 5,
+                    "scored_value": 5,
+                    "answered_at": "2026-07-22T15:32:13.000Z",
+                    "updated_at": "2026-07-22T15:32:13.000Z"
+                },
+                {
+                    "assessment_response_id": "019f8a74-9c65-7039-8d4a-8fbfe510c699",
+                    "question_id": "44b92692-0223-5c98-97c2-7efd8cb29a42",
+                    "question_code": "RIASEC-S-03",
+                    "assessment_type": "RIASEC",
+                    "dimension": "S",
+                    "question_text": "Saya sering menjadi orang yang didengarkan teman-teman saat mereka punya masalah.",
+                    "reverse_scored": false,
+                    "answer_value": 5,
+                    "scored_value": 5,
+                    "answered_at": "2026-07-22T15:32:13.000Z",
+                    "updated_at": "2026-07-22T15:32:13.000Z"
+                },
+                {
+                    "assessment_response_id": "019f8a74-a692-70c1-a91e-d8a1d1fcd835",
+                    "question_id": "3f990b98-777a-5d7c-b61b-ddb13fbbff0c",
+                    "question_code": "RIASEC-S-04",
+                    "assessment_type": "RIASEC",
+                    "dimension": "S",
+                    "question_text": "Saya tertarik berkontribusi pada komunitas atau isu-isu sosial.",
+                    "reverse_scored": false,
+                    "answer_value": 5,
+                    "scored_value": 5,
+                    "answered_at": "2026-07-22T15:32:13.000Z",
+                    "updated_at": "2026-07-22T15:32:13.000Z"
+                },
+                {
+                    "assessment_response_id": "019f8a74-a692-70c1-a91e-d8a2349931ed",
+                    "question_id": "342db8c0-2e00-5f52-8478-368073bdda93",
+                    "question_code": "RIASEC-E-01",
+                    "assessment_type": "RIASEC",
+                    "dimension": "E",
+                    "question_text": "Saya menikmati meyakinkan orang lain tentang suatu ide atau produk.",
+                    "reverse_scored": false,
+                    "answer_value": 5,
+                    "scored_value": 5,
+                    "answered_at": "2026-07-22T15:32:13.000Z",
+                    "updated_at": "2026-07-22T15:32:13.000Z"
+                },
+                {
+                    "assessment_response_id": "019f8a74-a692-70c1-a91e-d8a3fa80a998",
+                    "question_id": "d126b016-aaef-5d67-a8a6-f199341fb8bd",
+                    "question_code": "RIASEC-E-02",
+                    "assessment_type": "RIASEC",
+                    "dimension": "E",
+                    "question_text": "Saya sering mengambil inisiatif dan peran kepemimpinan dalam kelompok.",
+                    "reverse_scored": false,
+                    "answer_value": 5,
+                    "scored_value": 5,
+                    "answered_at": "2026-07-22T15:32:13.000Z",
+                    "updated_at": "2026-07-22T15:32:13.000Z"
+                },
+                {
+                    "assessment_response_id": "019f8a74-ab47-7279-abc0-c17da3af2505",
+                    "question_id": "7d3498d5-a425-5d8f-84ea-afee196e55f7",
+                    "question_code": "RIASEC-E-03",
+                    "assessment_type": "RIASEC",
+                    "dimension": "E",
+                    "question_text": "Saya termotivasi oleh target, kompetisi, dan pencapaian yang terukur.",
+                    "reverse_scored": false,
+                    "answer_value": 5,
+                    "scored_value": 5,
+                    "answered_at": "2026-07-22T15:32:13.000Z",
+                    "updated_at": "2026-07-22T15:32:13.000Z"
+                },
+                {
+                    "assessment_response_id": "019f8a74-ab47-7279-abc0-c17e8dd67700",
+                    "question_id": "ec396c4b-4042-5bc7-ad31-01d87f0a42ab",
+                    "question_code": "RIASEC-E-04",
+                    "assessment_type": "RIASEC",
+                    "dimension": "E",
+                    "question_text": "Saya tidak takut mengambil risiko demi peluang yang lebih besar.",
+                    "reverse_scored": false,
+                    "answer_value": 5,
+                    "scored_value": 5,
+                    "answered_at": "2026-07-22T15:32:13.000Z",
+                    "updated_at": "2026-07-22T15:32:13.000Z"
+                },
+                {
+                    "assessment_response_id": "019f8a74-ae78-7738-afc6-cf10bd8baac1",
+                    "question_id": "49dfbe2e-1728-51f4-8468-2d261b68f138",
+                    "question_code": "RIASEC-C-01",
+                    "assessment_type": "RIASEC",
+                    "dimension": "C",
+                    "question_text": "Saya menikmati pekerjaan yang membutuhkan akurasi, kerapian, dan perhatian terhadap detail.",
+                    "reverse_scored": false,
+                    "answer_value": 5,
+                    "scored_value": 5,
+                    "answered_at": "2026-07-22T15:32:13.000Z",
+                    "updated_at": "2026-07-22T15:32:13.000Z"
+                },
+                {
+                    "assessment_response_id": "019f8a74-b61c-729a-a8c8-aad3c5f18f87",
+                    "question_id": "2d2e60fa-85d6-5969-b46c-252a961c52f8",
+                    "question_code": "RIASEC-C-02",
+                    "assessment_type": "RIASEC",
+                    "dimension": "C",
+                    "question_text": "Saya lebih nyaman dengan aturan dan prosedur yang jelas.",
+                    "reverse_scored": false,
+                    "answer_value": 5,
+                    "scored_value": 5,
+                    "answered_at": "2026-07-22T15:32:13.000Z",
+                    "updated_at": "2026-07-22T15:32:13.000Z"
+                },
+                {
+                    "assessment_response_id": "019f8a74-b61c-729a-a8c8-aad4f6df4afd",
+                    "question_id": "b71ff9ce-9edc-5905-820b-290fddffb679",
+                    "question_code": "RIASEC-C-03",
+                    "assessment_type": "RIASEC",
+                    "dimension": "C",
+                    "question_text": "Saya merasa puas saat berhasil menyelesaikan tugas administratif dengan sempurna.",
+                    "reverse_scored": false,
+                    "answer_value": 5,
+                    "scored_value": 5,
+                    "answered_at": "2026-07-22T15:32:13.000Z",
+                    "updated_at": "2026-07-22T15:32:13.000Z"
+                },
+                {
+                    "assessment_response_id": "019f8a74-b859-71be-ae48-cce67dd73ed0",
+                    "question_id": "981354f5-03ff-5a41-b1d2-ad47f1d6699a",
+                    "question_code": "RIASEC-C-04",
+                    "assessment_type": "RIASEC",
+                    "dimension": "C",
+                    "question_text": "Saya lebih suka bekerja dalam sistem yang terorganisir dan dapat diprediksi.",
+                    "reverse_scored": false,
+                    "answer_value": 5,
+                    "scored_value": 5,
+                    "answered_at": "2026-07-22T15:32:13.000Z",
+                    "updated_at": "2026-07-22T15:32:13.000Z"
+                }
+            ]
+        },
+        "double_diamond": {
+            "result": {
+                "double_diamond_result_id": "019f8a75-5764-7106-bbef-48edda72943c",
+                "detected_fields": [
+                    {
+                        "code": "ML_AI",
+                        "label": "Machine Learning & Artificial Intelligence",
+                        "score": 0.9,
+                        "reason": "Profil menunjukkan pengalaman mendalam dalam applied ML: membangun pipeline NLP, autoencoder anomaly detection, clustering, RAG-based LLM, serta proyek klasifikasi gambar dengan transfer learning. Assessment RIASEC dominan RIA (Realistic, Investigative, Artistic) mendukung minat teknis dan analitis. Jawaban ACT_COLLAB dan BD_BREADTH menunjukkan ia menikmati kolaborasi dan eksplorasi luas, cocok dengan bidang ML yang multidisiplin."
+                    },
+                    {
+                        "code": "FULLSTACK_DEV",
+                        "label": "Full-Stack Software Engineering",
+                        "score": 0.85,
+                        "reason": "Profil menunjukkan fondasi full-stack yang kuat: membangun platform dari frontend hingga backend, DevOps, database. Pengalaman sebagai Lead Engineer di KodeKita dan co-founder AkuCuciin menunjukkan kemampuan end-to-end. Jawaban ENV_STARTUP dan EXP_FOUNDER mengindikasikan preferensi lingkungan startup yang membutuhkan fleksibilitas full-stack."
+                    },
+                    {
+                        "code": "PRODUCT_ENGINEERING",
+                        "label": "Product Engineering & Tech Leadership",
+                        "score": 0.8,
+                        "reason": "Pengalaman sebagai co-founder dan lead engineer menunjukkan kemampuan membawa produk dari ide ke skala. Jawaban VAL_IMPACT dan IMP_USER menekankan dampak pada pengguna, selaras dengan peran product engineering. Assessment OCEAN conscientiousness 66.67 mendukung ketelitian dalam membangun produk."
+                    },
+                    {
+                        "code": "AI_ENGINEERING",
+                        "label": "AI Engineering & MLOps",
+                        "score": 0.75,
+                        "reason": "Proyek FinSight dan Bacarita menunjukkan kemampuan mengintegrasikan model ML ke dalam aplikasi produksi. Jawaban BD_BREADTH menunjukkan keinginan memperluas skill, cocok dengan peran AI Engineer yang membutuhkan pemahaman dari model hingga deployment."
+                    }
+                ],
+                "recommended_roles": [
+                    {
+                        "code": "ML_ENGINEER",
+                        "label": "Machine Learning Engineer",
+                        "score": 0.9,
+                        "reason": "Kombinasi pengalaman ML (klasifikasi, NLP, anomaly detection) dan full-stack engineering membuatnya cocok untuk peran yang menjembatani model dan produksi. Assessment RIASEC dominan RIA mendukung minat teknis dan investigatif. Jawaban END2END dan IMPLEMENT menegaskan preferensi kontribusi dari model hingga deployment."
+                    },
+                    {
+                        "code": "FULLSTACK_DEVELOPER",
+                        "label": "Full-Stack Developer",
+                        "score": 0.85,
+                        "reason": "Profil menunjukkan kemampuan membangun aplikasi end-to-end dengan berbagai stack. Pengalaman sebagai lead engineer dan co-founder memperkuat kesiapan untuk peran ini. Jawaban ENV_STARTUP dan EXP_FOUNDER mendukung."
+                    },
+                    {
+                        "code": "AI_PRODUCT_MANAGER",
+                        "label": "AI Product Manager",
+                        "score": 0.7,
+                        "reason": "Kombinasi pemahaman teknis ML dan pengalaman membangun produk (co-founder) membuatnya potensial untuk peran yang menjembatani bisnis dan teknologi. Jawaban VAL_IMPACT dan IMP_USER menunjukkan fokus pada dampak pengguna."
+                    },
+                    {
+                        "code": "TECH_LEAD",
+                        "label": "Tech Lead / Engineering Manager",
+                        "score": 0.75,
+                        "reason": "Pengalaman memimpin tim di KodeKita dan proyek capstone menunjukkan kemampuan kepemimpinan teknis. Assessment OCEAN conscientiousness dan agreeableness mendukung peran yang membutuhkan koordinasi tim."
+                    }
+                ],
+                "selected_field": "ML_AI",
+                "selected_role": "YES",
+                "strengths": [
+                    "Kemampuan full-stack end-to-end: dari frontend, backend, hingga deployment dan DevOps.",
+                    "Pengalaman applied ML: NLP, computer vision, anomaly detection, RAG pipeline.",
+                    "Kepemimpinan teknis: lead engineer pada 5+ proyek klien dan co-founder platform dengan ribuan pengguna.",
+                    "Orientasi dampak pengguna: fokus pada solusi yang memberikan nilai nyata (IMP_USER, VAL_IMPACT).",
+                    "Kemampuan belajar cepat dan eksplorasi luas (BD_BREADTH) dengan portofolio proyek beragam."
+                ],
+                "barriers": [
+                    "Jaringan profesional (NETWORK) yang terbatas di bidang ML/AI, yang dapat menghambat akses ke peluang kerja, mentorship, dan kolaborasi."
+                ],
+                "career_summary": "Profil Anda sebagai Software Engineer dengan fondasi full-stack dan kedalaman applied ML sangat cocok untuk peran Machine Learning Engineer. Anda memiliki pengalaman membangun dan menskalakan platform dengan ribuan pengguna, memimpin tim teknis, serta mengerjakan proyek ML dari model hingga deployment. Target karier Anda dalam 1-2 tahun ke depan adalah menjadi Machine Learning Engineer, dengan fokus pada integrasi model ke dalam produk yang berdampak langsung pada pengguna.",
+                "work_style_summary": "Anda paling produktif dalam lingkungan kolaboratif (ACT_COLLAB) yang dinamis seperti startup (ENV_STARTUP), dengan nilai utama pada dampak nyata bagi pengguna (VAL_IMPACT, IMP_USER). Anda menyukai eksplorasi luas (BD_BREADTH) dan pendekatan end-to-end (END2END) dalam pengembangan ML, serta lebih suka mengimplementasikan solusi (IMPLEMENT) daripada hanya merancang. Anda cukup nyaman dengan spesifikasi yang berubah (skor 3/5) dan belajar melalui kursus terstruktur (COURSE).",
+                "readiness_summary": "Anda menilai kesiapan Anda untuk beralih ke peran Machine Learning Engineer pada skala 4 dari 5, menunjukkan keyakinan tinggi. Kekuatan utama yang ingin Anda andalkan adalah pengalaman ML (ML_EXP) yang sudah terbukti melalui berbagai proyek. Hambatan utama adalah jaringan profesional (NETWORK) yang masih perlu diperluas. Secara keseluruhan, Anda sudah memiliki fondasi teknis yang kuat dan siap untuk mengambil langkah selanjutnya, dengan fokus pada pengembangan jaringan dan exposure di bidang ML/AI.",
+                "confidence_score": 0.9,
+                "result_version": "DD-RESULT-V1.0",
+                "generated_at": "2026-07-22T15:34:32.000Z"
+            },
+            "questions": [
+                {
+                    "question_id": "019f8a74-e63c-7e99-bdda-d93c7297986a",
+                    "phase": "DIVERGE_1",
+                    "question_code": "DIV1_ACTIVITY",
+                    "question_text": "Dalam pekerjaan sehari-hari, aktivitas seperti apa yang paling membuat Anda merasa produktif dan bersemangat?",
+                    "helper_text": "Pilih satu yang paling sesuai.",
+                    "response_type": "SINGLE_CHOICE",
+                    "options": [
+                        {
+                            "code": "ACT_BUILD",
+                            "label": "Membangun dan merancang sistem dari awal hingga selesai"
+                        },
+                        {
+                            "code": "ACT_OPTIMIZE",
+                            "label": "Mengoptimalkan dan menyempurnakan sistem yang sudah ada"
+                        },
+                        {
+                            "code": "ACT_EXPLORE",
+                            "label": "Mengeksplorasi teknologi baru dan memecahkan masalah kompleks"
+                        },
+                        {
+                            "code": "ACT_COLLAB",
+                            "label": "Berkolaborasi dengan tim untuk mencapai tujuan bersama"
+                        }
+                    ],
+                    "min_selection": null,
+                    "max_selection": null,
+                    "scale_min": null,
+                    "scale_max": null,
+                    "question_order": 1,
+                    "framework_version": "DD-V1.0",
+                    "prompt_version": "DD-QUESTION-V1.0",
+                    "model_name": "deepseek-chat",
+                    "answer": "ACT_COLLAB",
+                    "answered_at": "2026-07-22T15:32:41.000Z",
+                    "updated_at": "2026-07-22T15:32:40.000Z"
+                },
+                {
+                    "question_id": "019f8a74-e63d-7e83-9d7d-a37f6027ac05",
+                    "phase": "DIVERGE_1",
+                    "question_code": "DIV1_VALUE",
+                    "question_text": "Nilai kerja apa yang paling penting bagi Anda dalam sebuah peran?",
+                    "helper_text": "Pilih satu yang paling utama.",
+                    "response_type": "SINGLE_CHOICE",
+                    "options": [
+                        {
+                            "code": "VAL_IMPACT",
+                            "label": "Dampak nyata pada pengguna atau bisnis"
+                        },
+                        {
+                            "code": "VAL_GROWTH",
+                            "label": "Kesempatan belajar dan mengembangkan keahlian baru"
+                        },
+                        {
+                            "code": "VAL_AUTONOMY",
+                            "label": "Kebebasan dan otonomi dalam mengambil keputusan teknis"
+                        },
+                        {
+                            "code": "VAL_STABILITY",
+                            "label": "Stabilitas dan lingkungan kerja yang terstruktur"
+                        }
+                    ],
+                    "min_selection": null,
+                    "max_selection": null,
+                    "scale_min": null,
+                    "scale_max": null,
+                    "question_order": 2,
+                    "framework_version": "DD-V1.0",
+                    "prompt_version": "DD-QUESTION-V1.0",
+                    "model_name": "deepseek-chat",
+                    "answer": "VAL_IMPACT",
+                    "answered_at": "2026-07-22T15:32:41.000Z",
+                    "updated_at": "2026-07-22T15:32:40.000Z"
+                },
+                {
+                    "question_id": "019f8a74-e63d-7e83-9d7d-a380fec50077",
+                    "phase": "DIVERGE_1",
+                    "question_code": "DIV1_ENV",
+                    "question_text": "Lingkungan kerja seperti apa yang paling mendukung produktivitas Anda?",
+                    "helper_text": "Pilih satu yang paling sesuai.",
+                    "response_type": "SINGLE_CHOICE",
+                    "options": [
+                        {
+                            "code": "ENV_STARTUP",
+                            "label": "Startup atau tim kecil dengan ritme cepat dan tanggung jawab luas"
+                        },
+                        {
+                            "code": "ENV_CORP",
+                            "label": "Perusahaan besar dengan proses yang jelas dan sumber daya melimpah"
+                        },
+                        {
+                            "code": "ENV_AGENCY",
+                            "label": "Agensi atau konsultan dengan proyek beragam dan klien eksternal"
+                        },
+                        {
+                            "code": "ENV_RESEARCH",
+                            "label": "Lingkungan riset atau R&D yang fokus pada inovasi dan eksperimen"
+                        }
+                    ],
+                    "min_selection": null,
+                    "max_selection": null,
+                    "scale_min": null,
+                    "scale_max": null,
+                    "question_order": 3,
+                    "framework_version": "DD-V1.0",
+                    "prompt_version": "DD-QUESTION-V1.0",
+                    "model_name": "deepseek-chat",
+                    "answer": "ENV_STARTUP",
+                    "answered_at": "2026-07-22T15:32:41.000Z",
+                    "updated_at": "2026-07-22T15:32:40.000Z"
+                },
+                {
+                    "question_id": "019f8a74-e63d-7e83-9d7d-a38154f9416b",
+                    "phase": "DIVERGE_1",
+                    "question_code": "DIV1_IMPACT",
+                    "question_text": "Dampak seperti apa yang paling Anda ingin hasilkan dari pekerjaan Anda?",
+                    "helper_text": "Pilih satu yang paling memotivasi.",
+                    "response_type": "SINGLE_CHOICE",
+                    "options": [
+                        {
+                            "code": "IMP_USER",
+                            "label": "Membantu pengguna individu menyelesaikan masalah sehari-hari"
+                        },
+                        {
+                            "code": "IMP_BUSINESS",
+                            "label": "Meningkatkan efisiensi atau profitabilitas bisnis"
+                        },
+                        {
+                            "code": "IMP_SOCIAL",
+                            "label": "Memberikan kontribusi pada isu sosial atau lingkungan"
+                        },
+                        {
+                            "code": "IMP_TECH",
+                            "label": "Mendorong batasan teknologi dan menciptakan solusi inovatif"
+                        }
+                    ],
+                    "min_selection": null,
+                    "max_selection": null,
+                    "scale_min": null,
+                    "scale_max": null,
+                    "question_order": 4,
+                    "framework_version": "DD-V1.0",
+                    "prompt_version": "DD-QUESTION-V1.0",
+                    "model_name": "deepseek-chat",
+                    "answer": "IMP_USER",
+                    "answered_at": "2026-07-22T15:32:41.000Z",
+                    "updated_at": "2026-07-22T15:32:40.000Z"
+                },
+                {
+                    "question_id": "019f8a74-e63d-7e83-9d7d-a382c74df0f3",
+                    "phase": "DIVERGE_1",
+                    "question_code": "DIV1_EXPERIENCE",
+                    "question_text": "Dari pengalaman Anda sejauh ini, mana yang paling membentuk arah karier yang Anda inginkan?",
+                    "helper_text": "Pilih satu yang paling berpengaruh.",
+                    "response_type": "SINGLE_CHOICE",
+                    "options": [
+                        {
+                            "code": "EXP_FOUNDER",
+                            "label": "Membangun produk dari nol sebagai co-founder (Aku Cuciin)"
+                        },
+                        {
+                            "code": "EXP_LEAD",
+                            "label": "Memimpin tim dan mengelola proyek klien sebagai Lead Engineer"
+                        },
+                        {
+                            "code": "EXP_AI",
+                            "label": "Mendalami machine learning dan AI melalui proyek seperti FinSight dan Bacarita"
+                        },
+                        {
+                            "code": "EXP_FULLSTACK",
+                            "label": "Mengembangkan aplikasi full-stack dengan dampak langsung pada pengguna"
+                        }
+                    ],
+                    "min_selection": null,
+                    "max_selection": null,
+                    "scale_min": null,
+                    "scale_max": null,
+                    "question_order": 5,
+                    "framework_version": "DD-V1.0",
+                    "prompt_version": "DD-QUESTION-V1.0",
+                    "model_name": "deepseek-chat",
+                    "answer": "EXP_FOUNDER",
+                    "answered_at": "2026-07-22T15:32:41.000Z",
+                    "updated_at": "2026-07-22T15:32:40.000Z"
+                },
+                {
+                    "question_id": "019f8a74-e63d-7e83-9d7d-a383eeb2d062",
+                    "phase": "DIVERGE_1",
+                    "question_code": "DIV1_BREADTH_DEPTH",
+                    "question_text": "Dalam pengembangan karier, mana yang lebih Anda prioritaskan saat ini?",
+                    "helper_text": "Pilih satu yang paling sesuai dengan preferensi Anda.",
+                    "response_type": "SINGLE_CHOICE",
+                    "options": [
+                        {
+                            "code": "BD_BREADTH",
+                            "label": "Memperluas cakupan keahlian di berbagai bidang (breadth)"
+                        },
+                        {
+                            "code": "BD_DEPTH",
+                            "label": "Memperdalam keahlian di satu bidang spesifik (depth)"
+                        },
+                        {
+                            "code": "BD_BALANCE",
+                            "label": "Kombinasi keduanya, tergantung peluang yang ada"
+                        }
+                    ],
+                    "min_selection": null,
+                    "max_selection": null,
+                    "scale_min": null,
+                    "scale_max": null,
+                    "question_order": 6,
+                    "framework_version": "DD-V1.0",
+                    "prompt_version": "DD-QUESTION-V1.0",
+                    "model_name": "deepseek-chat",
+                    "answer": "BD_BREADTH",
+                    "answered_at": "2026-07-22T15:32:41.000Z",
+                    "updated_at": "2026-07-22T15:32:40.000Z"
+                },
+                {
+                    "question_id": "019f8a75-692d-7caa-9d0f-5ad00562773b",
+                    "phase": "CONVERGE_1",
+                    "question_code": "CONV1_Q1",
+                    "question_text": "Dari bidang karier berikut, mana yang paling sesuai dengan minat dan pengalaman Anda saat ini?",
+                    "helper_text": "Pilih satu bidang yang paling Anda prioritaskan untuk dikembangkan.",
+                    "response_type": "SINGLE_CHOICE",
+                    "options": [
+                        {
+                            "code": "ML_AI",
+                            "label": "Machine Learning & Artificial Intelligence"
+                        },
+                        {
+                            "code": "FULLSTACK_DEV",
+                            "label": "Full-Stack Software Engineering"
+                        },
+                        {
+                            "code": "PRODUCT_ENG",
+                            "label": "Product Engineering & Tech Leadership"
+                        },
+                        {
+                            "code": "AI_ENG",
+                            "label": "AI Engineering & MLOps"
+                        },
+                        {
+                            "code": "CUSTOM",
+                            "label": "Bidang lain (sebutkan)"
+                        }
+                    ],
+                    "min_selection": null,
+                    "max_selection": null,
+                    "scale_min": null,
+                    "scale_max": null,
+                    "question_order": 1,
+                    "framework_version": "DD-V1.0",
+                    "prompt_version": "DD-QUESTION-V1.0",
+                    "model_name": "deepseek-chat",
+                    "answer": "ML_AI",
+                    "answered_at": "2026-07-22T15:33:11.000Z",
+                    "updated_at": "2026-07-22T15:33:11.000Z"
+                },
+                {
+                    "question_id": "019f8a75-692d-7caa-9d0f-5ad1d595c784",
+                    "phase": "CONVERGE_1",
+                    "question_code": "CONV1_Q2",
+                    "question_text": "Dari peran berikut, mana yang paling menarik bagi Anda dalam 1-2 tahun ke depan?",
+                    "helper_text": "Pilih satu peran yang paling sesuai dengan aspirasi karier Anda.",
+                    "response_type": "SINGLE_CHOICE",
+                    "options": [
+                        {
+                            "code": "ML_ENGINEER",
+                            "label": "Machine Learning Engineer"
+                        },
+                        {
+                            "code": "FULLSTACK_DEV",
+                            "label": "Full-Stack Developer"
+                        },
+                        {
+                            "code": "AI_PM",
+                            "label": "AI Product Manager"
+                        },
+                        {
+                            "code": "TECH_LEAD",
+                            "label": "Tech Lead / Engineering Manager"
+                        },
+                        {
+                            "code": "CUSTOM",
+                            "label": "Peran lain (sebutkan)"
+                        }
+                    ],
+                    "min_selection": null,
+                    "max_selection": null,
+                    "scale_min": null,
+                    "scale_max": null,
+                    "question_order": 2,
+                    "framework_version": "DD-V1.0",
+                    "prompt_version": "DD-QUESTION-V1.0",
+                    "model_name": "deepseek-chat",
+                    "answer": "ML_ENGINEER",
+                    "answered_at": "2026-07-22T15:33:11.000Z",
+                    "updated_at": "2026-07-22T15:33:11.000Z"
+                },
+                {
+                    "question_id": "019f8a75-692d-7caa-9d0f-5ad2c45d4d4b",
+                    "phase": "CONVERGE_1",
+                    "question_code": "CONV1_Q3",
+                    "question_text": "Apakah ada bidang atau peran lain yang belum disebutkan yang ingin Anda eksplorasi lebih dalam?",
+                    "helper_text": "Jika ada, silakan tuliskan. Jika tidak, kosongkan.",
+                    "response_type": "TEXT",
+                    "options": [],
+                    "min_selection": null,
+                    "max_selection": null,
+                    "scale_min": null,
+                    "scale_max": null,
+                    "question_order": 3,
+                    "framework_version": "DD-V1.0",
+                    "prompt_version": "DD-QUESTION-V1.0",
+                    "model_name": "deepseek-chat",
+                    "answer": "-",
+                    "answered_at": "2026-07-22T15:33:11.000Z",
+                    "updated_at": "2026-07-22T15:33:11.000Z"
+                },
+                {
+                    "question_id": "019f8a75-ed0e-79e9-886f-58b73317cf19",
+                    "phase": "DIVERGE_2",
+                    "question_code": "Q1_PROBLEM_TYPE",
+                    "question_text": "Dalam proyek ML yang pernah Anda kerjakan, jenis masalah seperti apa yang paling menarik bagi Anda?",
+                    "helper_text": "Pilih satu yang paling sesuai dengan preferensi Anda.",
+                    "response_type": "SINGLE_CHOICE",
+                    "options": [
+                        {
+                            "code": "CLASSIFICATION",
+                            "label": "Klasifikasi (misal: deteksi objek, klasifikasi gambar)"
+                        },
+                        {
+                            "code": "NLP",
+                            "label": "Natural Language Processing (misal: analisis sentimen, chatbot)"
+                        },
+                        {
+                            "code": "ANOMALY",
+                            "label": "Deteksi anomali atau pola tidak biasa"
+                        },
+                        {
+                            "code": "RECOMMENDATION",
+                            "label": "Sistem rekomendasi atau personalisasi"
+                        },
+                        {
+                            "code": "GENERATIVE",
+                            "label": "Generative AI atau LLM"
+                        }
+                    ],
+                    "min_selection": null,
+                    "max_selection": null,
+                    "scale_min": null,
+                    "scale_max": null,
+                    "question_order": 1,
+                    "framework_version": "DD-V1.0",
+                    "prompt_version": "DD-QUESTION-V1.0",
+                    "model_name": "deepseek-chat",
+                    "answer": "NLP",
+                    "answered_at": "2026-07-22T15:33:44.000Z",
+                    "updated_at": "2026-07-22T15:33:43.000Z"
+                },
+                {
+                    "question_id": "019f8a75-ed0e-79e9-886f-58b88378fa8c",
+                    "phase": "DIVERGE_2",
+                    "question_code": "Q2_THINKING_STYLE",
+                    "question_text": "Dalam pendekatan pemecahan masalah, mana yang paling mencerminkan cara Anda bekerja?",
+                    "helper_text": "Pilih satu opsi.",
+                    "response_type": "SINGLE_CHOICE",
+                    "options": [
+                        {
+                            "code": "EXPERIMENT",
+                            "label": "Eksperimen dan iterasi cepat untuk menemukan solusi terbaik"
+                        },
+                        {
+                            "code": "OPTIMIZE",
+                            "label": "Mengoptimalkan solusi yang sudah ada dengan analisis mendalam"
+                        },
+                        {
+                            "code": "DESIGN",
+                            "label": "Merancang arsitektur atau pipeline dari awal"
+                        },
+                        {
+                            "code": "INTEGRATE",
+                            "label": "Mengintegrasikan berbagai komponen atau sistem yang sudah ada"
+                        }
+                    ],
+                    "min_selection": null,
+                    "max_selection": null,
+                    "scale_min": null,
+                    "scale_max": null,
+                    "question_order": 2,
+                    "framework_version": "DD-V1.0",
+                    "prompt_version": "DD-QUESTION-V1.0",
+                    "model_name": "deepseek-chat",
+                    "answer": "OPTIMIZE",
+                    "answered_at": "2026-07-22T15:33:44.000Z",
+                    "updated_at": "2026-07-22T15:33:43.000Z"
+                },
+                {
+                    "question_id": "019f8a75-ed0e-79e9-886f-58b926d2e00e",
+                    "phase": "DIVERGE_2",
+                    "question_code": "Q3_WORKFLOW_POSITION",
+                    "question_text": "Dalam alur kerja pengembangan ML (dari data hingga deployment), di posisi mana Anda paling nyaman berkontribusi?",
+                    "helper_text": "Pilih satu yang paling dominan.",
+                    "response_type": "SINGLE_CHOICE",
+                    "options": [
+                        {
+                            "code": "DATA_PREP",
+                            "label": "Pengumpulan, pembersihan, dan persiapan data"
+                        },
+                        {
+                            "code": "MODEL_DEV",
+                            "label": "Pengembangan dan pelatihan model"
+                        },
+                        {
+                            "code": "EVAL",
+                            "label": "Evaluasi dan validasi model"
+                        },
+                        {
+                            "code": "DEPLOY",
+                            "label": "Deployment, monitoring, dan MLOps"
+                        },
+                        {
+                            "code": "END2END",
+                            "label": "Keseluruhan alur dari data hingga deployment"
+                        }
+                    ],
+                    "min_selection": null,
+                    "max_selection": null,
+                    "scale_min": null,
+                    "scale_max": null,
+                    "question_order": 3,
+                    "framework_version": "DD-V1.0",
+                    "prompt_version": "DD-QUESTION-V1.0",
+                    "model_name": "deepseek-chat",
+                    "answer": "END2END",
+                    "answered_at": "2026-07-22T15:33:44.000Z",
+                    "updated_at": "2026-07-22T15:33:43.000Z"
+                },
+                {
+                    "question_id": "019f8a75-ed0e-79e9-886f-58ba42517bc9",
+                    "phase": "DIVERGE_2",
+                    "question_code": "Q4_LEARNING_STYLE",
+                    "question_text": "Bagaimana cara Anda paling efektif dalam mempelajari teknologi atau konsep baru di bidang ML/AI?",
+                    "helper_text": "Pilih satu yang paling sesuai.",
+                    "response_type": "SINGLE_CHOICE",
+                    "options": [
+                        {
+                            "code": "HANDS_ON",
+                            "label": "Langsung praktek dengan proyek nyata"
+                        },
+                        {
+                            "code": "COURSE",
+                            "label": "Mengikuti kursus terstruktur atau bootcamp"
+                        },
+                        {
+                            "code": "READING",
+                            "label": "Membaca paper, dokumentasi, atau blog teknis"
+                        },
+                        {
+                            "code": "MENTOR",
+                            "label": "Belajar dari mentor atau rekan yang lebih berpengalaman"
+                        }
+                    ],
+                    "min_selection": null,
+                    "max_selection": null,
+                    "scale_min": null,
+                    "scale_max": null,
+                    "question_order": 4,
+                    "framework_version": "DD-V1.0",
+                    "prompt_version": "DD-QUESTION-V1.0",
+                    "model_name": "deepseek-chat",
+                    "answer": "COURSE",
+                    "answered_at": "2026-07-22T15:33:44.000Z",
+                    "updated_at": "2026-07-22T15:33:43.000Z"
+                },
+                {
+                    "question_id": "019f8a75-ed0e-79e9-886f-58bb69ed7f6a",
+                    "phase": "DIVERGE_2",
+                    "question_code": "Q5_TEAM_CONTRIBUTION",
+                    "question_text": "Dalam tim ML, kontribusi seperti apa yang paling ingin Anda berikan?",
+                    "helper_text": "Pilih satu yang paling utama.",
+                    "response_type": "SINGLE_CHOICE",
+                    "options": [
+                        {
+                            "code": "ARCHITECT",
+                            "label": "Merancang arsitektur solusi dan pipeline"
+                        },
+                        {
+                            "code": "IMPLEMENT",
+                            "label": "Mengimplementasikan dan mengkodekan model"
+                        },
+                        {
+                            "code": "LEAD",
+                            "label": "Memimpin tim dan mengoordinasikan pekerjaan"
+                        },
+                        {
+                            "code": "BRIDGE",
+                            "label": "Menjembatani antara tim teknis dan non-teknis"
+                        },
+                        {
+                            "code": "RESEARCH",
+                            "label": "Melakukan riset dan eksperimen untuk inovasi"
+                        }
+                    ],
+                    "min_selection": null,
+                    "max_selection": null,
+                    "scale_min": null,
+                    "scale_max": null,
+                    "question_order": 5,
+                    "framework_version": "DD-V1.0",
+                    "prompt_version": "DD-QUESTION-V1.0",
+                    "model_name": "deepseek-chat",
+                    "answer": "IMPLEMENT",
+                    "answered_at": "2026-07-22T15:33:44.000Z",
+                    "updated_at": "2026-07-22T15:33:43.000Z"
+                },
+                {
+                    "question_id": "019f8a75-ed0e-79e9-886f-58bc2c51177f",
+                    "phase": "DIVERGE_2",
+                    "question_code": "Q6_AMBIGUITY",
+                    "question_text": "Seberapa nyaman Anda bekerja pada proyek dengan spesifikasi yang belum jelas atau sering berubah?",
+                    "helper_text": "Skala 1-5, 1 = sangat tidak nyaman, 5 = sangat nyaman.",
+                    "response_type": "SCALE",
+                    "options": [],
+                    "min_selection": null,
+                    "max_selection": null,
+                    "scale_min": 1,
+                    "scale_max": 5,
+                    "question_order": 6,
+                    "framework_version": "DD-V1.0",
+                    "prompt_version": "DD-QUESTION-V1.0",
+                    "model_name": "deepseek-chat",
+                    "answer": 3,
+                    "answered_at": "2026-07-22T15:33:44.000Z",
+                    "updated_at": "2026-07-22T15:33:43.000Z"
+                },
+                {
+                    "question_id": "019f8a76-6297-7f0d-95b2-d6946460e9b6",
+                    "phase": "CONVERGE_2",
+                    "question_code": "ROLE_TARGET",
+                    "question_text": "Dari hasil eksplorasi, peran Machine Learning Engineer paling sesuai dengan profil Anda. Apakah Anda setuju untuk menjadikan peran ini sebagai target karier utama Anda dalam 1-2 tahun ke depan?",
+                    "helper_text": null,
+                    "response_type": "SINGLE_CHOICE",
+                    "options": [
+                        {
+                            "code": "YES",
+                            "label": "Ya, saya setuju"
+                        },
+                        {
+                            "code": "NO",
+                            "label": "Tidak, saya ingin mempertimbangkan peran lain"
+                        }
+                    ],
+                    "min_selection": null,
+                    "max_selection": null,
+                    "scale_min": null,
+                    "scale_max": null,
+                    "question_order": 1,
+                    "framework_version": "DD-V1.0",
+                    "prompt_version": "DD-QUESTION-V1.0",
+                    "model_name": "deepseek-chat",
+                    "answer": "YES",
+                    "answered_at": "2026-07-22T15:34:22.000Z",
+                    "updated_at": "2026-07-22T15:34:21.000Z"
+                },
+                {
+                    "question_id": "019f8a76-6297-7f0d-95b2-d6955239a470",
+                    "phase": "CONVERGE_2",
+                    "question_code": "READINESS",
+                    "question_text": "Seberapa siap Anda secara keseluruhan untuk beralih atau berkembang ke peran Machine Learning Engineer dalam waktu dekat?",
+                    "helper_text": "Pertimbangkan kesiapan skill, pengalaman, dan mental.",
+                    "response_type": "SCALE",
+                    "options": [],
+                    "min_selection": null,
+                    "max_selection": null,
+                    "scale_min": 1,
+                    "scale_max": 5,
+                    "question_order": 2,
+                    "framework_version": "DD-V1.0",
+                    "prompt_version": "DD-QUESTION-V1.0",
+                    "model_name": "deepseek-chat",
+                    "answer": 4,
+                    "answered_at": "2026-07-22T15:34:22.000Z",
+                    "updated_at": "2026-07-22T15:34:21.000Z"
+                },
+                {
+                    "question_id": "019f8a76-6297-7f0d-95b2-d696bcdbfb38",
+                    "phase": "CONVERGE_2",
+                    "question_code": "BARRIERS",
+                    "question_text": "Apa hambatan utama yang Anda rasakan dalam mencapai peran Machine Learning Engineer?",
+                    "helper_text": "Pilih maksimal 2 hambatan yang paling signifikan.",
+                    "response_type": "MULTI_CHOICE",
+                    "options": [
+                        {
+                            "code": "SKILL_GAP",
+                            "label": "Kesenjangan skill teknis tertentu (misal: MLOps, deep learning lanjutan)"
+                        },
+                        {
+                            "code": "EXP_GAP",
+                            "label": "Kurangnya pengalaman produksi di bidang ML"
+                        },
+                        {
+                            "code": "PORTFOLIO",
+                            "label": "Portofolio proyek ML yang masih terbatas"
+                        },
+                        {
+                            "code": "NETWORK",
+                            "label": "Koneksi atau akses ke peluang kerja di bidang ML"
+                        },
+                        {
+                            "code": "TIME",
+                            "label": "Keterbatasan waktu untuk belajar atau mempersiapkan diri"
+                        }
+                    ],
+                    "min_selection": 1,
+                    "max_selection": 2,
+                    "scale_min": null,
+                    "scale_max": null,
+                    "question_order": 3,
+                    "framework_version": "DD-V1.0",
+                    "prompt_version": "DD-QUESTION-V1.0",
+                    "model_name": "deepseek-chat",
+                    "answer": [
+                        "NETWORK"
+                    ],
+                    "answered_at": "2026-07-22T15:34:22.000Z",
+                    "updated_at": "2026-07-22T15:34:21.000Z"
+                },
+                {
+                    "question_id": "019f8a76-6297-7f0d-95b2-d69766bcf4a8",
+                    "phase": "CONVERGE_2",
+                    "question_code": "STRENGTHS",
+                    "question_text": "Dari kekuatan yang teridentifikasi, mana yang paling ingin Anda andalkan untuk mendukung transisi ke peran Machine Learning Engineer?",
+                    "helper_text": "Pilih satu yang paling utama.",
+                    "response_type": "SINGLE_CHOICE",
+                    "options": [
+                        {
+                            "code": "FULLSTACK",
+                            "label": "Kemampuan full-stack end-to-end (frontend, backend, deployment)"
+                        },
+                        {
+                            "code": "ML_EXP",
+                            "label": "Pengalaman applied ML (NLP, computer vision, anomaly detection)"
+                        },
+                        {
+                            "code": "LEADERSHIP",
+                            "label": "Kepemimpinan teknis dan pengalaman memimpin tim"
+                        },
+                        {
+                            "code": "IMPACT",
+                            "label": "Orientasi pada dampak pengguna dan solusi nyata"
+                        },
+                        {
+                            "code": "LEARNING",
+                            "label": "Kemampuan belajar cepat dan eksplorasi luas"
+                        }
+                    ],
+                    "min_selection": null,
+                    "max_selection": null,
+                    "scale_min": null,
+                    "scale_max": null,
+                    "question_order": 4,
+                    "framework_version": "DD-V1.0",
+                    "prompt_version": "DD-QUESTION-V1.0",
+                    "model_name": "deepseek-chat",
+                    "answer": "ML_EXP",
+                    "answered_at": "2026-07-22T15:34:22.000Z",
+                    "updated_at": "2026-07-22T15:34:21.000Z"
+                }
+            ]
+        }
+    }
+}
