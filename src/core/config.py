@@ -55,6 +55,14 @@ class Settings:
     deepseek_timeout_seconds: float = float(
         os.getenv("DEEPSEEK_TIMEOUT_SECONDS", "120")
     )
+    internal_api_key: str = os.getenv(
+        "INTERNAL_API_KEY", "development-internal-key"
+    )
+    double_diamond_prompt_version: str = os.getenv(
+        "DOUBLE_DIAMOND_PROMPT_VERSION", "DD-QUESTION-V1.1"
+    )
+    llm_timeout_seconds: float = float(os.getenv("LLM_TIMEOUT_SECONDS", "90"))
+    llm_max_retries: int = int(os.getenv("LLM_MAX_RETRIES", "1"))
 
     # ── Langfuse Observability ──────────────────────────
     langfuse_public_key: str | None = os.getenv("LANGFUSE_PUBLIC_KEY")
