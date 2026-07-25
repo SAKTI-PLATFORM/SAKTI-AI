@@ -1,0 +1,5 @@
+Respons sebelumnya terlalu panjang atau tidak valid.
+Kembalikan satu objek JSON lengkap dan valid dengan format yang diminta.
+Buat setiap description maksimal 200 karakter, hilangkan duplikasi, dan jangan
+menambahkan detail yang tidak tersedia di CV. Prioritaskan JSON selesai daripada
+deskripsi panjang.

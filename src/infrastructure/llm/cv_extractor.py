@@ -5,6 +5,7 @@ from __future__ import annotations
 import json
 import logging
 import re
+from pathlib import Path
 
 import httpx
 
@@ -13,98 +14,18 @@ from src.domain.cvparser.schema import ParsedCVResult
 
 logger = logging.getLogger("uvicorn.error")
 
-SYSTEM_PROMPT = """Kamu adalah CVParser untuk onboarding job seeker.
+PROMPTS_DIR = Path(__file__).resolve().parent.parent / "prompts"
 
-Tugasmu hanya mengekstrak data dari CV mentah menjadi JSON yang valid.
-Jangan mengarang data. Kalau data tidak ada, isi null atau array kosong.
-Jangan menulis markdown, penjelasan, heading, atau teks di luar JSON.
 
-Aturan field:
-- confidence_score: angka 0 sampai 1 berdasarkan kelengkapan dan kejelasan CV.
-- personal_info hanya diambil dari header, bagian profil, atau kontak CV.
-- full_name adalah nama kandidat, bukan nama perusahaan atau institusi.
-- professional_headline adalah jabatan/tagline profesional singkat kandidat.
-- email dan phone_number harus persis berdasarkan kontak yang tertulis di CV.
-- domicile adalah kota/lokasi domisili kandidat, bukan lokasi perusahaan.
-- linkedin_url hanya URL atau handle LinkedIn kandidat; jangan mengarang URL.
-- profile_summary adalah ringkasan/about/profile kandidat, maksimal 600 karakter.
-- education_level hanya boleh salah satu: SMA, D3, S1, S2, S3, atau null.
-- experience_type gunakan WORK, INTERNSHIP, ORGANIZATION, VOLUNTEER, FREELANCE, atau OTHER.
-- start_date dan end_date gunakan YYYY-MM-DD jika tanggal lengkap, YYYY-01-01 jika hanya tahun, atau null.
-- skills belum menjadi fokus utama, ekstrak seperlunya saja dari CV.
-"""
+def _load_prompt(filename: str) -> str:
+    return (PROMPTS_DIR / filename).read_text(encoding="utf-8").strip()
 
-JSON_SCHEMA_GUIDE = """Return JSON dengan bentuk persis seperti ini:
-{
-  "confidence_score": 0.85,
-  "personal_info": {
-    "full_name": "Anargya Isadhi Maheswara",
-    "professional_headline": "Software Engineer & AI Enthusiast",
-    "email": "anargya@example.com",
-    "phone_number": "+62 812-3456-7890",
-    "domicile": "Bogor, Indonesia",
-    "linkedin_url": "linkedin.com/in/anargya",
-    "profile_summary": "Software engineer experienced in scalable web applications and AI-assisted products."
-  },
-  "educations": [
-    {
-      "education_level": "S1",
-      "institution": "Universitas Indonesia",
-      "major": "Computer Science",
-      "degree": "Bachelor of Computer Science",
-      "start_year": 2020,
-      "end_year": 2024,
-      "gpa": 3.8,
-      "is_current": false
-    }
-  ],
-  "experiences": [
-    {
-      "title": "Backend Developer",
-      "organization": "Acme",
-      "experience_type": "WORK",
-      "start_date": "2024-01-01",
-      "end_date": null,
-      "is_current": true,
-      "duration_months": null,
-      "description": "Built REST APIs"
-    }
-  ],
-  "projects": [
-    {
-      "project_name": "BI Hackathon Platform",
-      "description": "Built onboarding backend",
-      "tools_used": "NestJS, MySQL",
-      "start_date": null,
-      "end_date": null
-    }
-  ],
-  "certifications": [
-    {
-      "certification_name": "AWS Cloud Practitioner",
-      "issuer": "Amazon Web Services",
-      "issued_year": 2024,
-      "certificate_url": null
-    }
-  ],
-  "skills": [
-    {
-      "detected_text": "TypeScript",
-      "inferred_level": null,
-      "confidence_score": 0.7,
-      "evidence_source": "cv_text",
-      "evidence_strength": "medium"
-    }
-  ]
-}
-"""
 
-COMPACT_OUTPUT_INSTRUCTION = """Respons sebelumnya terlalu panjang atau tidak valid.
-Kembalikan satu objek JSON lengkap dan valid dengan format yang diminta.
-Buat setiap description maksimal 200 karakter, hilangkan duplikasi, dan jangan
-menambahkan detail yang tidak tersedia di CV. Prioritaskan JSON selesai daripada
-deskripsi panjang.
-"""
+BASE_SYSTEM_PROMPT = _load_prompt("cv_extraction_system.txt")
+SKILL_HOURS_PROMPT = _load_prompt("cv_skill_hours.txt")
+SYSTEM_PROMPT = f"{BASE_SYSTEM_PROMPT}\n\n{SKILL_HOURS_PROMPT}"
+JSON_SCHEMA_GUIDE = _load_prompt("cv_extraction_json_schema.txt")
+COMPACT_OUTPUT_INSTRUCTION = _load_prompt("cv_extraction_compact_retry.txt")
 
 
 def is_deepseek_configured() -> bool:

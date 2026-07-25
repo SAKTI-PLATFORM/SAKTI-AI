@@ -13,6 +13,7 @@ from src.core.exceptions import UnprocessableException
 from src.core.http import HTTPDataResponse
 from src.domain.cvparser.cvparser import CVParser
 from src.domain.cvparser.pdf_extractor import MAX_CV_FILE_SIZE, extract_pdf_text
+from src.domain.cvparser.schema import ParsedSkill
 
 parse_cv_router = APIRouter(prefix="/ml/cv", tags=["cvparser"])
 cv_parser = CVParser()
@@ -31,7 +32,7 @@ class ParseCVResult(BaseModel):
     experiences: list[dict[str, Any]]
     projects: list[dict[str, Any]]
     certifications: list[dict[str, Any]]
-    skills: list[dict[str, Any]]
+    skills: list[ParsedSkill]
 
 
 @parse_cv_router.post("/parse", response_model=HTTPDataResponse[ParseCVResult])

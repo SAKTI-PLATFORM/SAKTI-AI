@@ -12,7 +12,7 @@ import logging
 from dataclasses import dataclass
 from typing import Any
 
-from src.infrastructure.llm.deepseek import (
+from src.infrastructure.llm.cv_extractor import (
     extract_cv_with_deepseek,
     is_deepseek_configured,
 )
@@ -315,8 +315,9 @@ class CVParser:
         return [
             {
                 "detected_text": skill,
-                "inferred_level": None,
                 "confidence_score": 0.6,
+                "learning_hours": None,
+                "working_hours": None,
                 "evidence_source": "cv_text",
                 "evidence_strength": "medium",
             }

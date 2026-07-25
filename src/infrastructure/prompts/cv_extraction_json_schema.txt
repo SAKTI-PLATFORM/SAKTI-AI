@@ -1,0 +1,64 @@
+Return JSON dengan bentuk persis seperti ini:
+{
+  "confidence_score": 0.85,
+  "personal_info": {
+    "full_name": "Anargya Isadhi Maheswara",
+    "professional_headline": "Software Engineer & AI Enthusiast",
+    "email": "anargya@example.com",
+    "phone_number": "+62 812-3456-7890",
+    "domicile": "Bogor, Indonesia",
+    "linkedin_url": "linkedin.com/in/anargya",
+    "profile_summary": "Software engineer experienced in scalable web applications and AI-assisted products."
+  },
+  "educations": [
+    {
+      "education_level": "S1",
+      "institution": "Universitas Indonesia",
+      "major": "Computer Science",
+      "degree": "Bachelor of Computer Science",
+      "start_year": 2020,
+      "end_year": 2024,
+      "gpa": 3.8,
+      "is_current": false
+    }
+  ],
+  "experiences": [
+    {
+      "title": "Backend Developer",
+      "organization": "Acme",
+      "experience_type": "WORK",
+      "start_date": "2024-01-01",
+      "end_date": null,
+      "is_current": true,
+      "duration_months": null,
+      "description": "Built REST APIs"
+    }
+  ],
+  "projects": [
+    {
+      "project_name": "BI Hackathon Platform",
+      "description": "Built onboarding backend",
+      "tools_used": "NestJS, MySQL",
+      "start_date": null,
+      "end_date": null
+    }
+  ],
+  "certifications": [
+    {
+      "certification_name": "AWS Cloud Practitioner",
+      "issuer": "Amazon Web Services",
+      "issued_year": 2024,
+      "certificate_url": null
+    }
+  ],
+  "skills": [
+    {
+      "detected_text": "TypeScript",
+      "confidence_score": 0.7,
+      "learning_hours": 120,
+      "working_hours": 960,
+      "evidence_source": "cv_text",
+      "evidence_strength": "medium"
+    }
+  ]
+}

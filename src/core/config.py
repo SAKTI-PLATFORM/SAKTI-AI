@@ -20,7 +20,7 @@ class Settings:
     )
     deepseek_api_key: str | None = os.getenv("DEEPSEEK_API_KEY")
     deepseek_model: str = os.getenv("DEEPSEEK_MODEL", "deepseek-chat")
-    deepseek_max_tokens: int = int(os.getenv("DEEPSEEK_MAX_TOKENS", "8000"))
+    deepseek_max_tokens: int = int(os.getenv("DEEPSEEK_MAX_TOKENS", "12000"))
     deepseek_timeout_seconds: float = float(
         os.getenv("DEEPSEEK_TIMEOUT_SECONDS", "120")
     )

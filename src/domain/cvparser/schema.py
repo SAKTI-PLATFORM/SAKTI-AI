@@ -58,8 +58,9 @@ class ParsedCertification(BaseModel):
 
 class ParsedSkill(BaseModel):
     detected_text: str
-    inferred_level: str | None = None
     confidence_score: float | None = Field(default=None, ge=0, le=1)
+    learning_hours: float | None = Field(default=None, ge=0)
+    working_hours: float | None = Field(default=None, ge=0)
     evidence_source: str | None = None
     evidence_strength: str | None = None
 

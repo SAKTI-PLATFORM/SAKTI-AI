@@ -3,7 +3,7 @@ from types import SimpleNamespace
 from unittest import IsolatedAsyncioTestCase
 from unittest.mock import AsyncMock, MagicMock, patch
 
-from src.infrastructure.llm import deepseek
+from src.infrastructure.llm import cv_extractor
 
 
 class DeepSeekClientTest(IsolatedAsyncioTestCase):
@@ -19,7 +19,13 @@ class DeepSeekClientTest(IsolatedAsyncioTestCase):
                                 "experiences": [],
                                 "projects": [],
                                 "certifications": [],
-                                "skills": [],
+                                "skills": [
+                                    {
+                                        "detected_text": "TypeScript",
+                                        "learning_hours": 120,
+                                        "working_hours": 960,
+                                    }
+                                ],
                             }
                         )
                     }
@@ -45,10 +51,14 @@ class DeepSeekClientTest(IsolatedAsyncioTestCase):
         )
 
         with (
-            patch.object(deepseek, "settings", configured_settings),
-            patch.object(deepseek.httpx, "AsyncClient", return_value=client_context),
+            patch.object(cv_extractor, "settings", configured_settings),
+            patch.object(
+                cv_extractor.httpx,
+                "AsyncClient",
+                return_value=client_context,
+            ),
         ):
-            result = await deepseek.extract_cv_with_deepseek("Sample CV")
+            result = await cv_extractor.extract_cv_with_deepseek("Sample CV")
 
         response.raise_for_status.assert_called_once_with()
         client.post.assert_awaited_once()
@@ -61,8 +71,12 @@ class DeepSeekClientTest(IsolatedAsyncioTestCase):
         self.assertEqual(request["json"]["response_format"], {"type": "json_object"})
         self.assertFalse(request["json"]["stream"])
         self.assertIn("personal_info", request["json"]["messages"][1]["content"])
-        self.assertIn("professional_headline", deepseek.SYSTEM_PROMPT)
+        self.assertIn("professional_headline", cv_extractor.SYSTEM_PROMPT)
+        self.assertIn("learning_hours", cv_extractor.SYSTEM_PROMPT)
+        self.assertIn("working_hours", cv_extractor.SYSTEM_PROMPT)
         self.assertEqual(result.confidence_score, 0.9)
+        self.assertEqual(result.skills[0].learning_hours, 120)
+        self.assertEqual(result.skills[0].working_hours, 960)
 
     async def test_retries_with_compact_output_when_response_is_truncated(self) -> None:
         truncated_response = MagicMock(status_code=200, is_error=False)
@@ -110,10 +124,14 @@ class DeepSeekClientTest(IsolatedAsyncioTestCase):
         )
 
         with (
-            patch.object(deepseek, "settings", configured_settings),
-            patch.object(deepseek.httpx, "AsyncClient", return_value=client_context),
+            patch.object(cv_extractor, "settings", configured_settings),
+            patch.object(
+                cv_extractor.httpx,
+                "AsyncClient",
+                return_value=client_context,
+            ),
         ):
-            result = await deepseek.extract_cv_with_deepseek("Sample CV")
+            result = await cv_extractor.extract_cv_with_deepseek("Sample CV")
 
         self.assertEqual(client.post.await_count, 2)
         retry_request = client.post.await_args_list[1].kwargs["json"]
@@ -124,6 +142,6 @@ class DeepSeekClientTest(IsolatedAsyncioTestCase):
     async def test_requires_deepseek_api_key(self) -> None:
         unconfigured_settings = SimpleNamespace(deepseek_api_key=None)
 
-        with patch.object(deepseek, "settings", unconfigured_settings):
+        with patch.object(cv_extractor, "settings", unconfigured_settings):
             with self.assertRaisesRegex(RuntimeError, "DEEPSEEK_API_KEY"):
-                await deepseek.extract_cv_with_deepseek("Sample CV")
+                await cv_extractor.extract_cv_with_deepseek("Sample CV")
