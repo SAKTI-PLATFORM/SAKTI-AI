@@ -19,4 +19,4 @@ OUTPUT FIELD UNTUK SETIAP RESOURCE:
 - url: Link valid menuju sumber belajar.
 
 FORMAT:
-Output HARUS berupa JSON valid yang sesuai dengan skema yang diminta (CourseSearchResult atau CertSearchResult). Gunakan Bahasa Indonesia pada judul atau deskripsi jika memang materi tersebut berbahasa Indonesia, sisanya sesuaikan dengan bahasa asli kursusnya.
+Output HARUS berupa JSON object dengan satu root key bernama "resources" yang berisi array dari sumber belajar tersebut (sesuai dengan skema CourseSearchResult atau CertSearchResult). Gunakan Bahasa Indonesia pada judul atau deskripsi jika memang materi tersebut berbahasa Indonesia, sisanya sesuaikan dengan bahasa asli kursusnya.

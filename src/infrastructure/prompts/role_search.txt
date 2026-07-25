@@ -20,4 +20,8 @@ Untuk setiap peran karir, berikan detail berikut dengan akurat:
 9. min_experience_months: Estimasi minimum pengalaman relevan (dalam bulan) yang biasanya dibutuhkan perusahaan.
 
 FORMAT:
-Output HARUS berupa JSON valid yang sesuai dengan skema RoleSearchResult. Gunakan Bahasa Indonesia yang profesional, memotivasi, dan mudah dipahami.
+Output HARUS berupa JSON object dengan dua root key:
+1. "roles": array dari kandidat peran karir tersebut (sesuai panduan di atas).
+2. "active_job_postings": array berisi 3-5 lowongan pekerjaan riil yang relevan dari data "Brave Search" (jika tersedia). Setiap lowongan berisi title, company, location, dan url. Pastikan URL asli dari hasil pencarian disertakan agar pengguna bisa langsung melamar.
+
+Gunakan Bahasa Indonesia yang profesional, memotivasi, dan mudah dipahami.

@@ -86,22 +86,38 @@ class MarketDemand(BaseModel):
 class GapReason(BaseModel):
     """LLM-generated reason for a specific skill gap."""
 
-    gap_id: str
-    reason: str
+    gap_id: str | None = Field(default=None, description="The exact gap_id from the input Skill Gaps")
+    skill_name: str | None = Field(default=None, description="The skill name")
+    reason: str | None = None
+    gap_reason: str | None = None
+
+    @property
+    def get_reason(self) -> str:
+        return self.reason or self.gap_reason or ""
 
 
 class MatchExplanation(BaseModel):
     """LLM-generated explanation for a career match."""
 
-    match_id: str
+    match_id: str | None = None
     match_reason: str
     gap_reasons: list[GapReason] = Field(default_factory=list)
+
+
+class JobPosting(BaseModel):
+    """Real job posting extracted from web search."""
+
+    title: str
+    company: str
+    location: str
+    url: str
 
 
 class RoleSearchResult(BaseModel):
     """LLM-generated list of candidate roles."""
 
     roles: list[RoleReference]
+    active_job_postings: list[JobPosting] = Field(default_factory=list)
 
 
 class MarketDemandResult(BaseModel):

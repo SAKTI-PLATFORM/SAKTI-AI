@@ -42,17 +42,8 @@ def get_langfuse_handler(
         return None
 
     try:
-        from langfuse.callback import CallbackHandler as LangfuseCallbackHandler
-
-        handler = LangfuseCallbackHandler(
-            public_key=settings.langfuse_public_key,
-            secret_key=settings.langfuse_secret_key,
-            host=settings.langfuse_host,
-            session_id=session_id,
-            user_id=user_id,
-            trace_name=trace_name or f"{module}_run",
-            tags=[f"module:{module}"],
-        )
+        from langfuse.langchain import CallbackHandler as LangfuseCallbackHandler
+        handler = LangfuseCallbackHandler()
         logger.info(
             "[Langfuse] Handler created: module=%s session=%s",
             module,

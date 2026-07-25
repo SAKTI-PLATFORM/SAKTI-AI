@@ -92,5 +92,17 @@ class Settings:
         os.getenv("MIN_RESOURCES_PER_GAP", "3")
     )
 
+    # ── Brave Search (LLM Context API) ──────────────────
+    brave_api_key: str | None = os.getenv("BRAVE_API_KEY")
+    # Default token budget per tool call — keeps agent latency low.
+    brave_max_tokens: int = int(os.getenv("BRAVE_MAX_TOKENS", "4096"))
+    # How many URLs Brave returns per search call.
+    brave_max_urls: int = int(os.getenv("BRAVE_MAX_URLS", "5"))
+
+    @property
+    def brave_search_enabled(self) -> bool:
+        """True when a Brave API key is configured."""
+        return bool(self.brave_api_key)
+
 
 settings = Settings()

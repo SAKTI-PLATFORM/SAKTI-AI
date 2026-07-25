@@ -15,4 +15,4 @@ Untuk setiap skill gap yang terdeteksi, berikan `reason` dengan pedoman:
 4. Jika relevan, sentuh sedikit aspek tren permintaan pasar terhadap skill tersebut.
 
 FORMAT:
-Output HARUS berupa JSON valid yang sesuai dengan skema MatchExplanation. Jangan gunakan format markdown di luar struktur JSON.
+Output HARUS berupa JSON object yang memiliki key "match_id", "match_reason", dan "gap_reasons" (berupa array dari objek GapReason). Jangan gunakan format markdown di luar struktur JSON.

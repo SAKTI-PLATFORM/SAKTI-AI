@@ -47,6 +47,7 @@ class UserPreferences(BaseModel):
     selected_field: str | None = None
     selected_role: str | None = None
     learning_style: str | None = None
+    subscription_tier: Literal["Lite", "Pro"] = "Lite"
 
 
 # ── Double Diamond output ──────────────────────────────

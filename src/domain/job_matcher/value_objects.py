@@ -11,6 +11,8 @@ from src.domain.job_matcher.schemas import (
     CareerMatchResult,
     ScoreDetail,
     SkillGapResult,
+    RoleReference,
+    JobPosting,
 )
 from src.domain.shared.user_profile import UserPreferences, UserProfileInput
 
@@ -28,6 +30,7 @@ class JobMatcherState(TypedDict):
 
     # ── Accumulated by nodes ────────────────────────────
     candidate_roles: Annotated[list, operator.add]
+    active_job_postings: Annotated[list, operator.add]
     similarity_results: Annotated[list, operator.add]
     score_details: Annotated[list, operator.add]
     career_matches: Annotated[list, operator.add]
@@ -45,3 +48,5 @@ class JobMatcherOutput(BaseModel):
     career_match_results: list[CareerMatchResult]
     career_match_score_details: list[ScoreDetail]
     skill_gap_results: list[SkillGapResult]
+    candidate_roles: list[RoleReference] = []
+    active_job_postings: list[JobPosting] = []

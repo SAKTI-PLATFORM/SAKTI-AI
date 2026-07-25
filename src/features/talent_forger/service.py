@@ -8,6 +8,7 @@ from typing import Any
 from langchain_core.runnables import RunnableConfig
 
 from src.domain.talent_forger.schemas import (
+    LearningMaterial,
     LearningPath,
     LearningPathStep,
     LearningResource,
@@ -78,6 +79,7 @@ class TalentForgerService:
             "role_references": [],
             "course_candidates": [],
             "cert_candidates": [],
+            "free_material_candidates": [],
             "learning_paths": [],
             "learning_path_steps": [],
             "resource_recommendations": [],
@@ -87,27 +89,49 @@ class TalentForgerService:
 
         config: RunnableConfig = {
             "callbacks": callbacks,
+            "run_name": "TalentForger",
+            "metadata": {
+                "langfuse_session_id": profile.onboarding_session_id,
+                "langfuse_user_id": profile.user_id,
+                "langfuse_tags": ["TalentForger"],
+                "langfuse_trace_name": "TalentForger_run"
+            },
             "configurable": {"thread_id": f"{profile.onboarding_session_id}_{match_id}"},
         }
 
+        from langchain_community.callbacks.manager import get_openai_callback
+
         # Run with streaming for progress updates
         final_state = None
-        async for chunk in compiled.astream(
-            initial_state,
-            config=config,
-            stream_mode=["updates", "custom"],
-        ):
-            if isinstance(chunk, tuple):
-                mode, data = chunk
-                if mode == "custom":
-                    logger.info("[TalentForger] Progress: %s", data)
-                elif mode == "updates":
-                    final_state = data
-            else:
-                final_state = chunk
+        with get_openai_callback() as cb:
+            async for chunk in compiled.astream(
+                initial_state,
+                config=config,
+                stream_mode=("values", "custom"),
+            ):
+                if isinstance(chunk, tuple):
+                    mode, data = chunk
+                    if mode == "custom":
+                        logger.info("[TalentForger] Progress: %s", data)
+                    elif mode == "values":
+                        final_state = data
+                else:
+                    final_state = chunk
 
-        if final_state is None:
-            final_state = await compiled.ainvoke(initial_state, config=config)
+            if final_state is None:
+                # Fallback: invoke without streaming
+                final_state = await compiled.ainvoke(initial_state, config=config)
+
+        # DeepSeek V4 Flash pricing estimate (assuming cache miss for simplicity)
+        deepseek_cost = (cb.prompt_tokens * 0.14 / 1_000_000) + (cb.completion_tokens * 0.28 / 1_000_000)
+        
+        logger.info(
+            "[TalentForger] Token Usage: Total=%d (Prompt=%d, Completion=%d) Cost=$%.6f (DeepSeek V4 Flash est.)",
+            cb.total_tokens,
+            cb.prompt_tokens,
+            cb.completion_tokens,
+            deepseek_cost,
+        )
 
         # 4. Extract and validate output
         learning_paths = [
@@ -125,6 +149,10 @@ class TalentForgerService:
                 + final_state.get("cert_candidates", [])
             )
         ]
+        free_materials = [
+            LearningMaterial(**m) if isinstance(m, dict) else m
+            for m in final_state.get("free_material_candidates", [])
+        ]
         recommendations = [
             ResourceRecommendation(**r) if isinstance(r, dict) else r
             for r in final_state.get("resource_recommendations", [])
@@ -134,14 +162,16 @@ class TalentForgerService:
             learning_paths=learning_paths,
             learning_path_steps=learning_path_steps,
             learning_resources=all_resources,
+            free_materials=free_materials,
             resource_recommendations=recommendations,
         )
 
         logger.info(
-            "[TalentForger] Complete: paths=%d steps=%d resources=%d recommendations=%d",
+            "[TalentForger] Complete: paths=%d steps=%d resources=%d free=%d recommendations=%d",
             len(output.learning_paths),
             len(output.learning_path_steps),
             len(output.learning_resources),
+            len(output.free_materials),
             len(output.resource_recommendations),
         )
 

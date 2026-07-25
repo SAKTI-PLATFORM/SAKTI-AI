@@ -35,3 +35,7 @@ htmlcov/
 *.log
 .DS_Store
 .agents/
+.claude/
+
+.agents/
+.claude/

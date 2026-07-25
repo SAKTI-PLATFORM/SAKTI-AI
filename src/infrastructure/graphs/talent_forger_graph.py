@@ -1,7 +1,9 @@
 """TalentForger LangGraph — learning path generation pipeline.
 
 Graph flow:
-    START → get_job_references → get_course_references → get_cert_references
+    START → get_job_references → get_course_references
+                               → get_material_references  (parallel)
+                               → get_cert_references
           → build_learning_path → explain_recommendations → END
 """
 
@@ -9,6 +11,7 @@ from __future__ import annotations
 
 import logging
 import uuid
+from typing import cast
 from datetime import datetime
 from pathlib import Path
 
@@ -27,7 +30,11 @@ from src.domain.talent_forger.schemas import (
 )
 from src.domain.talent_forger.value_objects import TalentForgerState
 from src.infrastructure.llm.deepseek_client import get_deepseek_llm
-from src.infrastructure.tools.search import search_certifications, search_courses
+from src.infrastructure.tools.search import (
+    search_certifications,
+    search_courses,
+    search_learning_materials,
+)
 
 logger = logging.getLogger("uvicorn.error")
 
@@ -51,8 +58,25 @@ async def get_job_references(state: TalentForgerState) -> dict:
     role_refs = []
     seen_matches = set()
 
-    for gap_dict in state.get("skill_gaps", []):
-        match_id = gap_dict.get("match_id", "")
+    # Limit skill gaps for Lite users (e.g. only process top 3 high priority gaps)
+    skill_gaps = state.get("skill_gaps", [])
+    preferences = state.get("preferences")
+    if isinstance(preferences, dict):
+        is_lite = preferences.get("subscription_tier", "Pro") == "Lite"
+    else:
+        is_lite = getattr(preferences, "subscription_tier", "Pro") == "Lite" if preferences else False
+
+    if is_lite:
+        # Sort gaps by priority (High > Medium > Low) and limit to top 3
+        priority_map = {"High": 0, "Medium": 1, "Low": 2}
+        skill_gaps = sorted(
+            skill_gaps, 
+            key=lambda g: priority_map.get(g.get("priority", "Low") if isinstance(g, dict) else getattr(g, "priority", "Low"), 3)
+        )[:3]
+        logger.info("[TalentForger] Lite mode: limited skill gaps to %d", len(skill_gaps))
+
+    for gap_dict in skill_gaps:
+        match_id = gap_dict.get("match_id", "") if isinstance(gap_dict, dict) else getattr(gap_dict, "match_id", "")
         if match_id not in seen_matches:
             seen_matches.add(match_id)
             role_refs.append({
@@ -65,6 +89,7 @@ async def get_job_references(state: TalentForgerState) -> dict:
 
     return {
         "role_references": role_refs,
+        "skill_gaps": skill_gaps,
         "progress_step": 1,
     }
 
@@ -94,7 +119,6 @@ async def get_course_references(state: TalentForgerState) -> dict:
 
     return {
         "course_candidates": courses,
-        "progress_step": 2,
     }
 
 
@@ -128,7 +152,44 @@ async def get_cert_references(state: TalentForgerState) -> dict:
 
     return {
         "cert_candidates": certs,
-        "progress_step": 3,
+    }
+
+
+async def get_material_references(state: TalentForgerState) -> dict:
+    """Search for free learning materials (articles, videos, docs, GitHub).
+
+    Runs in parallel with get_cert_references in the pipeline.
+    Focuses on free, high-quality content including Indonesian resources.
+    """
+    writer = get_stream_writer()
+    writer({"step": 4, "total": 6, "title": "Mencari materi belajar gratis..."})
+
+    materials = []
+    seen_skills: set[str] = set()
+
+    for gap_dict in state.get("skill_gaps", []):
+        gap = SkillGapResult(**gap_dict) if isinstance(gap_dict, dict) else gap_dict
+
+        if gap.skill_name.lower() in seen_skills:
+            continue
+        seen_skills.add(gap.skill_name.lower())
+
+        try:
+            gap_materials = await search_learning_materials(
+                skill_name=gap.skill_name,
+                current_level=gap.current_level,
+                min_results=3,
+                prefer_indonesian=True,
+            )
+            materials.extend([m.model_dump() for m in gap_materials])
+        except Exception:
+            logger.exception(
+                "[TalentForger] Material search failed for skill=%s",
+                gap.skill_name,
+            )
+
+    return {
+        "free_material_candidates": materials,
     }
 
 
@@ -141,11 +202,34 @@ async def build_learning_path(state: TalentForgerState) -> dict:
 
     match_id = state.get("match_id", "UNKNOWN")
     skill_gaps = state.get("skill_gaps", [])
-    all_resources = state.get("course_candidates", []) + state.get("cert_candidates", [])
+    # Include all resource types: paid courses, certs, and free materials
+    all_resources = (
+        state.get("course_candidates", [])
+        + state.get("cert_candidates", [])
+        + state.get("free_material_candidates", [])
+    )
 
     # Build the learning path via LLM
     llm = get_deepseek_llm()
-    structured_llm = llm.with_structured_output(LearningPathPlan)
+    structured_llm = llm.with_structured_output(LearningPathPlan, method="json_mode")
+
+    preferences = state.get("preferences")
+    if isinstance(preferences, dict):
+        is_lite = preferences.get("subscription_tier", "Pro") == "Lite"
+    else:
+        is_lite = getattr(preferences, "subscription_tier", "Pro") == "Lite" if preferences else False
+    
+    rules = (
+        "1. Order steps by gap priority (High → Medium → Low)\n"
+        "2. Group related skills in the same week when possible\n"
+        "3. Assign realistic week numbers (1-12)\n"
+        "4. Each step should reference a specific skill gap\n"
+        "5. Create resource recommendations linking steps to available resources\n"
+        "6. Use IDs that follow the pattern: LP-xxx, STEP-xxx, REC-xxx\n\n"
+    )
+    
+    if is_lite:
+        rules += "7. LITE VERSION RESTRICTION: Keep the learning path short (maximum 3 weeks/steps). For a full roadmap, the user must upgrade to Pro.\n\n"
 
     prompt = ChatPromptTemplate.from_messages([
         (
@@ -155,13 +239,14 @@ async def build_learning_path(state: TalentForgerState) -> dict:
             "skill gaps in priority order. Each step should have a clear "
             "objective and be linked to specific resources.\n\n"
             "Rules:\n"
-            "1. Order steps by gap priority (High → Medium → Low)\n"
-            "2. Group related skills in the same week when possible\n"
-            "3. Assign realistic week numbers (1-12)\n"
-            "4. Each step should reference a specific skill gap\n"
-            "5. Create resource recommendations linking steps to available resources\n"
-            "6. Use IDs that follow the pattern: LP-xxx, STEP-xxx, REC-xxx\n\n"
-            "Output must match the LearningPathPlan schema.",
+            f"{rules}"
+            "Output must be a JSON object containing exact keys: 'learning_path', 'steps' (array), and 'recommendations' (array).\n\n"
+            "Format your output EXACTLY like this JSON structure:\n"
+            "{{\n"
+            '  "learning_path": {{"target_role": "...", "learning_path_type": "structured", "estimated_duration_weeks": 4}},\n'
+            '  "steps": [{{"step_id": "STEP-001", "step_order": 1, "week": 1, "topic": "...", "objective": "...", "gap_id": "...", "related_skill_name": "..."}}],\n'
+            '  "recommendations": [{{"recommendation_id": "REC-001", "step_id": "STEP-001", "resource_id": "RES-001", "recommendation_reason": "...", "priority_order": 1}}]\n'
+            "}}",
         ),
         (
             "human",
@@ -174,16 +259,22 @@ async def build_learning_path(state: TalentForgerState) -> dict:
 
     try:
         chain = prompt | structured_llm
-        plan: LearningPathPlan = await chain.ainvoke({
+        result = await chain.ainvoke({
             "match_id": match_id,
             "gaps_json": json.dumps(skill_gaps, default=str),
             "resources_json": json.dumps(all_resources[:30], default=str),
         })
+        plan = cast(LearningPathPlan, result)
 
-        # Ensure IDs are set
-        if not plan.learning_path.learning_path_id:
-            plan.learning_path.learning_path_id = f"LP-{uuid.uuid4().hex[:8].upper()}"
+        lp_id = plan.learning_path.learning_path_id
+        if not lp_id:
+            lp_id = f"LP-{uuid.uuid4().hex[:8].upper()}"
+            plan.learning_path.learning_path_id = lp_id
         plan.learning_path.match_id = match_id
+
+        # Make sure steps link back to learning path
+        for step in plan.steps:
+            step.learning_path_id = lp_id
 
         return {
             "learning_paths": [plan.learning_path.model_dump()],
@@ -268,7 +359,11 @@ async def explain_recommendations(state: TalentForgerState) -> dict:
     llm = get_deepseek_llm()
 
     # Batch-enrich recommendations with personalized reasons
-    all_resources = state.get("course_candidates", []) + state.get("cert_candidates", [])
+    all_resources = (
+        state.get("course_candidates", [])
+        + state.get("cert_candidates", [])
+        + state.get("free_material_candidates", [])
+    )
     resource_map = {r.get("resource_id", ""): r for r in all_resources}
 
     for rec in recommendations:
@@ -290,20 +385,26 @@ async def explain_recommendations(state: TalentForgerState) -> dict:
 
 def build_talent_forger_graph() -> StateGraph:
     """Build and return the compiled TalentForger LangGraph."""
-    graph = StateGraph(TalentForgerState)
+    graph = StateGraph(TalentForgerState)  # type: ignore
 
     # Add nodes
     graph.add_node("get_job_references", get_job_references)
     graph.add_node("get_course_references", get_course_references)
     graph.add_node("get_cert_references", get_cert_references)
+    graph.add_node("get_material_references", get_material_references)
     graph.add_node("build_learning_path", build_learning_path)
     graph.add_node("explain_recommendations", explain_recommendations)
 
     # Wire edges
+    # get_job_references fans out to 3 parallel nodes
     graph.add_edge(START, "get_job_references")
     graph.add_edge("get_job_references", "get_course_references")
-    graph.add_edge("get_course_references", "get_cert_references")
+    graph.add_edge("get_job_references", "get_cert_references")
+    graph.add_edge("get_job_references", "get_material_references")
+    # All 3 parallel nodes fan back in to build_learning_path
+    graph.add_edge("get_course_references", "build_learning_path")
     graph.add_edge("get_cert_references", "build_learning_path")
+    graph.add_edge("get_material_references", "build_learning_path")
     graph.add_edge("build_learning_path", "explain_recommendations")
     graph.add_edge("explain_recommendations", END)
 

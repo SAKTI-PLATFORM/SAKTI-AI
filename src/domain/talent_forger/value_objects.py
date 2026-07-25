@@ -10,6 +10,7 @@ from typing_extensions import TypedDict
 
 from src.domain.shared.user_profile import UserPreferences, UserProfileInput
 from src.domain.talent_forger.schemas import (
+    LearningMaterial,
     LearningPath,
     LearningPathStep,
     LearningResource,
@@ -34,6 +35,7 @@ class TalentForgerState(TypedDict):
     role_references: Annotated[list, operator.add]
     course_candidates: Annotated[list, operator.add]
     cert_candidates: Annotated[list, operator.add]
+    free_material_candidates: Annotated[list, operator.add]
     learning_paths: Annotated[list, operator.add]
     learning_path_steps: Annotated[list, operator.add]
     resource_recommendations: Annotated[list, operator.add]
@@ -49,4 +51,5 @@ class TalentForgerOutput(BaseModel):
     learning_paths: list[LearningPath]
     learning_path_steps: list[LearningPathStep]
     learning_resources: list[LearningResource]
+    free_materials: list[LearningMaterial]
     resource_recommendations: list[ResourceRecommendation]

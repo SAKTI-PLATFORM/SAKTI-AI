@@ -14,4 +14,4 @@ OUTPUT FIELD UNTUK SETIAP KEAHLIAN:
 - trending: Setel nilai boolean `true` jika keahlian ini sedang mengalami lonjakan pencarian atau popularitas yang signifikan dalam 6-12 bulan terakhir, jika tidak setel `false`.
 
 FORMAT:
-Output HARUS berupa JSON valid yang sesuai dengan skema MarketDemandResult. Lakukan analisis dengan cepat, obyektif, dan presisi.
+Output HARUS berupa JSON object dengan satu root key bernama "demands" yang berisi array dari analisis permintaan (sesuai dengan skema MarketDemandResult). Lakukan analisis dengan cepat, obyektif, dan presisi.

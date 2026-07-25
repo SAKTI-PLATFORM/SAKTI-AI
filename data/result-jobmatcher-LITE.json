@@ -1,0 +1,781 @@
+{
+  "career_match_results": [
+    {
+      "match_id": "MATCH-954D0036",
+      "user_id": "019f8a61-632f-7acf-85ae-b639375970f5",
+      "role_id": "ROLE-002",
+      "role_name": "Full-Stack Developer",
+      "total_match_score": 73.76,
+      "match_reason": "Profil Anda sangat kuat untuk peran Full-Stack Developer, terutama dengan penguasaan TypeScript, React, Next.js, dan Node.js pada tingkat mahir (confidence tinggi). Kombinasi keterampilan frontend dan backend modern ini sangat relevan dengan tuntutan peran tersebut. Selain itu, kecocokan psikometri RIASEC yang sempurna menunjukkan keselarasan minat dan kepribadian dengan pekerjaan ini.",
+      "created_at": "2026-07-25T06:57:32.420528Z"
+    },
+    {
+      "match_id": "MATCH-954D0036",
+      "user_id": "019f8a61-632f-7acf-85ae-b639375970f5",
+      "role_id": "ROLE-002",
+      "role_name": "Full-Stack Developer",
+      "total_match_score": 73.76,
+      "match_reason": "Profil Anda sangat kuat untuk peran Full-Stack Developer, terutama dengan penguasaan TypeScript, React, Next.js, dan Node.js pada tingkat mahir (confidence tinggi). Kombinasi keterampilan frontend dan backend modern ini sangat relevan dengan tuntutan peran tersebut. Selain itu, kecocokan psikometri RIASEC yang sempurna menunjukkan keselarasan minat dan kepribadian dengan pekerjaan ini.",
+      "created_at": "2026-07-25T06:57:32.420528Z"
+    },
+    {
+      "match_id": "MATCH-E9405A77",
+      "user_id": "019f8a61-632f-7acf-85ae-b639375970f5",
+      "role_id": "ROLE-001",
+      "role_name": "Machine Learning Engineer",
+      "total_match_score": 65.31,
+      "match_reason": "Profil Anda menunjukkan kekuatan signifikan pada Python dan TypeScript dengan tingkat keyakinan tinggi, yang relevan untuk pengembangan machine learning. Meskipun belum memiliki pengalaman langsung di ML, skor RIASEC 100% dan latar belakang full-stack (Next.js, Node.js, Laravel) menunjukkan potensi adaptasi yang baik. Namun, untuk sukses sebagai Machine Learning Engineer, Anda perlu memperkuat fondasi di tools spesifik ML dan deployment.",
+      "created_at": "2026-07-25T06:57:32.420528Z"
+    },
+    {
+      "match_id": "MATCH-E9405A77",
+      "user_id": "019f8a61-632f-7acf-85ae-b639375970f5",
+      "role_id": "ROLE-001",
+      "role_name": "Machine Learning Engineer",
+      "total_match_score": 65.31,
+      "match_reason": "Profil Anda menunjukkan kekuatan signifikan pada Python dan TypeScript dengan tingkat keyakinan tinggi, yang relevan untuk pengembangan machine learning. Meskipun belum memiliki pengalaman langsung di ML, skor RIASEC 100% dan latar belakang full-stack (Next.js, Node.js, Laravel) menunjukkan potensi adaptasi yang baik. Namun, untuk sukses sebagai Machine Learning Engineer, Anda perlu memperkuat fondasi di tools spesifik ML dan deployment.",
+      "created_at": "2026-07-25T06:57:32.420528Z"
+    },
+    {
+      "match_id": "MATCH-F04496C9",
+      "user_id": "019f8a61-632f-7acf-85ae-b639375970f5",
+      "role_id": "ROLE-004",
+      "role_name": "Tech Lead / Engineering Manager",
+      "total_match_score": 54.29,
+      "match_reason": "Profil Anda menunjukkan fondasi teknis yang sangat kuat, terutama pada pengembangan full-stack modern seperti TypeScript, React.js, dan Node.js dengan tingkat keyakinan tinggi (0.9). Kecocokan psikometri Anda dengan peran Tech Lead sangat baik (RIASEC 100%), menunjukkan keselarasan kepribadian dengan tuntutan kepemimpinan teknis. Namun, pengalaman manajerial dan arsitektur sistem masih perlu dikembangkan untuk memenuhi ekspektasi peran ini.",
+      "created_at": "2026-07-25T06:57:32.420528Z"
+    },
+    {
+      "match_id": "MATCH-F04496C9",
+      "user_id": "019f8a61-632f-7acf-85ae-b639375970f5",
+      "role_id": "ROLE-004",
+      "role_name": "Tech Lead / Engineering Manager",
+      "total_match_score": 54.29,
+      "match_reason": "Profil Anda menunjukkan fondasi teknis yang sangat kuat, terutama pada pengembangan full-stack modern seperti TypeScript, React.js, dan Node.js dengan tingkat keyakinan tinggi (0.9). Kecocokan psikometri Anda dengan peran Tech Lead sangat baik (RIASEC 100%), menunjukkan keselarasan kepribadian dengan tuntutan kepemimpinan teknis. Namun, pengalaman manajerial dan arsitektur sistem masih perlu dikembangkan untuk memenuhi ekspektasi peran ini.",
+      "created_at": "2026-07-25T06:57:32.420528Z"
+    },
+    {
+      "match_id": "MATCH-E1EE00A0",
+      "user_id": "019f8a61-632f-7acf-85ae-b639375970f5",
+      "role_id": "ROLE-005",
+      "role_name": "MLOps Engineer",
+      "total_match_score": 52.91,
+      "match_reason": "Profil Anda menunjukkan fondasi rekayasa perangkat lunak yang sangat kuat, terutama pada Python (confidence 0.9, bukti tinggi) dan Node.js (confidence 0.9, bukti tinggi), yang merupakan bahasa utama dalam pipeline MLOps. Skor kecocokan psikometri RIASEC 100% mengindikasikan keselarasan dengan tuntutan peran yang analitis dan terstruktur. Namun, peran MLOps Engineer menuntut keahlian infrastruktur dan orkestrasi yang belum Anda miliki, sehingga skor keseluruhan berada di angka 52,91%.",
+      "created_at": "2026-07-25T06:57:32.420528Z"
+    },
+    {
+      "match_id": "MATCH-E1EE00A0",
+      "user_id": "019f8a61-632f-7acf-85ae-b639375970f5",
+      "role_id": "ROLE-005",
+      "role_name": "MLOps Engineer",
+      "total_match_score": 52.91,
+      "match_reason": "Profil Anda menunjukkan fondasi rekayasa perangkat lunak yang sangat kuat, terutama pada Python (confidence 0.9, bukti tinggi) dan Node.js (confidence 0.9, bukti tinggi), yang merupakan bahasa utama dalam pipeline MLOps. Skor kecocokan psikometri RIASEC 100% mengindikasikan keselarasan dengan tuntutan peran yang analitis dan terstruktur. Namun, peran MLOps Engineer menuntut keahlian infrastruktur dan orkestrasi yang belum Anda miliki, sehingga skor keseluruhan berada di angka 52,91%.",
+      "created_at": "2026-07-25T06:57:32.420528Z"
+    },
+    {
+      "match_id": "MATCH-932AC8D0",
+      "user_id": "019f8a61-632f-7acf-85ae-b639375970f5",
+      "role_id": "ROLE-003",
+      "role_name": "AI Product Manager",
+      "total_match_score": 46.79,
+      "match_reason": "Profil teknis Anda sangat kuat dengan keyakinan tinggi pada keahlian seperti TypeScript, Python, React, Next.js, dan Node.js (confidence 0.9, evidence high), yang sangat relevan untuk memahami dan mengembangkan produk AI. Namun, peran AI Product Manager juga menuntut kompetensi strategis dan manajemen produk, yang belum terlihat dalam profil Anda. Dengan pendidikan dan kecocokan psikometri yang baik, Anda memiliki fondasi potensial untuk berkembang, tetapi perlu mengisi kesenjangan signifikan pada keterampilan produk.",
+      "created_at": "2026-07-25T06:57:32.420528Z"
+    },
+    {
+      "match_id": "MATCH-932AC8D0",
+      "user_id": "019f8a61-632f-7acf-85ae-b639375970f5",
+      "role_id": "ROLE-003",
+      "role_name": "AI Product Manager",
+      "total_match_score": 46.79,
+      "match_reason": "Profil teknis Anda sangat kuat dengan keyakinan tinggi pada keahlian seperti TypeScript, Python, React, Next.js, dan Node.js (confidence 0.9, evidence high), yang sangat relevan untuk memahami dan mengembangkan produk AI. Namun, peran AI Product Manager juga menuntut kompetensi strategis dan manajemen produk, yang belum terlihat dalam profil Anda. Dengan pendidikan dan kecocokan psikometri yang baik, Anda memiliki fondasi potensial untuk berkembang, tetapi perlu mengisi kesenjangan signifikan pada keterampilan produk.",
+      "created_at": "2026-07-25T06:57:32.420528Z"
+    }
+  ],
+  "career_match_score_details": [
+    {
+      "match_id": "MATCH-E9405A77",
+      "skill_match_score": 62.0,
+      "experience_project_score": 44.44,
+      "education_score": 80.0,
+      "riasec_fit_score": 100.0,
+      "ocean_workstyle_score": 62.5,
+      "preference_score": 50.0
+    },
+    {
+      "match_id": "MATCH-954D0036",
+      "skill_match_score": 72.0,
+      "experience_project_score": 66.67,
+      "education_score": 80.0,
+      "riasec_fit_score": 100.0,
+      "ocean_workstyle_score": 62.5,
+      "preference_score": 50.0
+    },
+    {
+      "match_id": "MATCH-932AC8D0",
+      "skill_match_score": 21.25,
+      "experience_project_score": 33.33,
+      "education_score": 80.0,
+      "riasec_fit_score": 100.0,
+      "ocean_workstyle_score": 62.5,
+      "preference_score": 50.0
+    },
+    {
+      "match_id": "MATCH-F04496C9",
+      "skill_match_score": 40.0,
+      "experience_project_score": 33.33,
+      "education_score": 80.0,
+      "riasec_fit_score": 100.0,
+      "ocean_workstyle_score": 62.5,
+      "preference_score": 50.0
+    },
+    {
+      "match_id": "MATCH-E1EE00A0",
+      "skill_match_score": 31.0,
+      "experience_project_score": 44.44,
+      "education_score": 80.0,
+      "riasec_fit_score": 100.0,
+      "ocean_workstyle_score": 62.5,
+      "preference_score": 50.0
+    }
+  ],
+  "skill_gap_results": [
+    {
+      "gap_id": "GAP-A1963A2C",
+      "match_id": "MATCH-E9405A77",
+      "skill_name": "PyTorch",
+      "current_level": "Beginner",
+      "required_level": "Intermediate",
+      "gap_level": "Medium",
+      "priority": "Medium",
+      "reason": "PyTorch adalah framework utama untuk deep learning yang sangat diminati pasar (demand 0.9). Kemampuan Anda saat ini di level Beginner sementara peran ini menuntut Intermediate."
+    },
+    {
+      "gap_id": "GAP-76A20442",
+      "match_id": "MATCH-E9405A77",
+      "skill_name": "REST API",
+      "current_level": "None",
+      "required_level": "Intermediate",
+      "gap_level": "High",
+      "priority": "High",
+      "reason": "REST API krusial untuk deployment model ML sebagai layanan yang dapat diintegrasikan. Saat ini Anda tidak memiliki pengalaman, padahal peran ini membutuhkan level Intermediate."
+    },
+    {
+      "gap_id": "GAP-EFEC0F0C",
+      "match_id": "MATCH-E9405A77",
+      "skill_name": "MLflow",
+      "current_level": "None",
+      "required_level": "Intermediate",
+      "gap_level": "High",
+      "priority": "High",
+      "reason": "MLflow diperlukan untuk mengelola eksperimen dan siklus hidup model ML, dengan permintaan pasar tinggi (0.7). Anda belum memiliki keahlian ini, sementara peran ini menuntut level Intermediate."
+    },
+    {
+      "gap_id": "GAP-EAB0E065",
+      "match_id": "MATCH-954D0036",
+      "skill_name": "GraphQL",
+      "current_level": "None",
+      "required_level": "Intermediate",
+      "gap_level": "High",
+      "priority": "Medium",
+      "reason": "GraphQL tidak terdeteksi pada profil Anda, padahal peran Full-Stack Developer saat ini memerlukan kemampuan Intermediate untuk membangun API yang efisien dan fleksibel. Permintaan pasar terhadap GraphQL cukup tinggi (0.6), sehingga menguasainya akan meningkatkan daya saing Anda."
+    },
+    {
+      "gap_id": "GAP-219619F6",
+      "match_id": "MATCH-954D0036",
+      "skill_name": "AWS",
+      "current_level": "None",
+      "required_level": "Intermediate",
+      "gap_level": "High",
+      "priority": "Medium",
+      "reason": "Kemampuan AWS Anda belum teridentifikasi, sementara peran ini menuntut pemahaman Intermediate karena cloud services menjadi fondasi deployment aplikasi modern. Permintaan pasar akan Cloud Services sangat tinggi (0.9), menjadikannya keterampilan yang krusial."
+    },
+    {
+      "gap_id": "GAP-3BE4E995",
+      "match_id": "MATCH-954D0036",
+      "skill_name": "CI/CD",
+      "current_level": "None",
+      "required_level": "Intermediate",
+      "gap_level": "High",
+      "priority": "Medium",
+      "reason": "CI/CD belum ada dalam keahlian Anda, padahal peran Full-Stack Developer membutuhkan tingkat Intermediate untuk mengotomatiskan pengujian dan deployment. Praktik CI/CD adalah standar industri yang mempercepat siklus pengembangan."
+    },
+    {
+      "gap_id": "GAP-03758F55",
+      "match_id": "MATCH-954D0036",
+      "skill_name": "Redis",
+      "current_level": "None",
+      "required_level": "Intermediate",
+      "gap_level": "High",
+      "priority": "Medium",
+      "reason": "Redis tidak terdeteksi pada profil Anda, padahal peran ini memerlukan kemampuan Intermediate untuk caching dan manajemen sesi guna meningkatkan performa aplikasi. Redis adalah komponen penting dalam arsitektur full-stack modern."
+    },
+    {
+      "gap_id": "GAP-50F00561",
+      "match_id": "MATCH-932AC8D0",
+      "skill_name": "Product Strategy",
+      "current_level": "None",
+      "required_level": "Intermediate",
+      "gap_level": "High",
+      "priority": "High",
+      "reason": "Product Strategy sangat krusial untuk menentukan arah dan prioritas produk AI agar selaras dengan visi bisnis. Saat ini Anda belum memiliki keahlian ini (level None), sementara peran membutuhkan level Intermediate. Permintaan pasar terhadap kemampuan ini cukup tinggi."
+    },
+    {
+      "gap_id": "GAP-7E5C4F6F",
+      "match_id": "MATCH-932AC8D0",
+      "skill_name": "User Research",
+      "current_level": "None",
+      "required_level": "Intermediate",
+      "gap_level": "High",
+      "priority": "High",
+      "reason": "User Research penting untuk memahami kebutuhan pengguna dan memvalidasi ide produk AI. Anda saat ini di level None, padahal peran ini membutuhkan level Intermediate agar dapat menyusun solusi yang tepat sasaran."
+    },
+    {
+      "gap_id": "GAP-9190121C",
+      "match_id": "MATCH-932AC8D0",
+      "skill_name": "Agile/Scrum",
+      "current_level": "None",
+      "required_level": "Intermediate",
+      "gap_level": "High",
+      "priority": "High",
+      "reason": "Agile/Scrum adalah metodologi standar dalam pengembangan produk modern untuk memastikan iterasi cepat dan responsif. Keahlian Anda masih None, sementara peran menuntut Intermediate. Tren pasar menunjukkan permintaan yang stabil untuk skill ini."
+    },
+    {
+      "gap_id": "GAP-3C8DE122",
+      "match_id": "MATCH-932AC8D0",
+      "skill_name": "Data Analysis",
+      "current_level": "None",
+      "required_level": "Intermediate",
+      "gap_level": "High",
+      "priority": "High",
+      "reason": "Data Analysis kunci untuk mengambil keputusan berbasis data dalam pengelolaan produk AI. Saat ini Anda belum memiliki keahlian (None), padahal peran membutuhkan Intermediate. Skill ini juga sangat diminati di pasar."
+    },
+    {
+      "gap_id": "GAP-35C48309",
+      "match_id": "MATCH-932AC8D0",
+      "skill_name": "Roadmapping",
+      "current_level": "None",
+      "required_level": "Intermediate",
+      "gap_level": "High",
+      "priority": "High",
+      "reason": "Roadmapping esensial untuk merencanakan dan mengkomunikasikan visi produk ke stakeholder. Level Anda saat ini None, sementara targetnya Intermediate. Kemampuan ini krusial untuk menyelaraskan tim dan sumber daya."
+    },
+    {
+      "gap_id": "GAP-E00C77E6",
+      "match_id": "MATCH-932AC8D0",
+      "skill_name": "A/B Testing",
+      "current_level": "None",
+      "required_level": "Intermediate",
+      "gap_level": "High",
+      "priority": "High",
+      "reason": "A/B Testing diperlukan untuk mengoptimalkan fitur produk melalui eksperimen terkontrol. Anda di level None, sementara peran membutuhkan Intermediate. Skill ini semakin penting dalam era product-led growth."
+    },
+    {
+      "gap_id": "GAP-E63978EC",
+      "match_id": "MATCH-F04496C9",
+      "skill_name": "System Design",
+      "current_level": "None",
+      "required_level": "Intermediate",
+      "gap_level": "High",
+      "priority": "High",
+      "reason": "System Design sangat krusial bagi Tech Lead untuk merancang arsitektur yang scalable. Saat ini Anda belum memiliki pengalaman (None), sementara peran ini membutuhkan level Intermediate."
+    },
+    {
+      "gap_id": "GAP-113BBA2B",
+      "match_id": "MATCH-F04496C9",
+      "skill_name": "Code Review",
+      "current_level": "None",
+      "required_level": "Intermediate",
+      "gap_level": "High",
+      "priority": "High",
+      "reason": "Code Review adalah aktivitas utama Tech Lead untuk menjaga kualitas kode tim. Kemampuan Anda saat ini belum terdeteksi (None), padahal peran ini menuntut keahlian di level Intermediate."
+    },
+    {
+      "gap_id": "GAP-2B735FB6",
+      "match_id": "MATCH-F04496C9",
+      "skill_name": "Agile/Scrum",
+      "current_level": "None",
+      "required_level": "Intermediate",
+      "gap_level": "High",
+      "priority": "High",
+      "reason": "Agile/Scrum merupakan metodologi standar untuk mengelola proyek pengembangan. Keahlian Anda belum ada (None), sementara peran ini membutuhkan pemahaman Intermediate untuk memimpin sprint dan tim."
+    },
+    {
+      "gap_id": "GAP-20AF3F02",
+      "match_id": "MATCH-F04496C9",
+      "skill_name": "Cloud Services",
+      "current_level": "None",
+      "required_level": "Intermediate",
+      "gap_level": "High",
+      "priority": "High",
+      "reason": "Cloud Services (AWS/GCP) sangat diminati pasar (demand 0.9) untuk deployment dan infrastruktur modern. Anda belum memiliki pengalaman (None), padahal Tech Lead harus mampu mengelola sistem cloud."
+    },
+    {
+      "gap_id": "GAP-EB5B3396",
+      "match_id": "MATCH-F04496C9",
+      "skill_name": "Mentoring",
+      "current_level": "None",
+      "required_level": "Intermediate",
+      "gap_level": "High",
+      "priority": "High",
+      "reason": "Mentoring penting bagi Tech Lead untuk mengembangkan anggota tim junior. Saat ini level Anda None, sementara peran ini membutuhkan kemampuan Intermediate dalam membimbing."
+    },
+    {
+      "gap_id": "GAP-720F46D4",
+      "match_id": "MATCH-E1EE00A0",
+      "skill_name": "Kubernetes",
+      "current_level": "None",
+      "required_level": "Intermediate",
+      "gap_level": "High",
+      "priority": "High",
+      "reason": "Kubernetes adalah fondasi orkestrasi container yang wajib untuk deployment dan scaling model ML di lingkungan produksi. Saat ini Anda belum memiliki pengalaman, padahal peran ini membutuhkan level Intermediate."
+    },
+    {
+      "gap_id": "GAP-7768C589",
+      "match_id": "MATCH-E1EE00A0",
+      "skill_name": "CI/CD",
+      "current_level": "None",
+      "required_level": "Intermediate",
+      "gap_level": "High",
+      "priority": "High",
+      "reason": "Pipeline CI/CD merupakan tulang punggung otomatisasi pengujian dan deployment model, esensial untuk menjaga kualitas dan kecepatan rilis. Keahlian Anda masih kosong, sementara peran ini menuntut pemahaman Intermediate."
+    },
+    {
+      "gap_id": "GAP-7624BD1F",
+      "match_id": "MATCH-E1EE00A0",
+      "skill_name": "MLflow",
+      "current_level": "None",
+      "required_level": "Intermediate",
+      "gap_level": "High",
+      "priority": "High",
+      "reason": "MLflow adalah standar industri untuk manajemen siklus hidup ML, meliputi tracking eksperimen dan model registry. Tanpa kemampuan ini, Anda akan kesulitan mengelola model secara terstruktur; target yang dibutuhkan adalah Intermediate."
+    },
+    {
+      "gap_id": "GAP-38FD794D",
+      "match_id": "MATCH-E1EE00A0",
+      "skill_name": "AWS/GCP",
+      "current_level": "None",
+      "required_level": "Intermediate",
+      "gap_level": "High",
+      "priority": "High",
+      "reason": "Cloud providers seperti AWS/GCP menjadi platform utama untuk infrastruktur MLOps, dengan permintaan pasar sangat tinggi (0.9). Anda belum memiliki pengalaman, sementara peran ini membutuhkan keahlian Intermediate."
+    },
+    {
+      "gap_id": "GAP-00BEAE71",
+      "match_id": "MATCH-E1EE00A0",
+      "skill_name": "Terraform",
+      "current_level": "None",
+      "required_level": "Intermediate",
+      "gap_level": "High",
+      "priority": "High",
+      "reason": "Terraform digunakan untuk Infrastructure as Code, memungkinkan provisioning lingkungan yang konsisten dan dapat direproduksi. Ketiadaan kemampuan ini merupakan gap besar karena peran ini membutuhkan level Intermediate."
+    },
+    {
+      "gap_id": "GAP-514BD164",
+      "match_id": "MATCH-E1EE00A0",
+      "skill_name": "Monitoring",
+      "current_level": "None",
+      "required_level": "Intermediate",
+      "gap_level": "High",
+      "priority": "High",
+      "reason": "Sistem monitoring (seperti Prometheus/Grafana) krusial untuk memantau performa model dan mendeteksi drift secara real-time. Anda saat ini belum memiliki keahlian, padahal peran MLOps Engineer menuntut Intermediate."
+    },
+    {
+      "gap_id": "GAP-A1963A2C",
+      "match_id": "MATCH-E9405A77",
+      "skill_name": "PyTorch",
+      "current_level": "Beginner",
+      "required_level": "Intermediate",
+      "gap_level": "Medium",
+      "priority": "Medium",
+      "reason": "PyTorch adalah framework utama untuk deep learning yang sangat diminati pasar (demand 0.9). Kemampuan Anda saat ini di level Beginner sementara peran ini menuntut Intermediate."
+    },
+    {
+      "gap_id": "GAP-76A20442",
+      "match_id": "MATCH-E9405A77",
+      "skill_name": "REST API",
+      "current_level": "None",
+      "required_level": "Intermediate",
+      "gap_level": "High",
+      "priority": "High",
+      "reason": "REST API krusial untuk deployment model ML sebagai layanan yang dapat diintegrasikan. Saat ini Anda tidak memiliki pengalaman, padahal peran ini membutuhkan level Intermediate."
+    },
+    {
+      "gap_id": "GAP-EFEC0F0C",
+      "match_id": "MATCH-E9405A77",
+      "skill_name": "MLflow",
+      "current_level": "None",
+      "required_level": "Intermediate",
+      "gap_level": "High",
+      "priority": "High",
+      "reason": "MLflow diperlukan untuk mengelola eksperimen dan siklus hidup model ML, dengan permintaan pasar tinggi (0.7). Anda belum memiliki keahlian ini, sementara peran ini menuntut level Intermediate."
+    },
+    {
+      "gap_id": "GAP-EAB0E065",
+      "match_id": "MATCH-954D0036",
+      "skill_name": "GraphQL",
+      "current_level": "None",
+      "required_level": "Intermediate",
+      "gap_level": "High",
+      "priority": "Medium",
+      "reason": "GraphQL tidak terdeteksi pada profil Anda, padahal peran Full-Stack Developer saat ini memerlukan kemampuan Intermediate untuk membangun API yang efisien dan fleksibel. Permintaan pasar terhadap GraphQL cukup tinggi (0.6), sehingga menguasainya akan meningkatkan daya saing Anda."
+    },
+    {
+      "gap_id": "GAP-219619F6",
+      "match_id": "MATCH-954D0036",
+      "skill_name": "AWS",
+      "current_level": "None",
+      "required_level": "Intermediate",
+      "gap_level": "High",
+      "priority": "Medium",
+      "reason": "Kemampuan AWS Anda belum teridentifikasi, sementara peran ini menuntut pemahaman Intermediate karena cloud services menjadi fondasi deployment aplikasi modern. Permintaan pasar akan Cloud Services sangat tinggi (0.9), menjadikannya keterampilan yang krusial."
+    },
+    {
+      "gap_id": "GAP-3BE4E995",
+      "match_id": "MATCH-954D0036",
+      "skill_name": "CI/CD",
+      "current_level": "None",
+      "required_level": "Intermediate",
+      "gap_level": "High",
+      "priority": "Medium",
+      "reason": "CI/CD belum ada dalam keahlian Anda, padahal peran Full-Stack Developer membutuhkan tingkat Intermediate untuk mengotomatiskan pengujian dan deployment. Praktik CI/CD adalah standar industri yang mempercepat siklus pengembangan."
+    },
+    {
+      "gap_id": "GAP-03758F55",
+      "match_id": "MATCH-954D0036",
+      "skill_name": "Redis",
+      "current_level": "None",
+      "required_level": "Intermediate",
+      "gap_level": "High",
+      "priority": "Medium",
+      "reason": "Redis tidak terdeteksi pada profil Anda, padahal peran ini memerlukan kemampuan Intermediate untuk caching dan manajemen sesi guna meningkatkan performa aplikasi. Redis adalah komponen penting dalam arsitektur full-stack modern."
+    },
+    {
+      "gap_id": "GAP-50F00561",
+      "match_id": "MATCH-932AC8D0",
+      "skill_name": "Product Strategy",
+      "current_level": "None",
+      "required_level": "Intermediate",
+      "gap_level": "High",
+      "priority": "High",
+      "reason": "Product Strategy sangat krusial untuk menentukan arah dan prioritas produk AI agar selaras dengan visi bisnis. Saat ini Anda belum memiliki keahlian ini (level None), sementara peran membutuhkan level Intermediate. Permintaan pasar terhadap kemampuan ini cukup tinggi."
+    },
+    {
+      "gap_id": "GAP-7E5C4F6F",
+      "match_id": "MATCH-932AC8D0",
+      "skill_name": "User Research",
+      "current_level": "None",
+      "required_level": "Intermediate",
+      "gap_level": "High",
+      "priority": "High",
+      "reason": "User Research penting untuk memahami kebutuhan pengguna dan memvalidasi ide produk AI. Anda saat ini di level None, padahal peran ini membutuhkan level Intermediate agar dapat menyusun solusi yang tepat sasaran."
+    },
+    {
+      "gap_id": "GAP-9190121C",
+      "match_id": "MATCH-932AC8D0",
+      "skill_name": "Agile/Scrum",
+      "current_level": "None",
+      "required_level": "Intermediate",
+      "gap_level": "High",
+      "priority": "High",
+      "reason": "Agile/Scrum adalah metodologi standar dalam pengembangan produk modern untuk memastikan iterasi cepat dan responsif. Keahlian Anda masih None, sementara peran menuntut Intermediate. Tren pasar menunjukkan permintaan yang stabil untuk skill ini."
+    },
+    {
+      "gap_id": "GAP-3C8DE122",
+      "match_id": "MATCH-932AC8D0",
+      "skill_name": "Data Analysis",
+      "current_level": "None",
+      "required_level": "Intermediate",
+      "gap_level": "High",
+      "priority": "High",
+      "reason": "Data Analysis kunci untuk mengambil keputusan berbasis data dalam pengelolaan produk AI. Saat ini Anda belum memiliki keahlian (None), padahal peran membutuhkan Intermediate. Skill ini juga sangat diminati di pasar."
+    },
+    {
+      "gap_id": "GAP-35C48309",
+      "match_id": "MATCH-932AC8D0",
+      "skill_name": "Roadmapping",
+      "current_level": "None",
+      "required_level": "Intermediate",
+      "gap_level": "High",
+      "priority": "High",
+      "reason": "Roadmapping esensial untuk merencanakan dan mengkomunikasikan visi produk ke stakeholder. Level Anda saat ini None, sementara targetnya Intermediate. Kemampuan ini krusial untuk menyelaraskan tim dan sumber daya."
+    },
+    {
+      "gap_id": "GAP-E00C77E6",
+      "match_id": "MATCH-932AC8D0",
+      "skill_name": "A/B Testing",
+      "current_level": "None",
+      "required_level": "Intermediate",
+      "gap_level": "High",
+      "priority": "High",
+      "reason": "A/B Testing diperlukan untuk mengoptimalkan fitur produk melalui eksperimen terkontrol. Anda di level None, sementara peran membutuhkan Intermediate. Skill ini semakin penting dalam era product-led growth."
+    },
+    {
+      "gap_id": "GAP-E63978EC",
+      "match_id": "MATCH-F04496C9",
+      "skill_name": "System Design",
+      "current_level": "None",
+      "required_level": "Intermediate",
+      "gap_level": "High",
+      "priority": "High",
+      "reason": "System Design sangat krusial bagi Tech Lead untuk merancang arsitektur yang scalable. Saat ini Anda belum memiliki pengalaman (None), sementara peran ini membutuhkan level Intermediate."
+    },
+    {
+      "gap_id": "GAP-113BBA2B",
+      "match_id": "MATCH-F04496C9",
+      "skill_name": "Code Review",
+      "current_level": "None",
+      "required_level": "Intermediate",
+      "gap_level": "High",
+      "priority": "High",
+      "reason": "Code Review adalah aktivitas utama Tech Lead untuk menjaga kualitas kode tim. Kemampuan Anda saat ini belum terdeteksi (None), padahal peran ini menuntut keahlian di level Intermediate."
+    },
+    {
+      "gap_id": "GAP-2B735FB6",
+      "match_id": "MATCH-F04496C9",
+      "skill_name": "Agile/Scrum",
+      "current_level": "None",
+      "required_level": "Intermediate",
+      "gap_level": "High",
+      "priority": "High",
+      "reason": "Agile/Scrum merupakan metodologi standar untuk mengelola proyek pengembangan. Keahlian Anda belum ada (None), sementara peran ini membutuhkan pemahaman Intermediate untuk memimpin sprint dan tim."
+    },
+    {
+      "gap_id": "GAP-20AF3F02",
+      "match_id": "MATCH-F04496C9",
+      "skill_name": "Cloud Services",
+      "current_level": "None",
+      "required_level": "Intermediate",
+      "gap_level": "High",
+      "priority": "High",
+      "reason": "Cloud Services (AWS/GCP) sangat diminati pasar (demand 0.9) untuk deployment dan infrastruktur modern. Anda belum memiliki pengalaman (None), padahal Tech Lead harus mampu mengelola sistem cloud."
+    },
+    {
+      "gap_id": "GAP-EB5B3396",
+      "match_id": "MATCH-F04496C9",
+      "skill_name": "Mentoring",
+      "current_level": "None",
+      "required_level": "Intermediate",
+      "gap_level": "High",
+      "priority": "High",
+      "reason": "Mentoring penting bagi Tech Lead untuk mengembangkan anggota tim junior. Saat ini level Anda None, sementara peran ini membutuhkan kemampuan Intermediate dalam membimbing."
+    },
+    {
+      "gap_id": "GAP-720F46D4",
+      "match_id": "MATCH-E1EE00A0",
+      "skill_name": "Kubernetes",
+      "current_level": "None",
+      "required_level": "Intermediate",
+      "gap_level": "High",
+      "priority": "High",
+      "reason": "Kubernetes adalah fondasi orkestrasi container yang wajib untuk deployment dan scaling model ML di lingkungan produksi. Saat ini Anda belum memiliki pengalaman, padahal peran ini membutuhkan level Intermediate."
+    },
+    {
+      "gap_id": "GAP-7768C589",
+      "match_id": "MATCH-E1EE00A0",
+      "skill_name": "CI/CD",
+      "current_level": "None",
+      "required_level": "Intermediate",
+      "gap_level": "High",
+      "priority": "High",
+      "reason": "Pipeline CI/CD merupakan tulang punggung otomatisasi pengujian dan deployment model, esensial untuk menjaga kualitas dan kecepatan rilis. Keahlian Anda masih kosong, sementara peran ini menuntut pemahaman Intermediate."
+    },
+    {
+      "gap_id": "GAP-7624BD1F",
+      "match_id": "MATCH-E1EE00A0",
+      "skill_name": "MLflow",
+      "current_level": "None",
+      "required_level": "Intermediate",
+      "gap_level": "High",
+      "priority": "High",
+      "reason": "MLflow adalah standar industri untuk manajemen siklus hidup ML, meliputi tracking eksperimen dan model registry. Tanpa kemampuan ini, Anda akan kesulitan mengelola model secara terstruktur; target yang dibutuhkan adalah Intermediate."
+    },
+    {
+      "gap_id": "GAP-38FD794D",
+      "match_id": "MATCH-E1EE00A0",
+      "skill_name": "AWS/GCP",
+      "current_level": "None",
+      "required_level": "Intermediate",
+      "gap_level": "High",
+      "priority": "High",
+      "reason": "Cloud providers seperti AWS/GCP menjadi platform utama untuk infrastruktur MLOps, dengan permintaan pasar sangat tinggi (0.9). Anda belum memiliki pengalaman, sementara peran ini membutuhkan keahlian Intermediate."
+    },
+    {
+      "gap_id": "GAP-00BEAE71",
+      "match_id": "MATCH-E1EE00A0",
+      "skill_name": "Terraform",
+      "current_level": "None",
+      "required_level": "Intermediate",
+      "gap_level": "High",
+      "priority": "High",
+      "reason": "Terraform digunakan untuk Infrastructure as Code, memungkinkan provisioning lingkungan yang konsisten dan dapat direproduksi. Ketiadaan kemampuan ini merupakan gap besar karena peran ini membutuhkan level Intermediate."
+    },
+    {
+      "gap_id": "GAP-514BD164",
+      "match_id": "MATCH-E1EE00A0",
+      "skill_name": "Monitoring",
+      "current_level": "None",
+      "required_level": "Intermediate",
+      "gap_level": "High",
+      "priority": "High",
+      "reason": "Sistem monitoring (seperti Prometheus/Grafana) krusial untuk memantau performa model dan mendeteksi drift secara real-time. Anda saat ini belum memiliki keahlian, padahal peran MLOps Engineer menuntut Intermediate."
+    }
+  ],
+  "candidate_roles": [
+    {
+      "role_id": "ROLE-001",
+      "role_name": "Machine Learning Engineer",
+      "role_category": "Data & AI",
+      "role_level": "Mid-Level",
+      "description": "Peran ini menggabungkan keahlian full-stack Anda dengan kemampuan machine learning untuk merancang, melatih, dan menerapkan model ke dalam produksi. Pengalaman Anda dalam membangun platform berskala dan proyek AI (LIDM) menjadikan Anda kandidat ideal untuk menjembatani riset dan deployment.",
+      "required_skills": [
+        "Python",
+        "TensorFlow",
+        "PyTorch",
+        "scikit-learn",
+        "Docker",
+        "REST API",
+        "SQL",
+        "Git",
+        "MLflow",
+        "Pandas"
+      ],
+      "nice_to_have_skills": [
+        "Kubernetes",
+        "Apache Spark",
+        "Kubeflow",
+        "NLP",
+        "Computer Vision"
+      ],
+      "riasec_ideal": "RIA",
+      "min_experience_months": 18
+    },
+    {
+      "role_id": "ROLE-002",
+      "role_name": "Full-Stack Developer",
+      "role_category": "Software Engineering",
+      "role_level": "Mid-Level",
+      "description": "Kemampuan Anda yang kuat dalam berbagai stack (React, Next.js, Node.js, Laravel) dan pengalaman memimpin proyek end-to-end sangat cocok untuk peran ini. Anda akan mengembangkan aplikasi web dan mobile yang skalabel dengan fokus pada pengalaman pengguna.",
+      "required_skills": [
+        "JavaScript",
+        "TypeScript",
+        "React.js",
+        "Node.js",
+        "Next.js",
+        "SQL",
+        "MongoDB",
+        "Git",
+        "REST API",
+        "Docker"
+      ],
+      "nice_to_have_skills": [
+        "GraphQL",
+        "AWS",
+        "CI/CD",
+        "React Native",
+        "Redis"
+      ],
+      "riasec_ideal": "RIC",
+      "min_experience_months": 12
+    },
+    {
+      "role_id": "ROLE-003",
+      "role_name": "AI Product Manager",
+      "role_category": "Product Management",
+      "role_level": "Mid-Level",
+      "description": "Dengan pengalaman co-founder dan pemahaman teknis ML, Anda dapat menjembatani kebutuhan bisnis dan teknologi. Peran ini membutuhkan kemampuan strategis untuk menentukan visi produk AI, mengelola prioritas, dan berkolaborasi dengan tim engineering.",
+      "required_skills": [
+        "Product Strategy",
+        "User Research",
+        "Agile/Scrum",
+        "Data Analysis",
+        "Roadmapping",
+        "A/B Testing",
+        "SQL",
+        "Python"
+      ],
+      "nice_to_have_skills": [
+        "Machine Learning",
+        "UI/UX Design",
+        "Business Modeling",
+        "Stakeholder Management"
+      ],
+      "riasec_ideal": "ESC",
+      "min_experience_months": 24
+    },
+    {
+      "role_id": "ROLE-004",
+      "role_name": "Tech Lead / Engineering Manager",
+      "role_category": "Engineering Leadership",
+      "role_level": "Mid-Level",
+      "description": "Pengalaman Anda sebagai lead engineer di KodeKita dan proyek capstone menunjukkan kemampuan memimpin tim teknis. Peran ini menggabungkan kontribusi teknis dengan tanggung jawab mentoring, perencanaan arsitektur, dan pengelolaan sprint.",
+      "required_skills": [
+        "System Design",
+        "Code Review",
+        "Agile/Scrum",
+        "Node.js",
+        "React.js",
+        "SQL",
+        "Docker",
+        "Git",
+        "Cloud Services",
+        "Mentoring"
+      ],
+      "nice_to_have_skills": [
+        "Kubernetes",
+        "Microservices",
+        "TypeScript",
+        "Project Management"
+      ],
+      "riasec_ideal": "ECS",
+      "min_experience_months": 24
+    },
+    {
+      "role_id": "ROLE-005",
+      "role_name": "MLOps Engineer",
+      "role_category": "Data & AI",
+      "role_level": "Mid-Level",
+      "description": "Peran ini berfokus pada infrastruktur dan pipeline untuk machine learning, mulai dari pelatihan hingga monitoring. Pengalaman Anda dalam Docker dan deployment model menjadikan Anda kandidat kuat untuk mengelola siklus hidup model di produksi.",
+      "required_skills": [
+        "Python",
+        "Docker",
+        "Kubernetes",
+        "CI/CD",
+        "MLflow",
+        "AWS/GCP",
+        "Terraform",
+        "SQL",
+        "Git",
+        "Monitoring"
+      ],
+      "nice_to_have_skills": [
+        "TensorFlow",
+        "PyTorch",
+        "Kubeflow",
+        "Apache Airflow",
+        "Prometheus"
+      ],
+      "riasec_ideal": "RIC",
+      "min_experience_months": 18
+    }
+  ],
+  "active_job_postings": [
+    {
+      "title": "MT – AI Integration",
+      "company": "PT Motor Sights International",
+      "location": "Bandung",
+      "url": "https://karir.itb.ac.id/vacancy/job/431350"
+    },
+    {
+      "title": "Machine Learning Engineer",
+      "company": "iSIXi PTE LTD",
+      "location": "",
+      "url": "https://glints.com/id/opportunities/jobs/machine-learning-engineer/062e58ee-3a9b-4531-be53-1f0a318739ac?traceInfo=4e893a4f-847b-4609-a215-9455025aaa3a"
+    },
+    {
+      "title": "Machine Learning Application Engineer",
+      "company": "CADIT Consultants Asia Pte Ltd",
+      "location": "Bandung, West Java",
+      "url": "https://bebee.com/id/jobs/machine-learning-application-engineer-cadit-consultants-asia-pte-ltd-bandung-west-java--t7xk-764751137"
+    }
+  ]
+}

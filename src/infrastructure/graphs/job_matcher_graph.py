@@ -99,7 +99,8 @@ async def search_roles(state: JobMatcherState) -> dict:
     )
 
     return {
-        "candidate_roles": [r.model_dump() for r in roles],
+        "candidate_roles": [r.model_dump() for r in roles.roles],
+        "active_job_postings": [j.model_dump() for j in roles.active_job_postings],
         "progress_step": 2,
     }
 
@@ -280,10 +281,10 @@ async def generate_skill_gap(state: JobMatcherState) -> dict:
                     gap_id=f"GAP-{uuid.uuid4().hex[:8].upper()}",
                     match_id=match_id,
                     skill_name=skill_name,
-                    current_level=cast(Literal["None", "Beginner", "Intermediate", "Advanced"], current),
-                    required_level=cast(Literal["Beginner", "Intermediate", "Advanced"], req_level),
-                    gap_level=cast(Literal["Low", "Medium", "High"], gl),
-                    priority=cast(Literal["Low", "Medium", "High"], gap_priority(gl, is_required)),
+                    current_level=current,
+                    required_level=req_level,
+                    gap_level=gl,
+                    priority=gap_priority(gl, is_required),
                 )
                 gaps.append(gap.model_dump())
 
@@ -334,7 +335,7 @@ async def explain_matches(state: JobMatcherState) -> dict:
         )
 
     llm = get_deepseek_llm()
-    structured_llm = llm.with_structured_output(MatchExplanation)
+    structured_llm = llm.with_structured_output(MatchExplanation, method="json_mode")
 
     prompt = ChatPromptTemplate.from_messages([
         ("system", prompt_template),
@@ -383,11 +384,20 @@ async def explain_matches(state: JobMatcherState) -> dict:
             updated_matches.append(match_dict)
 
             # Update gap reasons
-            gap_reason_map = {gr.gap_id: gr.reason for gr in explanation.gap_reasons}
-            for g in related_gaps:
-                if g["gap_id"] in gap_reason_map:
-                    g["reason"] = gap_reason_map[g["gap_id"]]
-                updated_gaps.append(g)
+            for i, gr in enumerate(explanation.gap_reasons):
+                target_gap = None
+                if gr.gap_id:
+                    target_gap = next((g for g in related_gaps if g.get("gap_id") == gr.gap_id), None)
+                if not target_gap and gr.skill_name:
+                    # try to match by skill name if gap_id missing or invalid
+                    target_gap = next((g for g in related_gaps if g.get("skill_name") == gr.skill_name or g.get("skill_id") == gr.skill_name), None)
+                if not target_gap and i < len(related_gaps):
+                    # fallback to positional
+                    target_gap = related_gaps[i]
+                
+                if target_gap:
+                    target_gap["reason"] = gr.get_reason
+            updated_gaps.extend(related_gaps)
 
         except Exception:
             logger.exception(
@@ -399,6 +409,8 @@ async def explain_matches(state: JobMatcherState) -> dict:
 
     # We need to overwrite, not append — use the full list
     return {
+        "career_matches": updated_matches,
+        "skill_gaps": updated_gaps,
         "progress_step": 7,
     }
 
@@ -420,7 +432,7 @@ def should_analyze_market(
 
 def build_job_matcher_graph() -> StateGraph:
     """Build and return the compiled JobMatcher LangGraph."""
-    graph = StateGraph(JobMatcherState)
+    graph = StateGraph(JobMatcherState)  # type: ignore
 
     # Add nodes
     graph.add_node("extract_preferences", extract_preferences)

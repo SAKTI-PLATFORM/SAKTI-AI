@@ -2,10 +2,14 @@
 
 from __future__ import annotations
 
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Literal
 
 from pydantic import BaseModel, Field
+
+
+def _now_utc() -> datetime:
+    return datetime.now(timezone.utc)
 
 
 class LearningPath(BaseModel):
@@ -16,20 +20,20 @@ class LearningPath(BaseModel):
     target_role: str
     learning_path_type: str = "structured"
     estimated_duration_weeks: int = 4
-    created_at: datetime = Field(default_factory=datetime.utcnow)
+    created_at: datetime = Field(default_factory=_now_utc)
 
 
 class LearningPathStep(BaseModel):
     """A single step within a learning path."""
 
     step_id: str
-    learning_path_id: str
-    gap_id: str
+    learning_path_id: str = ""
+    gap_id: str = ""
     step_order: int
     week: int
     topic: str
     objective: str
-    related_skill_name: str
+    related_skill_name: str = ""
 
 
 class LearningResource(BaseModel):
@@ -76,3 +80,25 @@ class LearningPathPlan(BaseModel):
     learning_path: LearningPath
     steps: list[LearningPathStep]
     recommendations: list[ResourceRecommendation]
+
+
+class LearningMaterial(BaseModel):
+    """A single free learning material: article, video, doc, or GitHub repo."""
+
+    resource_id: str = ""
+    skill_name: str
+    resource_title: str
+    resource_type: Literal["Article", "Video", "Documentation", "GitHub", "Tutorial"]
+    provider: str
+    difficulty_level: Literal["Beginner", "Intermediate", "Advanced"]
+    estimated_duration_hours: float = 0.0
+    url: str = ""
+    language: Literal["Indonesian", "English", "Bilingual"] = "English"
+    is_free: bool = True
+    summary: str = ""
+
+
+class LearningMaterialResult(BaseModel):
+    """LLM-generated free learning material search results."""
+
+    materials: list[LearningMaterial]
